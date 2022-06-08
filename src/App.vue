@@ -5,6 +5,7 @@
     <About/>
     <FormEntry/>
     <Tourneys/>
+    <Portfolio/>
   </div>
 </template>
 
@@ -14,10 +15,12 @@ import Navbar from "@/components/navbar";
 import About from "@/components/About";
 import FormEntry from "@/components/FormEntry";
 import Tourneys from "@/components/Tourneys";
+import Portfolio from "@/components/Portfolio";
 
 export default {
   name: 'App',
   components: {
+    Portfolio,
     Tourneys,
     FormEntry,
     About,
