@@ -1,28 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navbar/>
+    <Home/>
+    <About/>
+    <FormEntry/>
+    <Tourneys/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from "@/components/Home";
+import Navbar from "@/components/navbar";
+import About from "@/components/About";
+import FormEntry from "@/components/FormEntry";
+import Tourneys from "@/components/Tourneys";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Tourneys,
+    FormEntry,
+    About,
+    Navbar,
+    Home,
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  /*вся страница*/
+  #app{
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #0a0f18;
+    color: #6b7688;
+  }
+  /*контейнер на блоки посередине экрана*/
+  .container{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+
+
 </style>
