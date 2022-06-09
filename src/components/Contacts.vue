@@ -12,11 +12,17 @@
                     </p>
                     <p>До встречи на соревнованиях! </p>
                 </b-col>
-                <b-col cols="5">
+                <b-col cols="4">
                     <div class="flex-container">
-                        <div>Телефон</div>
-                        <div>Email</div>
-                        <div>Instagram</div>
+                        <div v-for="information in ContactsRow" :key="information.text">
+                            <a :href="information.href" :target="information.target">
+
+                                        <component :is="information.svg"/>
+
+                                        <div class="text">{{information.name}} {{information.http}}</div>
+
+                            </a>
+                        </div>
                     </div>
                 </b-col>
             </b-row>
@@ -27,8 +33,38 @@
 </template>
 
 <script>
+    import Telephone_svg from "./svg_contacts/telephone_svg";
+    import Email_svg from "./svg_contacts/email_svg";
+    import Instagram_svg from "./svg_contacts/instagram_svg";
     export default {
-        name: "Contacts"
+        name: "Contacts",
+        data(){
+            return{
+                ContactsRow:[
+                    {
+                        svg:Telephone_svg,
+                        href:'tel:' + '+7 968 824-80-96',
+                        target:'_self',
+                        name:'Телефон:',
+                        http:'+7 968 824-80-96'
+                    },
+                    {
+                        svg:Email_svg,
+                        href:'mailto:' + 'polyakovsteam@mail.ru',
+                        target:'_self',
+                        name:'Почта:',
+                        http:'polyakovsteam@mail.ru'
+                    },
+                    {
+                        svg:Instagram_svg,
+                        href:'',
+                        target:'_blank',
+                        name:'Инстаграм:',
+                        http:'polyakovs_team',
+                    },
+                ]
+            }
+        }
     }
 </script>
 
@@ -45,24 +81,41 @@
     }
     .flex-container{
         padding: 2% 0;
+
     }
     .col-5{
-        padding: 3% 0 0 ;
+        padding: 0 0 0 ;
+    }
+    a{
+       color:  #8e9aaf;
+    }
+    svg{
+        fill:#8e9aaf;
+        width: 35px;
+        height: 35px;
+        margin-right: 2%;
+        float: left;
+    }
+    .text{
+        margin-left: -4%;
+    }
+    .col-4{
+        padding: 0 !important;
     }
     /*блоки с картинками*/
     .flex-container > div {
-        background: #071935;
+        //background: #071935;
         font-size: 1.5rem !important;
         font-family: 'Forum', cursive!important;
         border-radius: 8px;
-        padding: .8%;
-        text-align: center;
+        padding: .8% 2%;
         width: 100%;
+        box-shadow: 0px 1px 8px 1px #293655;
         height: 100%;
         margin: 0 1% 4% 1% !important;
     /*при наведении*/
     &:hover{
-         box-shadow: 0px 1px 8px 1px #293655;
+
      }
     }
 </style>
