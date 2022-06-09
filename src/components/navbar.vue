@@ -12,10 +12,10 @@
             </b-navbar-toggle>
             <b-collapse id="navbar-toggle-collapse" class="justify-content-end" is-nav v-model="isExpanded">
                 <b-navbar-nav>
-                    <b-nav-item @click="scrollToId" href="">О нас</b-nav-item>
-                    <b-nav-item @click="scrollToId" href="">Запись на грим</b-nav-item>
-                    <b-nav-item @click="scrollToId" href="">Турниры</b-nav-item>
-                    <b-nav-item @click="scrollToId" href="">Портфолио</b-nav-item>
+                    <b-nav-item @click="scrollToId" href="#About">О нас</b-nav-item>
+                    <b-nav-item @click="scrollToId" href="#FormEntry">Запись на грим</b-nav-item>
+                    <b-nav-item @click="scrollToId" href="#Tourneys">Турниры</b-nav-item>
+                    <b-nav-item @click="scrollToId" href="#Portfolio">Портфолио</b-nav-item>
                     <b-nav-item @click="scrollToId" href="">Контакты</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
@@ -37,7 +37,7 @@
                 window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
             },
             scrollToId(event){
-                let offsetY = 20;
+                let offsetY = 90;
                 if(this.isExpanded){
                     let nav = document.getElementById(("Nav"));
                     let bounds =  nav.getBoundingClientRect();
@@ -69,15 +69,15 @@
     .nav-link{
         color: #8792a5 !important;
         padding-right: 1rem !important;
-        padding-left: 1rem !important;
-        font-size: 1.35rem !important;
+        padding-left: 1rem !important;font-family: 'Forum', cursive;
+        font-size: 1.5rem !important;
         //font-family: 'Bitter', serif;
     }
     /*название компании "Аваконт" в логотипе*/
     .name_company{
-        font-size: 1.45rem;
+        font-size: 1.6rem;
         color: #1767aa;
-        letter-spacing: 2px;
+        letter-spacing: 2px;font-family: 'Forum', cursive;
         //font-family: 'Bitter', serif;
     }
     /*надпись "производственная компания" в логотипе*/
