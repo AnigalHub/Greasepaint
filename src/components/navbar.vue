@@ -16,7 +16,7 @@
                     <b-nav-item @click="scrollToId" href="#FormEntry">Запись на грим</b-nav-item>
                     <b-nav-item @click="scrollToId" href="#Tourneys">Турниры</b-nav-item>
                     <b-nav-item @click="scrollToId" href="#Portfolio">Портфолио</b-nav-item>
-                    <b-nav-item @click="scrollToId" href="">Контакты</b-nav-item>
+                    <b-nav-item @click="scrollToId" href="#Contacts">Контакты</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
         </b-container>
