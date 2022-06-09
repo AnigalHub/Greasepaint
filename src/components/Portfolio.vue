@@ -40,7 +40,8 @@
         padding: 2% 0;
     }
     h2{
-        font-size: 1.8rem;text-shadow: #293655 3px 0 120px;
+        font-size: 1.8rem;
+        text-shadow: #293655 3px 0 120px;
         font-family: 'Forum', cursive;
         text-align: center;
         margin-bottom: 3%;
@@ -48,9 +49,9 @@
     }
     /*блоки с картинками*/
     .flex-container > img {
-        width: 17%;
+        width: 18%;
         height: 100%;
-        margin: 0 1% 2.2% 1% !important;
+        margin: 0 2% 2% 0 !important;
         box-shadow: 0px 1px 8px 1px #071935;
     /*при наведении*/
     &:hover{
