@@ -12,11 +12,13 @@
                         В своей работе мы используем самые лучшие средства, подбираем идеальный тон под тип кожи,
                         подчеркивающий все достоинства тела на чемпионате. Наши мастера обладают только высшей квалификацией.
                     </p>
-                    <p>Команда #polyakovsteam сотрудничает:</p>
-                    <div class="r">
-                        <img src="../../public/2.png">
-                        <img src="../../public/3.png">
-                    </div>
+                    <p>Команда #polyakovsteam сотрудничает c известными брендами грима:</p>
+                    <ul>
+                       <li>Jan Tana</li>
+                        <li>Pro Tan</li>
+                        <li>Cos-World</li>
+                        <li>Dream Tan</li>
+                    </ul>
                 </b-col>
             </b-row>
         </b-container>
@@ -34,7 +36,7 @@
         padding: 4% 0 0 10px!important;
     }
 
-    img{
+    .col-5 img{
         width: 100%;
         height: 100%;
         background: radial-gradient( #293655, #1a2238, #0a0f18, #0a0f18);
@@ -48,10 +50,13 @@
         font-weight: 400;
         font-size: 2rem;
     }
-    p{
+    p,li{
         font-size: 1.7rem;
         font-family: 'Forum', cursive;
         line-height: 1.8rem;
-        font-weight: 300;margin-bottom: 6%;
+        font-weight: 300;
+    }
+    p{
+        margin-bottom: 6%;
     }
 </style>
