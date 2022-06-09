@@ -9,7 +9,7 @@
                     <button>Подробнее...</button>
                 </div>
                 <div>
-                    <img src="../../public/e.png">
+                    <img src="../../public/home.png">
                 </div>
             </div>
         </b-container>
