@@ -63,7 +63,7 @@
         background-size:cover;
         border-bottom: 5px #8792a5 !important;
         padding: 0 !important;
-        //box-shadow: 7px 7px 7px -7px rgb(34 60 80 / 90%)
+        box-shadow: 7px 7px 7px -7px rgb(34 60 80 / 90%)
     }
     /*все кнопки в меню*/
     .nav-link{
@@ -77,7 +77,9 @@
     .name_company{
         font-size: 1.6rem;
         color: #1767aa;
-        letter-spacing: 2px;font-family: 'Forum', cursive;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-family: 'Peralta', cursive;
         //font-family: 'Bitter', serif;
     }
     /*надпись "производственная компания" в логотипе*/
