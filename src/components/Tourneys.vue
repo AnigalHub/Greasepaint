@@ -4,21 +4,34 @@
             <h2>Ближайшие турниры федерации NBC:</h2>
             <b-row>
                 <b-col>
-                    <img src="../../public/qw.jpg">
-                    <p>29 октября 2022 <br>
-                        GRAND PRIX MOSCOW<br>
-                        Москва,
-                        Ленинский проспект, 49 стр. 3.<br>
-                        STUDIO HALL
-                    </p>
+                    <b-row>
+                        <b-col cols="5">
+                            <img src="../../public/qw.jpg">
+                        </b-col>
+                        <b-col>
+                            <div>29 октября 2022 <hr>
+                                GRAND PRIX MOSCOW<hr>
+                                Москва,
+                                Ленинский проспект, 49 стр. 3.<hr>
+                                STUDIO HALL
+                            </div>
+                        </b-col>
+                    </b-row>
                 </b-col>
                 <b-col>
-                    <img src="../../public/qe.jpg">
-                    <p>13 ноября 2022<br>
-                        GRAND PRIX NBC 7<br>
-                        Москва,
-                        Орджоникидзе, д. 11 стр.
-                        ГЛАВCLUB</p>
+                    <b-row>
+                        <b-col cols="5">
+                            <img src="../../public/qe.jpg">
+                        </b-col>
+                        <b-col>
+                            <div>29 октября 2022 <hr>
+                                GRAND PRIX MOSCOW<hr>
+                                Москва,
+                                Ленинский проспект, 49 стр. 3.<hr>
+                                STUDIO HALL
+                            </div>
+                        </b-col>
+                    </b-row>
                 </b-col>
             </b-row>
         </b-container>
@@ -32,19 +45,43 @@
 </script>
 
 <style scoped lang="scss">
+    #Tourneys{
+        padding-bottom: 2%;
+    }
     img{
-        width: 220px;
-        margin: 4% auto;
+        width: 100%;
+        //margin: 4% auto;
         display: block;
     }
     h2{
+        font-size: 1.8rem;text-shadow: #293655 3px 0 120px;
+        font-family: 'Forum', cursive;
+        margin-bottom: 3%;
+        color: #8e9aaf;
+    }
+    .col .row{
+        margin-right: 8%;
+        box-shadow: 0px 1px 8px 1px #071935;
+    }
+    .col .col-5{
+        padding: 4px;
+    }
+    .col .col{
+        padding: 1%;
+    }
+    .col .col, .col .col{
+        background: #030b1a;
+    }
+    p, .col div{
+        //padding-top: 8%;
+        //text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Forum', cursive;
+        line-height: 1.8rem;
         font-weight: 300;
     }
-    p{
-        text-align: center;
-        font-size: 1.4rem;
-        font-family: 'Inter', sans-serif;
-        line-height: 2rem;
-        font-weight: 300;
+    hr{
+        margin: .5rem 0;
+        border-top: 1px solid #071935;
     }
 </style>
