@@ -5,7 +5,7 @@
                 <b-col cols="5">
                     <img src="../../public/n.png">
                 </b-col>
-                <b-col>
+                <b-col class="about">
                     <p>Наша команда занимается гримированием спортсменов перед выступлением, что
                         помогает им демонстрировать свое тело более выигрышно и становиться чемпионами! </p>
                     <p>
@@ -30,8 +30,8 @@
 </script>
 
 <style scoped>
-    col{
-        padding: 7% 0 0;
+    .about{
+        padding: 4% 0 0 10px!important;
     }
 
     img{
@@ -40,7 +40,7 @@
         background: radial-gradient( #293655, #1a2238, #0a0f18, #0a0f18);
     }
     .r img{
-        width: 160px;
+        width: 130px;
         background: transparent;
     }
     h1{
@@ -49,18 +49,9 @@
         font-size: 2rem;
     }
     p{
-        font-size: 1.4rem;
-        font-family: 'Inter', sans-serif;
-        line-height: 2rem;
+        font-size: 1.7rem;
+        font-family: 'Forum', cursive;
+        line-height: 1.8rem;
         font-weight: 300;margin-bottom: 6%;
-    }
-    button{
-        border: 2px solid #8792a5;
-        font-size: 1.6rem;
-        color: #8792a5;
-        border-radius: 7px;
-        margin-top: 2%;
-        padding: 1%; font-family: 'Inter', sans-serif;
-        background: transparent;
     }
 </style>
