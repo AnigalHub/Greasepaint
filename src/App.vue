@@ -57,6 +57,15 @@ export default {
       margin-left: 10%;
       background: radial-gradient( #293655, #1a2238, #0a0f18, #0a0f18);
     }
+    button{
+      border-radius: 7px;
+      font-size: 1.7rem;
+      border: 2px solid #8792a5;
+      background: transparent;
+    }
+    .grid{
+      grid-template-columns: 55% 45%;
+    }
   }
   img{
     width: 100%;
@@ -64,18 +73,19 @@ export default {
   }
   .grid{
     display: grid;
-    grid-template-columns: 55% 45%;
     column-gap: normal;
   }
-  h1,p, button{
+  h1,p, #Home button{
     font-family: 'Forum', cursive;
     font-weight: 300;
   }
   h1{
-    padding: 15% 0 5%;
+    padding: 15% 0 3%;
     font-size: 2.35rem;
-    color: #8e9aaf;
     text-shadow: #293655 3px 0 120px;
+  }
+  h1,p,button{
+    color: #8e9aaf;
   }
   p{
     font-size: 1.8rem;
@@ -83,13 +93,9 @@ export default {
     margin-bottom: 6%;
   }
   button{
-    border: 2px solid #8792a5;
     font-size: 1.7rem;
-    color: #8e9aaf;
-    border-radius: 7px;
     margin-top: 2%;
     padding: 1%;
-    background: transparent;
   }
 
 </style>
