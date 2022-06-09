@@ -6,6 +6,8 @@
     <FormEntry/>
     <Tourneys/>
     <Portfolio/>
+    <Contacts/>
+    <MyFooter/>
   </div>
 </template>
 
@@ -16,10 +18,14 @@ import About from "@/components/About";
 import FormEntry from "@/components/FormEntry";
 import Tourneys from "@/components/Tourneys";
 import Portfolio from "@/components/Portfolio";
+import MyFooter from "@/components/MyFooter";
+import Contacts from "@/components/Contacts";
 
 export default {
   name: 'App',
   components: {
+    Contacts,
+    MyFooter,
     Portfolio,
     Tourneys,
     FormEntry,
