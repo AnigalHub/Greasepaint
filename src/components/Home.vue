@@ -4,7 +4,7 @@
             <b-row>
                 <b-col>
                     <h1>Качественный грим - эффектное выступление в соревновательном бодибилдинге.</h1>
-                    <p>Мы команда гримеров  #polyakovsteam.</p>
+                    <p>Мы команда #polyakovsteam - профессиональные гримеры спортсменов перед выступлениями.</p>
                     <p>Наша цель - ваш идеально красивый путь к победе.</p>
                     <button>Подробнее...</button>
                 </b-col>
@@ -24,18 +24,25 @@
 
 <style scoped>
     img{
+        margin-top: 2%;
         width: 100%;
         height: 100%;
         margin-left: 10%;
         background: radial-gradient( #293655, #1a2238, #0a0f18, #0a0f18);
     }
     h1{
-        padding: 25% 0 5%;
+        padding: 15% 0 5%;
         font-weight: 300;
         font-size: 2.35rem;
         color: #8e9aaf;
         font-family: 'Forum', cursive;
         text-shadow: #293655 3px 0 120px;
+    }
+    .col{
+        padding: 0 !important;
+    }
+    .col-6{
+        flex: 0 0 47%;
     }
     p{
         font-size: 1.8rem;
