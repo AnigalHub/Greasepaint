@@ -24,29 +24,29 @@
 
 <style scoped>
     img{
-        padding-top: 7%;
         width: 100%;
         height: 100%;
+        margin-left: 10%;
         background: radial-gradient( #293655, #1a2238, #0a0f18, #0a0f18);
     }
     h1{
         padding: 25% 0 5%;
         font-weight: 300;
-        font-size: 1.8rem;
+        font-size: 2.35rem;
         color: #8e9aaf;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Forum', cursive;
         text-shadow: #293655 3px 0 120px;
     }
     p{
-        font-size: 1.4rem;
-        font-family: 'Inter', sans-serif;
+        font-size: 1.8rem;
+        font-family: 'Forum', cursive;
         line-height: 2rem;
         font-weight: 300;margin-bottom: 6%;
     }
     button{
         border: 2px solid #8792a5;
-        font-size: 1.5rem;
-        font-family: 'Inter', sans-serif;
+        font-size: 1.7rem;
+        font-family: 'Forum', cursive;
         color: #8e9aaf;;font-weight: 300;
         border-radius: 7px;
         margin-top: 2%;
