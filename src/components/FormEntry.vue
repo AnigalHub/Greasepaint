@@ -48,6 +48,7 @@
         width: 100%;
         border: none !important;
         height: 50px;
+        box-shadow: 0px 1px 8px 1px #293655;
         background: #071935;
         font-size: 1.5rem !important;
         font-family: 'Forum', cursive!important;
