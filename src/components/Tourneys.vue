@@ -49,8 +49,6 @@
         padding-bottom: 2%;
     }
     img{
-        width: 100%;
-        display: block;
         filter: brightness(80%);
     }
     h2{
