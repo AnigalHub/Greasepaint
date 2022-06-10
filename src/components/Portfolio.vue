@@ -49,9 +49,9 @@
     }
     /*блоки с картинками*/
     .flex-container > img {
-        width: 18%;
+        width: 17%;
         height: 100%;
-        margin: 0 2% 2% 0 !important;
+        margin: 0 2.5% 2.5% 0 !important;
         box-shadow: 0px 1px 8px 1px #071935;
     /*при наведении*/
     &:hover{
