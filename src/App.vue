@@ -79,8 +79,10 @@ export default {
       padding: 8% 0 0 55px!important;
     }
   }
-  #FormEntry{
+  #Portfolio, #FormEntry{
     padding: 25px 0;
+  }
+  #FormEntry{
     form{
       padding-top: 10%;
       width: 80%;
@@ -106,6 +108,7 @@ export default {
     }
   }
   img{
+    display: block;
     width: 100%;
     height: 100%;
   }
@@ -113,7 +116,7 @@ export default {
     display: grid;
     column-gap: normal;
   }
-  h1,p, #Home button, #FormEntry button, li, input{
+  h1,h2,p, #Home button, #FormEntry button, li, input{
     font-family: 'Forum', cursive;
     font-weight: 300;
   }
