@@ -36,16 +36,16 @@
 </script>
 
 <style scoped lang="scss">
-    #Portfolio{
-        padding: 2% 0;
-    }
     h2{
         font-size: 1.8rem;
         text-shadow: #293655 3px 0 120px;
-        font-family: 'Forum', cursive;
         text-align: center;
         margin-bottom: 3%;
         color: #8e9aaf;
+    }
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
     }
     /*блоки с картинками*/
     .flex-container > img {
