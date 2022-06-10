@@ -73,15 +73,7 @@
         font-size: 1.5rem !important;
         //font-family: 'Bitter', serif;
     }
-    /*название компании "Аваконт" в логотипе*/
-    .name_company{
-        font-size: 1.6rem;
-        color: #1767aa;
-        font-weight: 300;
-        letter-spacing: 2px;
-        font-family: 'Peralta', cursive;
-        //font-family: 'Bitter', serif;
-    }
+
     /*надпись "производственная компания" в логотипе*/
     .description_name{
         font-size: 0.65rem;
