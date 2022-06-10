@@ -2,12 +2,12 @@
   <div id="app">
     <Navbar/>
     <Home/>
-    <About/>
-    <FormEntry/>
-    <Tourneys/>
-    <Portfolio/>
-    <Contacts/>
-    <MyFooter/>
+<!--    <About/>-->
+<!--    <FormEntry/>-->
+<!--    <Tourneys/>-->
+<!--    <Portfolio/>-->
+<!--    <Contacts/>-->
+<!--    <MyFooter/>-->
   </div>
 </template>
 
@@ -37,6 +37,12 @@ export default {
 </script>
 
 <style lang="scss">
+  *,*:before,*:after{
+    box-sizing: border-box;
+  }
+  body{
+    font-family: sans-serif;
+  }
   /*вся страница*/
   #app{
     height: 100%;
@@ -53,8 +59,8 @@ export default {
 
   #Home{
     img{
-      margin-top: 2%;
-      margin-left: 10%;
+      padding-top: 5%;
+      //margin-left: 10%;
     }
     button{
       margin-top: 3%;
@@ -63,7 +69,73 @@ export default {
       background: transparent;
     }
     .grid{
-      grid-template-columns: 55% 45%;
+      grid-template-columns: 60% 42%;
+    }
+  }
+  /*название компании "Аваконт" в логотипе*/
+  .name_company{
+    font-size: 1.6rem;
+    color: #1767aa;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-family: 'Peralta', cursive;
+    //font-family: 'Bitter', serif;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px){
+    .name_company{
+      font-size: 1.4rem;
+    }
+    #Home{
+      h1{
+        padding: 12% 0 4%;
+        font-size: 2.15rem;
+        line-height: 2rem;
+      }
+      p,li,button{
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    .name_company{
+      font-size: 1.3rem;
+    }
+    #Home{
+      .grid{
+        grid-template-columns: 68% 32%;
+      }
+      h1{
+        padding: 4% 0 4%;
+        font-size: 1.45rem;
+        line-height: 1.6rem;
+      }
+      p,li,button{
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+      }
+    }
+  }
+  @media screen and (min-width: 500px) and (max-width: 768px){
+    .name_company{
+      font-size: 1rem;
+    }
+    #Home{
+      .grid{
+        grid-template-columns: 65% 35%;
+      }
+      h1{
+        padding: 5% 0 2%;
+        font-size: 1rem;
+        line-height: 1.1rem;
+      }
+      p,li,button{
+        font-size: 1rem;
+        line-height: 1.1rem;
+      }
+      p{
+        margin-bottom: 2% !important;
+      }
     }
   }
   #Home, #About, #FormEntry{
@@ -141,7 +213,7 @@ export default {
   button{
     text-align: center;
     border-radius: 7px !important;
-    height: 50px;
+    //height: 50px;
     padding: 1%;
   }
 
