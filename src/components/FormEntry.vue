@@ -2,6 +2,9 @@
     <div id="FormEntry">
         <b-container>
             <b-row>
+                <b-col cols="5">
+                    <img src="../../public/1.png">
+                </b-col>
                 <b-col>
                 <form>
                     <input type="text" placeholder="ФИО">
@@ -10,9 +13,6 @@
                     <input type="text" placeholder="Выберите турнир">
                     <button>Записаться на грим</button>
                 </form>
-                </b-col>
-                <b-col cols="5">
-                    <img src="../../public/1.png">
                 </b-col>
             </b-row>
         </b-container>
