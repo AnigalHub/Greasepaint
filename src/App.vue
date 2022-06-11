@@ -4,6 +4,7 @@
       <Navbar/>
       <Home/>
       <About/>
+      <Preparation/>
       <FormEntry/>
       <Tourneys/>
       <Portfolio/>
@@ -24,10 +25,12 @@ import Tourneys from "@/components/Tourneys";
 import Portfolio from "@/components/Portfolio";
 import MyFooter from "@/components/MyFooter";
 import Contacts from "@/components/Contacts";
+import Preparation from "@/components/Preparation";
 
 export default {
   name: 'App',
   components: {
+    Preparation,
     Contacts,
     MyFooter,
     Portfolio,
@@ -61,47 +64,106 @@ export default {
     background-repeat: no-repeat;
 
   }
+  .list2a {
+    margin-bottom: 8px;
+    padding:0;
+    list-style: none;
+    counter-reset: li;
+  }
+  .list2a li {
+    position: relative;
+    border: 2px solid rgba(67, 103, 167, 0.21);
+    background: rgb(15 27 35 / 55%);
+    box-shadow: 0 1px 5px rgb(78 106 159 / 40%);
+    padding:16px 20px 16px 28px;
+    margin:12px 0 12px 40px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-radius: 8px;
+  }
+  .list2a li:hover {
+    background: #FFF;
+  }
+  .list2a li:before {
+    line-height: 32px;
+    position: absolute;
+    top: 15px;
+    left:-40px;
+    width:40px;
+    text-align:center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    background: #2b6584;
+    counter-increment: li;
+    content: counter(li);
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+  }
+  .list2a li:hover:before {
+    width:46px;
+  }
+  .list2a li:after {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 16px solid transparent;
+    border-left-color: #2b6584;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s
+  }
+  .list2a li:hover:after {
+    margin-left: 6px;
+  }
   #Home{
-
-    .floating-button {
-      border: 2px solid rgba(135, 146, 165, 0.21);
-      border-radius: 8px;
-      font-family: "Forum", cursive;
+    p,li,button,ol{
+      font-size: 2rem;
+      line-height: 2.2rem;
+      letter-spacing: .5px;
       text-align: center;
-      background: rgb(15 27 35 / 55%);
-      transition: 0.3s;
-      padding: 1% 2%;
-      box-shadow: 0 1px 10px rgb(78 106 159 / 40%);
-      color: #8e9aaf;
+      margin-left: -3%;
+    }
+    .floating-button {
+      border-bottom: 2px solid rgba(135, 146, 165, 0.21);
+      border-top: none;
     }
     p:first-child{
-      padding: 12% 0 2%;
+      padding: 140px 0 5%;
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
       font-family: 'Rubik Dirt', cursive;
       color: #457490;
-      font-size: 2.9rem;
-      line-height: 1;
+
+      letter-spacing: 1px;
+      font-size: 3.3rem;
+      line-height: 3.8rem;
     }
     img{
-      padding-top: 3%;
       //margin-left: 10%;
     }
     button{
-      margin-top: 8px;
+      margin: 10% auto 0;
+      display: block;
       font-size: 1.6rem;
       background: transparent;
     }
     .grid{
-      grid-template-columns: 59% 41%;
+      grid-template-columns: 40% 60%;
     }
   }
   /*название компании "Аваконт" в логотипе*/
   .name_company{
-    font-size: 1.9rem;
-    letter-spacing: 3px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
     padding: 0 7px !important;
-    color: #5fafdc !important;
+
+    color: #2b6584 !important;
     font-weight: 500;
-    font-family: 'Londrina Outline', cursive;
+    font-family: 'Forum', cursive;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px){
     .name_company{
@@ -165,21 +227,24 @@ export default {
       //background: radial-gradient( #293655, #1a2238, transparent, transparent);
     }
   }
+  #Preparation{
+    .about{
+      padding-top:9% !important;
+    }
+  }
   #About{
     .about{
-      padding-top: 8% !important;
+      padding-top: 6% !important;
     }
     .grid{
       grid-template-columns: 38% 62%;
     }
     ol{
-      border: 2px solid rgba(135, 146, 165, 0.21);
-      border-radius: 8px;
       font-family: "Forum", cursive;
-      background: rgb(15 27 35 / 55%);
       transition: 0.3s;
-      padding: 3% 6%;
-      box-shadow: 0 1px 10px rgb(78 106 159 / 40%);
+      padding: 0 3%;
+      margin-bottom: 4%;
+
       color: #8e9aaf;
       li{
         padding-bottom: 3%;
@@ -191,7 +256,7 @@ export default {
   }
   #FormEntry{
     form{
-      width: 80%;
+      width: 60%;
       margin: 0 auto;
     }
     input{
