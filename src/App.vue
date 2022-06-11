@@ -78,7 +78,7 @@ export default {
       padding: 12% 0 2%;
       font-family: 'Rubik Dirt', cursive;
       color: #457490;
-      font-size: 2.7rem;
+      font-size: 2.9rem;
       line-height: 1;
     }
     img{
