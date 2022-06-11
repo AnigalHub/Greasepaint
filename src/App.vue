@@ -166,8 +166,24 @@ export default {
     }
   }
   #About{
+    .about{
+      padding-top: 8% !important;
+    }
     .grid{
       grid-template-columns: 38% 62%;
+    }
+    ol{
+      border: 2px solid rgba(135, 146, 165, 0.21);
+      border-radius: 8px;
+      font-family: "Forum", cursive;
+      background: rgb(15 27 35 / 55%);
+      transition: 0.3s;
+      padding: 3% 6%;
+      box-shadow: 0 1px 10px rgb(78 106 159 / 40%);
+      color: #8e9aaf;
+      li{
+        padding-bottom: 3%;
+      }
     }
   }
   #Portfolio, #FormEntry{
@@ -175,7 +191,6 @@ export default {
   }
   #FormEntry{
     form{
-      padding-top: 10%;
       width: 80%;
       margin: 0 auto;
     }
@@ -201,13 +216,12 @@ export default {
   img{
     display: block;
     width: 100%;
-    height: 100%;
   }
   .grid{
     display: grid;
     column-gap: normal;
   }
-  h1,h2,p, #Home button, #FormEntry button, li, input{
+  h1,h2,p, #Home button, #FormEntry button, li,ol, input{
     font-family: 'Forum', cursive;
     font-weight: 300;
   }
@@ -217,7 +231,7 @@ export default {
   p{
     margin-bottom: 4% !important;
   }
-  p,li,button{
+  p,li,button,ol{
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
