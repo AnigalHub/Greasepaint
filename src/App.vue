@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <Navbar/>
-    <Home/>
-<!--    <About/>-->
-<!--    <FormEntry/>-->
-<!--    <Tourneys/>-->
-<!--    <Portfolio/>-->
-<!--    <Contacts/>-->
-<!--    <MyFooter/>-->
+    <div class="rr">
+      <Navbar/>
+      <Home/>
+      <About/>
+      <FormEntry/>
+      <Tourneys/>
+      <Portfolio/>
+      <Contacts/>
+      <MyFooter/>
+    </div>
+
+
   </div>
 </template>
 
@@ -37,12 +41,6 @@ export default {
 </script>
 
 <style lang="scss">
-  *,*:before,*:after{
-    box-sizing: border-box;
-  }
-  body{
-    font-family: sans-serif;
-  }
   /*вся страница*/
   #app{
     height: 100%;
@@ -56,30 +54,54 @@ export default {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
+  .rr{
+    background:url("../public/123.png");
+    background-attachment: fixed;
 
+    background-repeat: no-repeat;
+
+  }
   #Home{
+
+    .floating-button {
+      border: 2px solid rgba(135, 146, 165, 0.21);
+      border-radius: 8px;
+      font-family: "Forum", cursive;
+      text-align: center;
+      background: rgb(15 27 35 / 55%);
+      transition: 0.3s;
+      padding: 1% 2%;
+      box-shadow: 0 1px 10px rgb(78 106 159 / 40%);
+      color: #8e9aaf;
+    }
+    p:first-child{
+      padding: 12% 0 2%;
+      font-family: 'Rubik Dirt', cursive;
+      color: #457490;
+      font-size: 2.7rem;
+      line-height: 1;
+    }
     img{
-      padding-top: 5%;
+      padding-top: 3%;
       //margin-left: 10%;
     }
     button{
-      margin-top: 3%;
-      font-size: 1.7rem;
-      border: 2px solid #8792a5;
+      margin-top: 8px;
+      font-size: 1.6rem;
       background: transparent;
     }
     .grid{
-      grid-template-columns: 60% 42%;
+      grid-template-columns: 59% 41%;
     }
   }
   /*название компании "Аваконт" в логотипе*/
   .name_company{
-    font-size: 1.6rem;
-    color: #1767aa;
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-family: 'Peralta', cursive;
-    //font-family: 'Bitter', serif;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+    padding: 0 7px !important;
+    color: #5fafdc !important;
+    font-weight: 500;
+    font-family: 'Londrina Outline', cursive;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px){
     .name_company{
@@ -140,15 +162,12 @@ export default {
   }
   #Home, #About, #FormEntry{
     img{
-      background: radial-gradient( #293655, #1a2238, #0a0f18, #0a0f18);
+      //background: radial-gradient( #293655, #1a2238, transparent, transparent);
     }
   }
   #About{
     .grid{
-      grid-template-columns: 40% 60%;
-    }
-    .about{
-      padding: 8% 0 0 55px!important;
+      grid-template-columns: 38% 62%;
     }
   }
   #Portfolio, #FormEntry{
@@ -192,11 +211,6 @@ export default {
     font-family: 'Forum', cursive;
     font-weight: 300;
   }
-  h1{
-    padding: 15% 0 4%;
-    font-size: 2.35rem;
-    text-shadow: #293655 3px 0 120px;
-  }
   h1,p,button,li,input{
     color: #8e9aaf;
   }
@@ -204,15 +218,15 @@ export default {
     margin-bottom: 4% !important;
   }
   p,li,button{
-    font-size: 1.7rem;
-    line-height: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
   input{
     line-height: 1.2rem;
   }
   button{
     text-align: center;
-    border-radius: 7px !important;
+    border-radius: 7px;
     //height: 50px;
     padding: 1%;
   }
