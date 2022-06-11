@@ -35,7 +35,7 @@
                     <img class="imgLast" src="../../public/fitnessFormula.png">
                     <img class="imgLast" src="../../public/jantana.png">
                 </b-col>
-                <b-col cols="4">
+                <b-col cols="5">
                     <img src="../../public/about.png">
                 </b-col>
             </b-row>
@@ -56,9 +56,10 @@
         filter: brightness(70%);
     }
     .row{
+        margin-top: 2%;
         margin-bottom: 2%;
     }
-    /*p:first-child{*/
-    /*    //padding-top: 10% !important;*/
-    /*}*/
+    col{
+        padding-top: 10% !important;
+    }
 </style>
