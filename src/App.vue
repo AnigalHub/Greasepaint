@@ -73,11 +73,10 @@ export default {
   .list2a li {
     position: relative;
     border: 2px solid rgba(67, 103, 167, 0.21);
-    background: rgb(15 27 35 / 55%);
-    box-shadow: 0 1px 5px rgb(78 106 159 / 40%);
-    padding:16px 20px 16px 28px;
-    margin:12px 0 12px 40px;
-    -webkit-transition-duration: 0.3s;
+    background: rgba(15, 27, 35, 0.55);
+    box-shadow: 0 1px 4px rgba(78, 106, 159, 0.24);
+    padding: 6px 0 6px 18px;
+    margin: 12px 50px 15px 60px;
     transition-duration: 0.3s;
     border-radius: 8px;
   }
@@ -97,7 +96,6 @@ export default {
     background: #2b6584;
     counter-increment: li;
     content: counter(li);
-    -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
   }
   .list2a li:hover:before {
@@ -112,7 +110,6 @@ export default {
     width: 0;
     border: 16px solid transparent;
     border-left-color: #2b6584;
-    -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s
   }
   .list2a li:hover:after {
