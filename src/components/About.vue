@@ -50,9 +50,6 @@
     height: 50%;
     margin-bottom: 3%;
 }
-.imgLast{
-    float: left;
-}
     .about .col-2 img{
         width: 120%;
         margin-top: 15%;
