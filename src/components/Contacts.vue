@@ -3,31 +3,21 @@
         <b-container>
             <b-row>
                 <b-col>
-                    <p>К каждому клиенту мы подходим индивидуально, делаем всё возможное,
-                        чтобы Вы остались довольны результатом нашего грима.
-                    </p>
-                    <p>
-                        Задать любой интересующий Вас вопрос можно
-                        удобным для вас способом и мы ответим Вам в ближайшее время!
-                    </p>
+                    <p>К каждому клиенту мы подходим индивидуально, делаем всё возможное, чтобы Вы остались довольны результатом нашего грима.</p>
+                    <p>Задать любой интересующий Вас вопрос можно удобным для вас способом и мы ответим Вам в ближайшее время!</p>
                     <p>До встречи на соревнованиях! </p>
                 </b-col>
                 <b-col cols="4">
                     <div class="flex-container">
                         <div v-for="information in ContactsRow" :key="information.text">
                             <a :href="information.href" :target="information.target">
-
-                                        <component :is="information.svg"/>
-
-                                        <div class="text">{{information.name}} {{information.http}}</div>
-
+                                <component :is="information.svg"/>
+                                <div class="text">{{information.name}} {{information.http}}</div>
                             </a>
                         </div>
                     </div>
                 </b-col>
             </b-row>
-
-
         </b-container>
     </div>
 </template>
