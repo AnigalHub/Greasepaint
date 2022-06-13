@@ -5,7 +5,7 @@
                 <div>
                     <p>Мы команда <br/> #polyakovsteam
                     <p>Профессиональные гримеры спортсменов NBC перед выступлениями</p>
-                    <button class="floating-button">Узнать больше</button>
+                    <p><a href="">Узнать больше</a></p>
                 </div>
                 <div>
                     <img src="../../public/99.png">
