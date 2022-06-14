@@ -16,14 +16,8 @@
 </template>
 
 <script>
-    import AirBrush_svg from "./svg_home/airbrush";
     export default {
         name: "Home",
-        data(){
-            return{
-                svg:AirBrush_svg
-            }
-        }
     }
 </script>
 
