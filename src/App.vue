@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="rr">
+    <div class="background">
       <Navbar/>
       <Home/>
       <About/>
@@ -11,8 +11,6 @@
       <Contacts/>
       <MyFooter/>
     </div>
-
-
   </div>
 </template>
 
@@ -57,12 +55,8 @@ export default {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
-  .rr{
-    background:url("../public/123.png");
-    background-attachment: fixed;
-
-    background-repeat: no-repeat;
-
+  .background{
+    background: url("../public/123.png") no-repeat fixed;
   }
   .list2a {
     margin-bottom: 8px;
