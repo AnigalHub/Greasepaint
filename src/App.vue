@@ -58,6 +58,70 @@ export default {
   .background{
     background: url("../public/123.png") no-repeat fixed;
   }
+  img{
+    display: block;
+    width: 100%;
+  }
+  .grid{
+    display: grid;
+    column-gap: normal;
+  }
+  p,button,ol,input{
+    color: #8e9aaf;
+  }
+  p{
+    margin-bottom: 3.5% !important;
+  }
+  p,a,button,ol{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  input{
+    line-height: 1.2rem;
+  }
+  button{
+    text-align: center;
+    border-radius: 8px;
+    padding: 1%;
+  }
+  #Home{
+    p,a{
+      font-size: 2rem;
+      line-height: 2.2rem;
+      letter-spacing: .5px;
+      text-align: center;
+    }
+    p:first-child{
+      padding: 140px 0 5%;
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
+      font-family: 'Rubik Dirt', cursive;
+      color: #457490;
+      text-shadow: 1px 1px 5px #032645;
+      letter-spacing: 1px;
+      font-size: 3.3rem;
+      line-height: 3.8rem;
+    }
+    img{
+      padding-top: 4%;
+      width: 102%;
+      margin: 0 auto;
+    }
+    .grid{
+      grid-template-columns: 40% 60%;
+    }
+  }
+  /*название компании "Аваконт" в логотипе*/
+  .name_company{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding: 0 7px !important;
+
+    color: #2b6584 !important;
+    font-weight: 500;
+    font-family: 'Forum', cursive;
+  }
   .list2a {
     margin-bottom: 8px;
     padding:0;
@@ -109,115 +173,6 @@ export default {
   .list2a li:hover:after {
     margin-left: 6px;
   }
-  #Home{
-    p,li,button,ol{
-      font-size: 2rem;
-      line-height: 2.2rem;
-      letter-spacing: .5px;
-      text-align: center;
-      margin-left: -3%;
-    }
-    .floating-button {
-      border-bottom: 2px solid rgba(135, 146, 165, 0.21);
-      border-top: none;
-    }
-    p:first-child{
-      padding: 140px 0 5%;
-      position: relative;
-      z-index: 1;
-      text-transform: uppercase;
-      font-family: 'Rubik Dirt', cursive;
-      color: #457490;
-
-      letter-spacing: 1px;
-      font-size: 3.3rem;
-      line-height: 3.8rem;
-    }
-    img{
-      //margin-left: 10%;
-    }
-    button{
-      margin: 10% auto 0;
-      display: block;
-      font-size: 1.6rem;
-      background: transparent;
-    }
-    .grid{
-      grid-template-columns: 40% 60%;
-    }
-  }
-  /*название компании "Аваконт" в логотипе*/
-  .name_company{
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    padding: 0 7px !important;
-
-    color: #2b6584 !important;
-    font-weight: 500;
-    font-family: 'Forum', cursive;
-  }
-  @media screen and (min-width: 992px) and (max-width: 1200px){
-    .name_company{
-      font-size: 1.4rem;
-    }
-    #Home{
-      h1{
-        padding: 12% 0 4%;
-        font-size: 2.15rem;
-        line-height: 2rem;
-      }
-      p,li,button{
-        font-size: 1.6rem;
-        line-height: 1.6rem;
-      }
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 992px){
-    .name_company{
-      font-size: 1.3rem;
-    }
-    #Home{
-      .grid{
-        grid-template-columns: 68% 32%;
-      }
-      h1{
-        padding: 4% 0 4%;
-        font-size: 1.45rem;
-        line-height: 1.6rem;
-      }
-      p,li,button{
-        font-size: 1.3rem;
-        line-height: 1.4rem;
-      }
-    }
-  }
-  @media screen and (min-width: 500px) and (max-width: 768px){
-    .name_company{
-      font-size: 1rem;
-    }
-    #Home{
-      .grid{
-        grid-template-columns: 65% 35%;
-      }
-      h1{
-        padding: 5% 0 2%;
-        font-size: 1rem;
-        line-height: 1.1rem;
-      }
-      p,li,button{
-        font-size: 1rem;
-        line-height: 1.1rem;
-      }
-      p{
-        margin-bottom: 2% !important;
-      }
-    }
-  }
-  #Home, #About, #FormEntry{
-    img{
-      //background: radial-gradient( #293655, #1a2238, transparent, transparent);
-    }
-  }
   #Preparation{
     .about{
       padding-top:9% !important;
@@ -229,17 +184,6 @@ export default {
     }
     .grid{
       grid-template-columns: 38% 62%;
-    }
-    ol{
-      font-family: "Forum", cursive;
-      transition: 0.3s;
-      padding: 0 3%;
-      margin-bottom: 4%;
-
-      color: #8e9aaf;
-      li{
-        padding-bottom: 3%;
-      }
     }
   }
   #Portfolio, #FormEntry{
@@ -269,36 +213,23 @@ export default {
       font-size: 1.6rem;
     }
   }
-  img{
-    display: block;
-    width: 100%;
-  }
-  .grid{
-    display: grid;
-    column-gap: normal;
-  }
   h1,h2,p, #Home button, #FormEntry button, li,ol, input{
     font-family: 'Forum', cursive;
     font-weight: 300;
   }
-  h1,p,button,li,input{
-    color: #8e9aaf;
+  @media screen and (min-width: 992px) and (max-width: 1200px){
+    .name_company{
+      font-size: 1.4rem;
+    }
   }
-  p{
-    margin-bottom: 4% !important;
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    .name_company{
+      font-size: 1.3rem;
+    }
   }
-  p,li,button,ol{
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+  @media screen and (min-width: 500px) and (max-width: 768px){
+    .name_company{
+      font-size: 1rem;
+    }
   }
-  input{
-    line-height: 1.2rem;
-  }
-  button{
-    text-align: center;
-    border-radius: 7px;
-    //height: 50px;
-    padding: 1%;
-  }
-
 </style>
