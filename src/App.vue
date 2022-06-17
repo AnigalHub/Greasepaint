@@ -92,14 +92,12 @@ export default {
       text-align: center;
     }
     p:first-child{
-      padding: 140px 0 5%;
-      position: relative;
-      z-index: 1;
+      padding: 140px 0 0;
       text-transform: uppercase;
       font-family: 'Rubik Dirt', cursive;
       color: #457490;
       text-shadow: 1px 1px 5px #032645;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
       font-size: 3.3rem;
       line-height: 3.8rem;
     }
@@ -117,11 +115,11 @@ export default {
     font-size: 1.5rem;
     letter-spacing: 2px;
     padding: 0 7px !important;
-
     color: #2b6584 !important;
     font-weight: 500;
     font-family: 'Forum', cursive;
   }
+
   .list2a {
     margin-bottom: 8px;
     padding:0;
