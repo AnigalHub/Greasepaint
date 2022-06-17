@@ -22,9 +22,5 @@
 </script>
 
 <style scoped lang="scss">
-img{
-    padding-top: 4%;
-    width: 102%;
-    margin: 0 auto;
-}
+
 </style>
