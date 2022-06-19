@@ -140,62 +140,63 @@ export default {
       border-radius: 8px;
     }
   }
-  .list2a {
-    margin-bottom: 8px;
-    padding:0;
-    list-style: none;
-    counter-reset: li;
-  }
-  .list2a li {
-    position: relative;
-    border: 2px solid rgba(67, 103, 167, 0.21);
-    background: rgba(15, 27, 35, 0.55);
-    box-shadow: 0 1px 4px rgba(78, 106, 159, 0.24);
-    padding: 6px 0 6px 18px;
-    margin: 12px 50px 15px 60px;
-    transition-duration: 0.3s;
-    border-radius: 8px;
-  }
-  .list2a li:hover {
-    background: #FFF;
-  }
-  .list2a li:before {
-    line-height: 32px;
-    position: absolute;
-    top: 15px;
-    left:-40px;
-    width:40px;
-    text-align:center;
-    font-size: 16px;
-    font-weight: bold;
-    color: #FFF;
-    background: #2b6584;
-    counter-increment: li;
-    content: counter(li);
-    transition-duration: 0.2s;
-  }
-  .list2a li:hover:before {
-    width:46px;
-  }
-  .list2a li:after {
-    position: absolute;
-    left: 0;
-    top: 15px;
-    content: "";
-    height: 0;
-    width: 0;
-    border: 16px solid transparent;
-    border-left-color: #2b6584;
-    transition-duration: 0.2s
-  }
-  .list2a li:hover:after {
-    margin-left: 6px;
-  }
   #Preparation{
     .about{
       padding-top:9% !important;
     }
+    ol {
+      margin-bottom: 8px;
+      padding:0;
+      list-style: none;
+      counter-reset: li;
+    }
+    ol li {
+      position: relative;
+      border: 2px solid rgba(67, 103, 167, 0.21);
+      background: rgba(15, 27, 35, 0.55);
+      box-shadow: 0 1px 4px rgba(78, 106, 159, 0.24);
+      padding: 6px 0 6px 18px;
+      margin: 12px 50px 15px 60px;
+      transition-duration: 0.3s;
+      border-radius: 8px;
+    }
+    ol li:hover {
+      background: #FFF;
+    }
+    ol li:before {
+      line-height: 32px;
+      position: absolute;
+      top: 15px;
+      left:-40px;
+      width:40px;
+      text-align:center;
+      font-size: 16px;
+      font-weight: bold;
+      color: #FFF;
+      background: #2b6584;
+      counter-increment: li;
+      content: counter(li);
+      transition-duration: 0.2s;
+    }
+    ol li:hover:before {
+      width:46px;
+    }
+    ol li:after {
+      position: absolute;
+      left: 0;
+      top: 15px;
+      content: "";
+      height: 0;
+      width: 0;
+      border: 16px solid transparent;
+      border-left-color: #2b6584;
+      transition-duration: 0.2s
+    }
+    ol li:hover:after {
+      margin-left: 6px;
+    }
   }
+
   #Portfolio, #FormEntry{
     padding: 25px 0;
   }
