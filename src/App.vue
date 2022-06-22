@@ -58,6 +58,15 @@ export default {
   .background{
     background: url("../public/123.png") no-repeat fixed;
   }
+  /*название компании "Аваконт" в логотипе*/
+  .name_company{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding: 0 7px !important;
+    color: #2b6584 !important;
+    font-weight: 500;
+    font-family: 'Forum', cursive;
+  }
   img{
     display: block;
     width: 100%;
@@ -111,15 +120,6 @@ export default {
       grid-template-columns: 40% 60%;
     }
   }
-  /*название компании "Аваконт" в логотипе*/
-  .name_company{
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    padding: 0 7px !important;
-    color: #2b6584 !important;
-    font-weight: 500;
-    font-family: 'Forum', cursive;
-  }
   #About{
     .about{
       padding-top: 6% !important;
@@ -145,12 +145,11 @@ export default {
       padding-top:9% !important;
     }
     ol {
-      margin-bottom: 8px;
       padding:0;
       list-style: none;
       counter-reset: li;
     }
-    ol li {
+    li {
       position: relative;
       border: 2px solid rgba(67, 103, 167, 0.21);
       background: rgba(15, 27, 35, 0.55);
@@ -159,41 +158,41 @@ export default {
       margin: 12px 50px 15px 60px;
       transition-duration: 0.3s;
       border-radius: 8px;
-    }
-    ol li:hover {
-      background: #FFF;
-    }
-    ol li:before {
-      line-height: 32px;
-      position: absolute;
-      top: 15px;
-      left:-40px;
-      width:40px;
-      text-align:center;
-      font-size: 16px;
-      font-weight: bold;
-      color: #FFF;
-      background: #2b6584;
-      counter-increment: li;
-      content: counter(li);
-      transition-duration: 0.2s;
-    }
-    ol li:hover:before {
-      width:46px;
-    }
-    ol li:after {
-      position: absolute;
-      left: 0;
-      top: 15px;
-      content: "";
-      height: 0;
-      width: 0;
-      border: 16px solid transparent;
-      border-left-color: #2b6584;
-      transition-duration: 0.2s
-    }
-    ol li:hover:after {
-      margin-left: 6px;
+      &:hover {
+        background: #FFF;
+      }
+      &:before {
+        line-height: 32px;
+        position: absolute;
+        top: 15px;
+        left:-40px;
+        width:40px;
+        text-align:center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #FFF;
+        background: #2b6584;
+        counter-increment: li;
+        content: counter(li);
+        transition-duration: 0.2s;
+      }
+      &:hover:before {
+        width:46px;
+      }
+      &:after {
+        position: absolute;
+        left: 0;
+        top: 15px;
+        content: "";
+        height: 0;
+        width: 0;
+        border: 16px solid transparent;
+        border-left-color: #2b6584;
+        transition-duration: 0.2s
+      }
+      &:hover:after {
+        margin-left: 6px;
+      }
     }
   }
 
@@ -224,7 +223,7 @@ export default {
       font-size: 1.6rem;
     }
   }
-  h1,h2,p, #Home button, #FormEntry button, li,ol, input{
+  h1,h2,p, #FormEntry button, li, input{
     font-family: 'Forum', cursive;
     font-weight: 300;
   }
