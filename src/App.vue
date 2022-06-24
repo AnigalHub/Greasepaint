@@ -89,6 +89,7 @@ export default {
     line-height: 1.2rem;
   }
   button{
+    width: 100%;
     text-align: center;
     border-radius: 8px;
     padding: 1%;
@@ -152,25 +153,26 @@ export default {
     li {
       position: relative;
       border: 2px solid rgba(67, 103, 167, 0.21);
-      background: rgba(15, 27, 35, 0.55);
+      background: rgba(15, 27, 35, 0.35);
       box-shadow: 0 1px 4px rgba(78, 106, 159, 0.24);
       padding: 6px 0 6px 18px;
       margin: 12px 50px 15px 60px;
       transition-duration: 0.3s;
       border-radius: 8px;
       &:hover {
-        background: #FFF;
+        background: rgba(17, 31, 40, 0.95);
+        cursor: default;
       }
       &:before {
         line-height: 32px;
         position: absolute;
         top: 15px;
-        left:-40px;
-        width:40px;
-        text-align:center;
+        left: -40px;
+        width: 40px;
+        text-align: center;
         font-size: 1.2rem;
         font-weight: bold;
-        color: #FFF;
+        color: white;
         background: #2b6584;
         counter-increment: li;
         content: counter(li);
@@ -195,10 +197,6 @@ export default {
       }
     }
   }
-
-  #Portfolio, #FormEntry{
-    padding: 25px 0;
-  }
   #FormEntry{
     form{
       width: 60%;
@@ -216,13 +214,16 @@ export default {
     }
     button{
       margin-top: 10%;
-      width: 100%;
       border: none;
       box-shadow: 0 1px 8px 1px #293655;
       background: #071935;
       font-size: 1.6rem;
     }
   }
+  #Portfolio, #FormEntry{
+    padding: 25px 0;
+  }
+
   h1,h2,p, #FormEntry button, li, input{
     font-family: 'Forum', cursive;
     font-weight: 300;
