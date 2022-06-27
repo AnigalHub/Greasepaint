@@ -59,10 +59,11 @@
         color: #8e9aaf;
     }
     .col .row{
-        background: rgba(66, 74, 90, 0.25);
+        background: rgba(24, 57, 80, 0.3);
+        border: 2px solid rgba(67, 103, 167, 0.21);
         color: #8e9aaf;
         margin-right: 2%;
-        box-shadow: 0px 1px 8px 1px #071935;
+        border-radius: 8px;
     }
     .col .col-5, .col .col-4{
         padding: 4px;
