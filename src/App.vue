@@ -88,12 +88,6 @@ export default {
   input{
     line-height: 1.2rem;
   }
-  button{
-    width: 100%;
-    text-align: center;
-    border-radius: 8px;
-    padding: 1%;
-  }
   #Home{
     p,a{
       font-size: 2rem;
@@ -155,8 +149,8 @@ export default {
       border: 2px solid rgba(67, 103, 167, 0.21);
       background: rgba(15, 27, 35, 0.35);
       box-shadow: 0 1px 4px rgba(78, 106, 159, 0.24);
-      padding: 6px 0 6px 18px;
-      margin: 12px 50px 15px 60px;
+      padding: 12px 12px 18px;
+      margin: 12px 50px 25px 60px;
       transition-duration: 0.3s;
       border-radius: 8px;
       &:hover {
@@ -197,32 +191,37 @@ export default {
       }
     }
   }
+  h2{
+    text-align: center;
+  }
   #FormEntry{
     padding-bottom: 2% !important;
     h2{
-      text-align: center;
       padding-bottom: 1.5%;
     }
     .block{
-      margin: 0 7%;
-      padding: 2% 4%;
-      //background: rgba(66, 74, 90, 0.25);
+      padding: 3% 2% 0;
       color: #8e9aaf;
       border-radius: 8px;
-      border: 2px solid rgba(67, 103, 167, 0.21);
-      background: rgba(24, 57, 80, 0.1);
-      box-shadow: 0 1px 4px rgb(78 106 159 / 24%);
+      box-shadow: inset 2px 2px 5px rgba(67, 103, 167, 0.21), 1px 1px 5px rgba(67, 103, 167, 0.21);
       .col:last-child{
         text-align: center;
-        margin: 8% 0 0 ;
       }
     }
-    form{
+    button{
       width: 100%;
-      padding: 4% 5% 6%;
-      background: rgba(24, 57, 80, 0.3);
-      border: 2px solid rgba(67, 103, 167, 0.21);
-      margin: 0 auto;
+      text-align: center;
+      border-radius: 8px;
+      padding: 1%;
+    }
+    img{
+      width: 110%;
+    }
+    form{
+      width: 90%;
+      padding: 4%;
+      //background: rgba(24, 57, 80, 0.3);
+      //border: 2px solid rgba(67, 103, 167, 0.21);
       border-radius: 8px;
     }
     input{
@@ -230,18 +229,22 @@ export default {
       border-left: none !important;
       border-right: none !important;
       width: 100%;
-      font-size: 1.2rem !important;
+      font-size: 1.35rem !important;
       background: transparent;
-      padding: 2%;
-      margin-bottom: 9%;
+      padding: 3%;
+      margin-bottom: 6%;
       font-family: 'Forum', cursive;
       border-bottom: 1px solid #293655;
+    }
+    input::-webkit-input-placeholder {
+
+      color: rgba(142, 154, 175, 0.8);
     }
     button{
       margin-top: 4%;
       border: none;
-      box-shadow: 0 1px 8px 1px #293655;
-      background: #071935;
+      padding: 2% 0;
+      background: rgba(24, 57, 80, 0.9);
       font-size: 1.6rem;
     }
   }
