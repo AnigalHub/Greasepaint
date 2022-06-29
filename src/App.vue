@@ -124,7 +124,7 @@ export default {
       }
     }
     .imgLast{
-      width: 130px;
+      width: 155px;
       filter: brightness(80%);
       float: left;
       margin: 0 10px;
@@ -146,10 +146,10 @@ export default {
     }
     li {
       position: relative;
+      background: rgba(24, 57, 80, 0.3);
       border: 2px solid rgba(67, 103, 167, 0.21);
-      background: rgba(15, 27, 35, 0.35);
-      box-shadow: 0 1px 4px rgba(78, 106, 159, 0.24);
-      padding: 12px 12px 18px;
+      //box-shadow: 0 1px 4px rgba(78, 106, 159, 0.24);
+      padding: 12px 25px 18px;
       margin: 12px 50px 25px 60px;
       transition-duration: 0.3s;
       border-radius: 8px;
@@ -205,11 +205,6 @@ export default {
       padding: 3% 2% 0;
       color: #8e9aaf;
       border-radius: 8px;
-      /*box-shadow: inset 2px 2px 5px rgba(67, 103, 167, 0.21), 1px 1px 5px rgba(67, 103, 167, 0.21);*/
-      .col:last-child p{
-        //text-align: center;
-
-      }
     }
     button{
       width: 100%;
@@ -221,7 +216,7 @@ export default {
       width: 110%;
     }
     form{
-      width: 75%;
+      width: 80%;
       padding: 4% 6% 6%;
       background: rgba(24, 57, 80, 0.3);
       border: 2px solid rgba(67, 103, 167, 0.21);
