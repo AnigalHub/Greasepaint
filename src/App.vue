@@ -83,7 +83,7 @@ export default {
   }
   p,a,button,ol{
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
   }
   input{
     line-height: 1.2rem;
@@ -137,7 +137,7 @@ export default {
   }
   #Preparation{
     .about{
-      padding-top:9% !important;
+      padding-top:5% !important;
     }
     ol {
       padding:0;
@@ -192,20 +192,23 @@ export default {
     }
   }
   h2{
+    color: #3c88b5;
     text-align: center;
   }
   #FormEntry{
     padding-bottom: 2% !important;
     h2{
-      padding-bottom: 1.5%;
+
+      padding-bottom: 1%;
     }
     .block{
       padding: 3% 2% 0;
       color: #8e9aaf;
       border-radius: 8px;
-      box-shadow: inset 2px 2px 5px rgba(67, 103, 167, 0.21), 1px 1px 5px rgba(67, 103, 167, 0.21);
-      .col:last-child{
-        text-align: center;
+      /*box-shadow: inset 2px 2px 5px rgba(67, 103, 167, 0.21), 1px 1px 5px rgba(67, 103, 167, 0.21);*/
+      .col:last-child p{
+        //text-align: center;
+
       }
     }
     button{
@@ -218,11 +221,12 @@ export default {
       width: 110%;
     }
     form{
-      width: 90%;
-      padding: 4%;
-      //background: rgba(24, 57, 80, 0.3);
-      //border: 2px solid rgba(67, 103, 167, 0.21);
+      width: 75%;
+      padding: 4% 6% 6%;
+      background: rgba(24, 57, 80, 0.3);
+      border: 2px solid rgba(67, 103, 167, 0.21);
       border-radius: 8px;
+      margin: 0 auto 3%;
     }
     input{
       border-top: none !important;
@@ -231,8 +235,8 @@ export default {
       width: 100%;
       font-size: 1.35rem !important;
       background: transparent;
-      padding: 3%;
-      margin-bottom: 6%;
+      padding: 2%;
+      margin-bottom: 8%;
       font-family: 'Forum', cursive;
       border-bottom: 1px solid #293655;
     }
@@ -244,8 +248,9 @@ export default {
       margin-top: 4%;
       border: none;
       padding: 2% 0;
-      background: rgba(24, 57, 80, 0.9);
-      font-size: 1.6rem;
+      color: rgba(255, 255, 255, 0.75);
+      background: rgba(60, 136, 181, 0.43);
+      font-size: 1.5rem;
     }
   }
   #Portfolio, #FormEntry{
