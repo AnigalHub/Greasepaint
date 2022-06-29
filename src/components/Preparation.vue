@@ -15,7 +15,7 @@
 <!--                         предоставляют специальное средство для протирания. </p>-->
                 </b-col>
                 <b-col cols="5">
-                    <img src="../../public/ww.png">
+                    <img src="../../public/tt.png">
                 </b-col>
             </b-row>
 
