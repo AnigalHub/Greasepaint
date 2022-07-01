@@ -119,19 +119,36 @@ export default {
     .about{
       padding-top: 6% !important;
       .col-2 img{
-        width: 120%;
-        margin-top: 12%;
+        width: 110%;
+        margin: 0 0 0 -20%;
+        filter: invert(0.3);
+      }
+    }
+    .important{
+      padding: 1%;
+      background: rgba(24, 57, 80, 0.3);
+      border: 2px solid rgba(67, 103, 167, 0.21);
+      border-radius: 8px;
+      margin: 3% 0;
+      .col{
+        padding-top: 1.5%;
+        p{
+          margin: 0 !important;
+        }
+      }
+      .col-2{
+        padding-top: 1%;
+        padding-bottom: 1%;
       }
     }
     .imgLast{
-      width: 155px;
+      width: 100%;
       filter: brightness(80%);
       float: left;
-      margin: 0 10px;
+      margin: 8% 10px;
       padding: 5px;
-      border: 2px solid rgba(118, 123, 134, 0.67);
-      background: rgba(255, 255, 255, 0.03);
-      box-shadow: 0 1px 5px rgb(78 106 159 / 40%);
+      background: rgba(24, 57, 80, 0.3);
+      border: 2px solid rgba(67, 103, 167, 0.21);
       border-radius: 8px;
     }
   }
