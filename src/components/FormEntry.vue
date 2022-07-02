@@ -11,7 +11,7 @@
                         <h2>Запись на грим</h2>
                         <b-form-input v-model="formEntry.name" type="text" placeholder="Введите ваше имя"/>
                         <b-form-input v-model="formEntry.phone" type="tel" v-mask="'+7 (###) ###-##-##'" placeholder="Введите ваш телефон"/>
-                        <b-form-select v-model="selected" :options="Tourneys" value-field="id" text-field="name">
+                        <b-form-select v-model="selected" :options="Tournaments" value-field="id" text-field="name">
                             <template #first>
                                 <b-form-select-option :value="null" disabled>Выберите турнир</b-form-select-option>
                             </template>
@@ -48,7 +48,7 @@
                     phone: '',
                     time: '',
                 },
-                Tourneys:[
+                Tournaments:[
                     {
                         id: 1,
                         src: "./qw.jpg",
