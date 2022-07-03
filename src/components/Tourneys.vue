@@ -46,17 +46,10 @@
 
 <style scoped lang="scss">
     #Tourneys{
-        padding-bottom: 2%;
+        padding-bottom: 1%;
     }
     img{
         filter: brightness(80%);
-    }
-    h2{
-        font-size: 1.8rem;
-        text-shadow: #293655 3px 0 120px;
-        font-family: 'Forum', cursive;
-        margin-bottom: 3%;
-        color: #8e9aaf;
     }
     .col .row{
         background: rgba(24, 57, 80, 0.3);

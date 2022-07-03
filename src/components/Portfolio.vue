@@ -36,13 +36,6 @@
 </script>
 
 <style scoped lang="scss">
-    h2{
-        font-size: 1.8rem;
-        text-shadow: #293655 3px 0 120px;
-        text-align: center;
-        margin-bottom: 3%;
-        color: #8e9aaf;
-    }
     .flex-container{
         display: flex;
         flex-wrap: wrap;
