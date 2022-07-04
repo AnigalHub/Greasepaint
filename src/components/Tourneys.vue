@@ -45,9 +45,6 @@
 </script>
 
 <style scoped lang="scss">
-    #Tourneys{
-        padding-bottom: 1%;
-    }
     img{
         filter: brightness(80%);
     }
@@ -64,12 +61,6 @@
     .col .col{
         text-align: center;
         padding: 6% 3% 3%;
-    }
-    p, .col div{
-        font-size: 1.5rem;
-        font-family: 'Forum', cursive;
-        line-height: 1.8rem;
-        font-weight: 300;
     }
     hr{
         margin: .5rem 0;
