@@ -210,15 +210,14 @@ export default {
   }
   #Portfolio h2, #Tourneys h2{
     text-shadow: #293655 3px 0 120px;
-    margin-bottom: 3%;
     color: #8e9aaf;
   }
   h2{
+    padding: 2%;
     font-size: 1.8rem !important;
     text-align: center;
   }
   #FormEntry{
-    padding-bottom: 2% !important;
     h2{
       color: #3c88b5;
       padding-bottom: 1%;
@@ -239,7 +238,7 @@ export default {
     }
     form{
       width: 80%;
-      padding: 4%;
+      padding: 0 4% 4%;
       background: rgba(24, 57, 80, 0.3);
       border: 2px solid rgba(67, 103, 167, 0.21);
       border-radius: 8px;
@@ -270,10 +269,6 @@ export default {
       font-size: 1.5rem;
     }
   }
-  #Portfolio, #FormEntry{
-    padding: 25px 0;
-  }
-
   h1,h2,p, #FormEntry button, li, input{
     font-family: 'Forum', cursive;
     font-weight: 300;
