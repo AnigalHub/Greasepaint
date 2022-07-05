@@ -59,22 +59,8 @@
 </script>
 
 <style scoped lang="scss">
-    #Contacts{
-        padding: 1% 0;
-    }
-    p{
-        font-size: 1.7rem;
-        font-family: 'Forum', cursive;
-        line-height: 1.8rem;
-        font-weight: 300;
-        margin-bottom: 4%;
-    }
     .flex-container{
         padding: 2% 0;
-
-    }
-    .col-5{
-        padding: 0 0 0 ;
     }
     a{
        color:  #8e9aaf;
@@ -101,9 +87,5 @@
         box-shadow: 0 1px 8px 1px #293655;
         height: 100%;
         margin: 0 1% 4% 1% !important;
-    /*при наведении*/
-    &:hover{
-
-     }
     }
 </style>
