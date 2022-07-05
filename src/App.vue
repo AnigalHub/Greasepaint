@@ -81,7 +81,7 @@ export default {
   p{
     margin-bottom: 3.5% !important;
   }
-  p,a,button,ol{
+  p,a,button,ol, #Contacts div{
     font-size: 1.5rem;
     line-height: 1.6rem;
   }
@@ -238,7 +238,7 @@ export default {
     }
     form{
       width: 80%;
-      padding: 0 4% 4%;
+      padding: 0 4% 0;
       background: rgba(24, 57, 80, 0.3);
       border: 2px solid rgba(67, 103, 167, 0.21);
       border-radius: 8px;
@@ -252,17 +252,18 @@ export default {
       font-size: 1.35rem !important;
       background: transparent;
       padding: 2%;
-      margin-bottom: 6%;
+      margin-bottom: 8%;
       font-family: 'Forum', cursive;
       border-bottom: 1px solid #293655;
     }
     input::-webkit-input-placeholder {
-
       color: rgba(142, 154, 175, 0.8);
     }
     button{
-      margin-top: 4%;
+      width: 80%;
+      margin: 4% auto 2%;
       border: none;
+      display: block;
       padding: 2% 0;
       color: rgba(255, 255, 255, 0.75);
       background: rgba(60, 136, 181, 0.43);
