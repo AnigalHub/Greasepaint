@@ -12,7 +12,7 @@
                         <div v-for="information in ContactsRow" :key="information.text">
                             <a :href="information.href" :target="information.target">
                                 <component :is="information.svg"/>
-                                <div class="text">{{information.name}} {{information.http}}</div>
+                                <p class="text">{{information.name}} {{information.http}}</p>
                             </a>
                         </div>
                     </div>
@@ -66,10 +66,11 @@
        color:  #8e9aaf;
     }
     svg{
-        fill:#8e9aaf;
+        fill: #8e9aaf;
         width: 35px;
         height: 35px;
         margin-right: 2%;
+        margin-top: -1.5%;
         float: left;
     }
     .text{
@@ -79,13 +80,14 @@
         padding: 0 !important;
     }
     .flex-container > div {
-        font-size: 1.5rem !important;
-        font-family: 'Forum', cursive!important;
         border-radius: 8px;
-        padding: .8% 2%;
+        padding: 3%;
         width: 100%;
         box-shadow: 0 1px 8px 1px #293655;
         height: 100%;
-        margin: 0 1% 4% 1% !important;
+        margin: 0 0 4% 0 !important;
+        p{
+            margin: 0 !important;
+        }
     }
 </style>
