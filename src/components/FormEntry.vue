@@ -7,15 +7,15 @@
                         <img src="../../public/ww.png">
                     </b-col>
                     <b-col>
+                        <h2>Запись на грим</h2>
                         <form>
-                            <h2>Запись на грим</h2>
                             <input type="text" placeholder="ФИО">
                             <input type="text" placeholder="Телефон">
                             <input type="text" placeholder="Email">
                             <input type="text" placeholder="Выберите турнир">
                             <input type="text" placeholder="Выберите время">
-                            <button>Записаться</button>
                         </form>
+                        <button>Записаться</button>
                         <p>Напоминаем, что на грим надо записываться уже сейчас!
                             Не подводите себя и других спортсменов, не оставляйте на последний день.</p>
                     </b-col>
