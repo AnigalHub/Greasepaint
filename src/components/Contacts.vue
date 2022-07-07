@@ -61,6 +61,18 @@
 <style scoped lang="scss">
     .flex-container{
         padding: 2% 0;
+        & > div {
+            border-radius: 8px;
+            padding: 2.5%;
+            width: 100%;
+            background: rgba(24, 57, 80, 0.3);
+            border: 2px solid rgba(67, 103, 167, 0.21);
+            height: 100%;
+            margin: 0 0 4% 0 !important;
+            p{
+                margin: 0 !important;
+            }
+        }
     }
     a{
        color:  #8e9aaf;
@@ -78,16 +90,5 @@
     }
     .col-4{
         padding: 0 !important;
-    }
-    .flex-container > div {
-        border-radius: 8px;
-        padding: 3%;
-        width: 100%;
-        box-shadow: 0 1px 8px 1px #293655;
-        height: 100%;
-        margin: 0 0 4% 0 !important;
-        p{
-            margin: 0 !important;
-        }
     }
 </style>
