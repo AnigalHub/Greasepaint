@@ -5,6 +5,7 @@
                 <b-row>
                     <b-col cols="5">
                         <img src="../../public/ww.png">
+                        <div class="imgBg"></div>
                     </b-col>
                     <b-col>
                         <h2>Запись на грим</h2>
