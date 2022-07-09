@@ -1,16 +1,17 @@
 <template>
     <div id="Home">
         <b-container>
-            <div class="grid">
-                <div>
+            <b-row>
+                <b-col cols="5">
                     <p>Мы команда <br/> #polyakovsteam
                     <p>Профессиональные гримеры спортсменов NBC перед выступлениями</p>
                     <p><a href="">Узнать больше</a></p>
-                </div>
-                <div>
+                </b-col>
+                <b-col>
                     <img src="../../public/99.png">
-                </div>
-            </div>
+                    <div class="imgBg"></div>
+                </b-col>
+            </b-row>
         </b-container>
     </div>
 </template>
