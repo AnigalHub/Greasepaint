@@ -47,7 +47,7 @@ export default {
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
-    background: #0a0f18;
+    background: rgba(10, 15, 24);
     color: #6b7688;
   }
   /*контейнер на блоки посередине экрана*/
@@ -56,7 +56,8 @@ export default {
     padding-left: 15px !important;
   }
   .background{
-    background: url("../public/123.png") no-repeat fixed;
+    //background: url("../public/126.png") no-repeat fixed;
+    background: url("../public/fog-1.png") repeat fixed;
   }
   /*название компании "Аваконт" в логотипе*/
   .name_company{
@@ -89,6 +90,16 @@ export default {
     line-height: 1.2rem;
   }
   #Home{
+    padding-bottom: 240px;
+    .imgBg{
+      z-index: 3;
+      width: 130%;
+      height: 145%;
+      left: -5%;
+      position: absolute;
+      top:-15%;
+      background-image: radial-gradient(ellipse 50% 50%, rgba(20, 102, 141, 0.55), transparent );
+    }
     p,a{
       font-size: 2rem;
       line-height: 2.2rem;
@@ -108,20 +119,21 @@ export default {
     }
     img{
       padding-top: 4%;
-      width: 102%;
-      margin: 0 auto;
-    }
-    .grid{
-      grid-template-columns: 40% 60%;
+      width: 100%;
+      //margin: 0 auto;
+      z-index: 4;
+      position: absolute;
     }
   }
   #About{
+    padding-bottom: 90px;
     .about{
       padding-top: 6% !important;
       .col-2 img{
         width: 110%;
         margin: 0 0 0 -20%;
         filter: invert(0.3);
+        position: relative;
       }
     }
     .important{
@@ -150,6 +162,21 @@ export default {
       background: rgba(24, 57, 80, 0.3);
       border: 2px solid rgba(67, 103, 167, 0.21);
       border-radius: 8px;
+      position: relative;
+    }
+    img{
+      z-index: 4;
+      position: absolute;
+      width: 90%;
+    }
+    .imgBg{
+      z-index: 3;
+      width: 130%;
+      height: 125%;
+      left: -10%;
+      position: absolute;
+      top:-15%;
+      background-image: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
     }
   }
   #Preparation{
@@ -207,6 +234,9 @@ export default {
         margin-left: 6px;
       }
     }
+    img{
+      background-image: radial-gradient(ellipse 52% 50%, #14668d, transparent);
+    }
   }
   #Portfolio h2, #Tourneys h2{
     text-shadow: #293655 3px 0 120px;
@@ -234,7 +264,18 @@ export default {
       padding: 1%;
     }
     img{
-      width: 110%;
+      z-index: 4;
+      position: absolute;
+      width: 90%;
+    }
+    .imgBg{
+      z-index: 3;
+      width: 130%;
+      height: 125%;
+      left: -10%;
+      position: absolute;
+      top:-15%;
+      background-image: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
     }
     form{
       width: 80%;
@@ -252,7 +293,7 @@ export default {
       font-size: 1.35rem !important;
       background: transparent;
       padding: 2%;
-      margin-bottom: 8%;
+      margin-bottom: 6%;
       font-family: 'Forum', cursive;
       border-bottom: 1px solid #293655;
     }
@@ -273,6 +314,7 @@ export default {
   h1,h2,p, #FormEntry button, li, input{
     font-family: 'Forum', cursive;
     font-weight: 300;
+    z-index: 7;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px){
     .name_company{
