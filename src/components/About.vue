@@ -4,6 +4,7 @@
             <b-row>
                 <b-col cols="5">
                     <img src="../../public/ww.png">
+                    <div class="imgBg"></div>
                 </b-col>
                 <b-col class="about">
                     <p>Команда помогает спортсменам демонстрировать свое тело более выигрышно и становиться чемпионами!</p>
