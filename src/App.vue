@@ -172,10 +172,10 @@ export default {
     .imgBg{
       z-index: 3;
       width: 130%;
-      height: 125%;
+      height: 135%;
       left: -10%;
       position: absolute;
-      top:-15%;
+      top:-10%;
       background-image: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
     }
   }
@@ -311,6 +311,7 @@ export default {
       font-size: 1.5rem;
     }
   }
+
   h1,h2,p, #FormEntry button, li, input{
     font-family: 'Forum', cursive;
     font-weight: 300;
