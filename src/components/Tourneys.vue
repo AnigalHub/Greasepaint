@@ -9,12 +9,13 @@
                             <img src="../../public/qw.jpg">
                         </b-col>
                         <b-col>
-                            <div>29 октября 2022 <hr>
-                                GRAND PRIX MOSCOW<hr>
-                                Москва,
+                            <p> 29 октября 2022</p> <hr>
+                            <p> GRAND PRIX MOSCOW</p>
+                            <hr>
+                            <p>   Москва,
                                 Ленинский проспект, 49 стр. 3.
                                 ГЛАВCLUB
-                            </div>
+                            </p>
                         </b-col>
                     </b-row>
                 </b-col>
@@ -24,12 +25,12 @@
                             <img src="../../public/qe.jpg">
                         </b-col>
                         <b-col>
-                            <div>13 ноября 2022 <hr>
-                                GRAND PRIX NBC 7<hr>
-                                Москва,
+                            <p>13 ноября 2022 </p><hr>
+                            <p>GRAND PRIX NBC 7 </p><hr>
+                            <p> Москва,
                                 Орджоникидзе, д. 11 стр. 1.
                                 STUDIO HALL
-                            </div>
+                            </p>
                         </b-col>
                     </b-row>
                 </b-col>
@@ -46,7 +47,7 @@
 
 <style scoped lang="scss">
     img{
-        filter: brightness(80%);
+        filter: brightness(89%);
     }
     .col .row{
         background: rgba(24, 57, 80, 0.3);
@@ -55,7 +56,7 @@
         margin-right: 2%;
         border-radius: 8px;
     }
-    .col .col-5, .col .col-4{
+    .col-5{
         padding: 4px;
     }
     .col .col{
