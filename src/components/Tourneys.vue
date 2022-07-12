@@ -46,25 +46,5 @@
 </script>
 
 <style scoped lang="scss">
-    img{
-        filter: brightness(89%);
-    }
-    .col .row{
-        background: rgba(24, 57, 80, 0.3);
-        border: 2px solid rgba(67, 103, 167, 0.21);
-        color: #8e9aaf;
-        margin-right: 2%;
-        border-radius: 8px;
-    }
-    .col-5{
-        padding: 4px;
-    }
-    .col .col{
-        text-align: center;
-        padding: 6% 3% 3%;
-    }
-    hr{
-        margin: .5rem 0;
-        border-top: 1px solid #8e9aaf;
-    }
+
 </style>
