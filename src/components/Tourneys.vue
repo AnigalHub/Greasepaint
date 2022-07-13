@@ -3,34 +3,16 @@
         <b-container>
             <h2>Ближайшие турниры федерации NBC:</h2>
             <b-row>
-                <b-col>
+                <b-col v-for="tourney in Tourneys">
                     <b-row>
                         <b-col cols="5">
-                            <img src="../../public/qw.jpg">
+                            <img :src="tourney.src" :alt="tourney.name">
                         </b-col>
                         <b-col>
-                            <p> 29 октября 2022</p> <hr>
-                            <p> GRAND PRIX MOSCOW</p>
+                            <p>{{tourney.date}}</p> <hr>
+                            <p>{{tourney.name}}</p>
                             <hr>
-                            <p>   Москва,
-                                Ленинский проспект, 49 стр. 3.
-                                ГЛАВCLUB
-                            </p>
-                        </b-col>
-                    </b-row>
-                </b-col>
-                <b-col>
-                    <b-row>
-                        <b-col cols="5">
-                            <img src="../../public/qe.jpg">
-                        </b-col>
-                        <b-col>
-                            <p>13 ноября 2022 </p><hr>
-                            <p>GRAND PRIX NBC 7 </p><hr>
-                            <p> Москва,
-                                Орджоникидзе, д. 11 стр. 1.
-                                STUDIO HALL
-                            </p>
+                            <p> {{tourney.address}}</p>
                         </b-col>
                     </b-row>
                 </b-col>
@@ -46,16 +28,16 @@
             return{
                 Tourneys:[
                     {
-                        src: '../../public/qw.jpg',
-                        date:'29 октября 2022',
-                        name:'GRAND PRIX MOSCOW',
-                        address:'Москва, Ленинский проспект, 49 стр. 3. ГЛАВCLUB'
+                        src: "./qw.jpg",
+                        date:"29 октября 2022",
+                        name:"GRAND PRIX MOSCOW",
+                        address:"Москва, Ленинский проспект, 49 стр. 3. ГЛАВCLUB"
                     },
                     {
-                        src: '../../public/qe.jpg',
-                        date:'13 ноября 2022',
-                        name:'GRAND PRIX NBC 7',
-                        address:'Москва, Орджоникидзе, д. 11 стр. 1. STUDIO HALL'
+                        src: "./qe.jpg",
+                        date:"13 ноября 2022",
+                        name:"GRAND PRIX NBC 7",
+                        address:"Москва, Орджоникидзе, д. 11 стр. 1. STUDIO HALL"
                     },
                 ],
             }
