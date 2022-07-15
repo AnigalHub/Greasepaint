@@ -180,7 +180,7 @@ export default {
     }
   }
   #Preparation{
-    .about{
+    .preparation{
       padding-top:5% !important;
     }
     ol {
