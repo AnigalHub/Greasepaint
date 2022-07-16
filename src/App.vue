@@ -279,13 +279,13 @@ export default {
     }
     form{
       width: 80%;
-      padding: 0 4% 0;
+      padding: 5%;
       background: rgba(24, 57, 80, 0.3);
       border: 2px solid rgba(67, 103, 167, 0.21);
       border-radius: 8px;
       margin: 0 auto 3%;
     }
-    input{
+    input, select{
       border-top: none !important;
       border-left: none !important;
       border-right: none !important;
@@ -297,7 +297,8 @@ export default {
       font-family: 'Forum', cursive;
       border-bottom: 1px solid #293655;
     }
-    input::-webkit-input-placeholder {
+
+    input::placeholder, select:optional {
       color: rgba(142, 154, 175, 0.8);
     }
     button{
