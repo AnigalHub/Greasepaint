@@ -10,11 +10,11 @@
                     <b-col>
                         <h2>Запись на грим</h2>
                         <form>
-                            <input v-model="formEntry.name" type="text" placeholder="ФИО">
-                            <input v-model="formEntry.phone" type="tel" placeholder="Телефон">
-                            <input v-model="formEntry.email" type="email" placeholder="Email">
-                            <input v-model="formEntry.tourney" type="text" placeholder="Выберите турнир">
-                            <input v-model="formEntry.time" type="time" placeholder="Выберите время">
+                            <b-form-input v-model="formEntry.name" type="text" placeholder="ФИО"/>
+                            <b-form-input v-model="formEntry.phone" type="tel" placeholder="Телефон"/>
+                            <b-form-input v-model="formEntry.email" type="email" placeholder="Email"/>
+                            <b-form-select v-model="selected" :options="Tourneys" placeholder="Выберите турнир"/>
+                            <b-form-input v-model="formEntry.time" type="time" placeholder="Выберите время"/>
                         </form>
                         <button>Записаться</button>
                         <p>Напоминаем, что на грим надо записываться уже сейчас!
@@ -31,13 +31,17 @@
         name: "FormEntry",
         data(){
             return {
+                selected:null,
                 formEntry:{
                     name: '',
                     phone: '',
                     email: '',
-                    tourney: '',
                     time: '',
-                }
+                },
+                Tourneys:[
+                    { value: null, text: 'GRAND PRIX MOSCOW' },
+                    { value: null, text: 'GRAND PRIX NBC 7' },
+                ]
             }
         },
     }
