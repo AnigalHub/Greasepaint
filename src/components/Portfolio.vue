@@ -36,10 +36,6 @@
 </script>
 
 <style scoped lang="scss">
-    .flex-container{
-        display: flex;
-        flex-wrap: wrap;
-    }
     /*блоки с картинками*/
     .flex-container > img {
         width: 16.5%;
