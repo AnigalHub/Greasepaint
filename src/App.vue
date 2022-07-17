@@ -89,6 +89,10 @@ export default {
   input{
     line-height: 1.2rem;
   }
+  .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
   #Home{
     padding-bottom: 240px;
     .imgBg{
