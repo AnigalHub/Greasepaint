@@ -36,15 +36,5 @@
 </script>
 
 <style scoped lang="scss">
-    /*блоки с картинками*/
-    .flex-container > img {
-        width: 16.5%;
-        height: 100%;
-        margin: 0 1.5% 2.5% 1.5% !important;
-        box-shadow: 0 1px 8px 1px #071935;
-    /*при наведении*/
-    &:hover{
-        box-shadow: 0 1px 8px 1px #293655;
-     }
-    }
+
 </style>
