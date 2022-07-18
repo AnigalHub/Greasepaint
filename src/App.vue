@@ -339,6 +339,19 @@ export default {
       border-top: 1px solid #8e9aaf;
     }
   }
+  #Portfolio{
+    /*блоки с картинками*/
+    .flex-container > img {
+      width: 16.5%;
+      height: 100%;
+      margin: 0 1.5% 2.5% 1.5% !important;
+      box-shadow: 0 1px 8px 1px #071935;
+      /*при наведении*/
+      &:hover{
+        box-shadow: 0 1px 8px 1px #293655;
+      }
+    }
+  }
   h1,h2,p, #FormEntry button, li, input{
     font-family: 'Forum', cursive;
     font-weight: 300;
