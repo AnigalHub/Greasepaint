@@ -196,7 +196,6 @@ export default {
       position: relative;
       background: rgba(24, 57, 80, 0.3);
       border: 2px solid rgba(67, 103, 167, 0.21);
-      //box-shadow: 0 1px 4px rgba(78, 106, 159, 0.24);
       padding: 12px 25px 18px;
       margin: 12px 50px 25px 60px;
       transition-duration: 0.3s;
@@ -239,7 +238,18 @@ export default {
       }
     }
     img{
-      background-image: radial-gradient(ellipse 52% 50%, #14668d, transparent);
+      z-index: 4;
+      position: absolute;
+      width: 90%;
+    }
+    .imgBg{
+      z-index: 3;
+      width: 130%;
+      height: 135%;
+      left: -10%;
+      position: absolute;
+      top:-15%;
+      background-image: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
     }
   }
   #Portfolio h2, #Tourneys h2{
