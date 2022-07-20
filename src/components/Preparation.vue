@@ -10,6 +10,7 @@
                 </b-col>
                 <b-col cols="5">
                     <img src="../../public/tt.png">
+                    <div class="imgBg"></div>
                 </b-col>
             </b-row>
         </b-container>
