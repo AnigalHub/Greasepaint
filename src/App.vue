@@ -42,13 +42,19 @@ export default {
 </script>
 
 <style lang="scss">
+  $bgBlock: rgba(24, 57, 80, 0.3);
+  $borderBlock: 2px solid rgba(67, 103, 167, 0.21);
+  $fontFamily: 'Forum', cursive;
+  $colorText: #8e9aaf;
+  $bgImg: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
+
   /*вся страница*/
   #app{
     height: 100%;
     margin: 0 !important;
     padding: 0 !important;
     background: rgba(10, 15, 24);
-    color: #6b7688;
+    color: $colorText;
   }
   /*контейнер на блоки посередине экрана*/
   .container{
@@ -56,7 +62,6 @@ export default {
     padding-left: 15px !important;
   }
   .background{
-    //background: url("../public/126.png") no-repeat fixed;
     background: url("../public/fog-1.png") repeat fixed;
   }
   /*название компании "Аваконт" в логотипе*/
@@ -66,7 +71,7 @@ export default {
     padding: 0 7px !important;
     color: #2b6584 !important;
     font-weight: 500;
-    font-family: 'Forum', cursive;
+    font-family: $fontFamily;
   }
   img{
     display: block;
@@ -77,7 +82,7 @@ export default {
     column-gap: normal;
   }
   p,button,ol,input{
-    color: #8e9aaf;
+    color: $colorText;
   }
   p{
     margin-bottom: 3.5% !important;
@@ -102,7 +107,7 @@ export default {
       left: -5%;
       position: absolute;
       top:-15%;
-      background-image: radial-gradient(ellipse 50% 50%, rgba(20, 102, 141, 0.55), transparent );
+      background-image: $bgImg;
     }
     p,a{
       font-size: 2rem;
@@ -124,7 +129,6 @@ export default {
     img{
       padding-top: 4%;
       width: 100%;
-      //margin: 0 auto;
       z-index: 4;
       position: absolute;
     }
@@ -132,7 +136,7 @@ export default {
   #About{
     padding-bottom: 90px;
     .about{
-      padding-top: 6% !important;
+      padding-top: 3% !important;
       .col-2 img{
         width: 110%;
         margin: 0 0 0 -20%;
@@ -142,8 +146,8 @@ export default {
     }
     .important{
       padding: 1%;
-      background: rgba(24, 57, 80, 0.3);
-      border: 2px solid rgba(67, 103, 167, 0.21);
+      background: $bgBlock;
+      border: $borderBlock;
       border-radius: 8px;
       margin: 3% 0;
       .col{
@@ -163,8 +167,8 @@ export default {
       float: left;
       margin: 8% 10px;
       padding: 5px;
-      background: rgba(24, 57, 80, 0.3);
-      border: 2px solid rgba(67, 103, 167, 0.21);
+      background: $bgBlock;
+      border: $borderBlock;
       border-radius: 8px;
       position: relative;
     }
@@ -180,7 +184,7 @@ export default {
       left: -10%;
       position: absolute;
       top:-10%;
-      background-image: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
+      background-image: $bgImg;
     }
   }
   #Preparation{
@@ -194,7 +198,7 @@ export default {
     }
     li {
       position: relative;
-      background: rgba(24, 57, 80, 0.3);
+      background: $bgBlock;
       border: 2px solid rgba(67, 103, 167, 0.21);
       padding: 12px 25px 18px;
       margin: 12px 50px 25px 60px;
@@ -254,7 +258,7 @@ export default {
   }
   #Portfolio h2, #Tourneys h2{
     text-shadow: #293655 3px 0 120px;
-    color: #8e9aaf;
+    color: $colorText;
   }
   h2{
     padding: 2%;
@@ -268,7 +272,7 @@ export default {
     }
     .block{
       padding: 3% 2% 0;
-      color: #8e9aaf;
+      color: $colorText;
       border-radius: 8px;
     }
     button{
@@ -289,13 +293,13 @@ export default {
       left: -10%;
       position: absolute;
       top:-15%;
-      background-image: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
+      background-image: $bgImg;
     }
     form{
       width: 80%;
       padding: 5%;
-      background: rgba(24, 57, 80, 0.3);
-      border: 2px solid rgba(67, 103, 167, 0.21);
+      background: $bgBlock;
+      border: $borderBlock;
       border-radius: 8px;
       margin: 0 auto 3%;
     }
@@ -308,10 +312,10 @@ export default {
       background: transparent;
       padding: 2%;
       margin-bottom: 6%;
-      font-family: 'Forum', cursive;
+      font-family: $fontFamily;
       border-bottom: 1px solid #293655;
+      color: $colorText;
     }
-
     input::placeholder, select:optional {
       color: rgba(142, 154, 175, 0.8);
     }
@@ -331,9 +335,9 @@ export default {
       filter: brightness(89%);
     }
     .col .row{
-      background: rgba(24, 57, 80, 0.3);
-      border: 2px solid rgba(67, 103, 167, 0.21);
-      color: #8e9aaf;
+      background: $bgBlock;
+      border: $borderBlock;
+      color: $colorText;
       margin-right: 2%;
       border-radius: 8px;
     }
@@ -346,7 +350,7 @@ export default {
     }
     hr{
       margin: .5rem 0;
-      border-top: 1px solid #8e9aaf;
+      border-top: 1px solid $colorText;
     }
   }
   #Portfolio{
@@ -369,8 +373,8 @@ export default {
         border-radius: 8px;
         padding: 2.5%;
         width: 100%;
-        background: rgba(24, 57, 80, 0.3);
-        border: 2px solid rgba(67, 103, 167, 0.21);
+        background: $bgBlock;
+        border: $borderBlock;
         height: 100%;
         margin: 0 0 4% 0 !important;
         p{
@@ -379,10 +383,10 @@ export default {
       }
     }
     a{
-      color:  #8e9aaf;
+      color:  $colorText;
     }
     svg{
-      fill: #8e9aaf;
+      fill: $colorText;
       width: 35px;
       height: 35px;
       margin-right: 2%;
@@ -397,7 +401,7 @@ export default {
     }
   }
   h1,h2,p, #FormEntry button, li, input{
-    font-family: 'Forum', cursive;
+    font-family: $fontFamily;
     font-weight: 300;
     z-index: 7;
   }
