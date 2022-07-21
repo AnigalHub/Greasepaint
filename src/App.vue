@@ -48,6 +48,20 @@ export default {
   $colorText: #8e9aaf;
   $bgImg: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
 
+  @mixin imgBg{
+    z-index: 3;
+    position: absolute;
+    background-image: $bgImg;
+  }
+  @mixin img{
+    z-index: 4;
+    position: absolute;
+  }
+  @mixin block{
+    background: $bgBlock;
+    border: $borderBlock;
+  }
+
   /*вся страница*/
   #app{
     height: 100%;
@@ -101,13 +115,11 @@ export default {
   #Home{
     padding-bottom: 240px;
     .imgBg{
-      z-index: 3;
+      @include imgBg;
       width: 130%;
       height: 145%;
       left: -5%;
-      position: absolute;
       top:-15%;
-      background-image: $bgImg;
     }
     p,a{
       font-size: 2rem;
@@ -129,8 +141,7 @@ export default {
     img{
       padding-top: 4%;
       width: 100%;
-      z-index: 4;
-      position: absolute;
+      @include img;
     }
   }
   #About{
@@ -146,8 +157,7 @@ export default {
     }
     .important{
       padding: 1%;
-      background: $bgBlock;
-      border: $borderBlock;
+      @include block;
       border-radius: 8px;
       margin: 3% 0;
       .col{
@@ -162,29 +172,25 @@ export default {
       }
     }
     .imgLast{
+      @include block;
       width: 100%;
       filter: brightness(80%);
       float: left;
       margin: 8% 10px;
       padding: 5px;
-      background: $bgBlock;
-      border: $borderBlock;
       border-radius: 8px;
       position: relative;
     }
     img{
-      z-index: 4;
-      position: absolute;
+      @include img;
       width: 90%;
     }
     .imgBg{
-      z-index: 3;
+      @include imgBg;
       width: 130%;
       height: 135%;
       left: -10%;
-      position: absolute;
       top:-10%;
-      background-image: $bgImg;
     }
   }
   #Preparation{
@@ -242,18 +248,15 @@ export default {
       }
     }
     img{
-      z-index: 4;
-      position: absolute;
+      @include img;
       width: 90%;
     }
     .imgBg{
-      z-index: 3;
+      @include imgBg;
       width: 130%;
       height: 135%;
       left: -10%;
-      position: absolute;
       top:-15%;
-      background-image: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
     }
   }
   #Portfolio h2, #Tourneys h2{
@@ -282,24 +285,20 @@ export default {
       padding: 1%;
     }
     img{
-      z-index: 4;
-      position: absolute;
+      @include img;
       width: 90%;
     }
     .imgBg{
-      z-index: 3;
+      @include imgBg;
       width: 130%;
       height: 125%;
       left: -10%;
-      position: absolute;
       top:-15%;
-      background-image: $bgImg;
     }
     form{
       width: 80%;
       padding: 5%;
-      background: $bgBlock;
-      border: $borderBlock;
+      @include block;
       border-radius: 8px;
       margin: 0 auto 3%;
     }
@@ -335,8 +334,7 @@ export default {
       filter: brightness(89%);
     }
     .col .row{
-      background: $bgBlock;
-      border: $borderBlock;
+      @include block;
       color: $colorText;
       margin-right: 2%;
       border-radius: 8px;
@@ -370,11 +368,10 @@ export default {
     .flex-container{
       padding: 2% 0;
       & > div {
+        @include block;
         border-radius: 8px;
         padding: 2.5%;
         width: 100%;
-        background: $bgBlock;
-        border: $borderBlock;
         height: 100%;
         margin: 0 0 4% 0 !important;
         p{
