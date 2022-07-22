@@ -47,6 +47,7 @@ export default {
   $fontFamily: 'Forum', cursive;
   $colorText: #8e9aaf;
   $bgImg: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
+  $borderRadius: 8px;
 
   @mixin imgBg{
     z-index: 3;
@@ -91,10 +92,6 @@ export default {
     display: block;
     width: 100%;
   }
-  .grid{
-    display: grid;
-    column-gap: normal;
-  }
   p,button,ol,input{
     color: $colorText;
   }
@@ -111,6 +108,16 @@ export default {
   .flex-container{
     display: flex;
     flex-wrap: wrap;
+  }
+  h2,p, #FormEntry button, li, input{
+    font-family: $fontFamily;
+    font-weight: 300;
+    z-index: 7;
+  }
+  h2{
+    padding: 2%;
+    font-size: 1.8rem !important;
+    text-align: center;
   }
   #Home{
     padding-bottom: 240px;
@@ -158,7 +165,7 @@ export default {
     .important{
       padding: 1%;
       @include block;
-      border-radius: 8px;
+      border-radius: $borderRadius;
       margin: 3% 0;
       .col{
         padding-top: 1.5%;
@@ -178,7 +185,7 @@ export default {
       float: left;
       margin: 8% 10px;
       padding: 5px;
-      border-radius: 8px;
+      border-radius: $borderRadius;
       position: relative;
     }
     img{
@@ -205,11 +212,11 @@ export default {
     li {
       position: relative;
       background: $bgBlock;
-      border: 2px solid rgba(67, 103, 167, 0.21);
+      border: $borderBlock;
       padding: 12px 25px 18px;
       margin: 12px 50px 25px 60px;
       transition-duration: 0.3s;
-      border-radius: 8px;
+      border-radius: $borderRadius;
       &:hover {
         background: rgba(17, 31, 40, 0.95);
         cursor: default;
@@ -263,11 +270,6 @@ export default {
     text-shadow: #293655 3px 0 120px;
     color: $colorText;
   }
-  h2{
-    padding: 2%;
-    font-size: 1.8rem !important;
-    text-align: center;
-  }
   #FormEntry{
     h2{
       color: #3c88b5;
@@ -276,12 +278,12 @@ export default {
     .block{
       padding: 3% 2% 0;
       color: $colorText;
-      border-radius: 8px;
+      border-radius: $borderRadius;
     }
     button{
       width: 100%;
       text-align: center;
-      border-radius: 8px;
+      border-radius: $borderRadius;
       padding: 1%;
     }
     img{
@@ -299,7 +301,7 @@ export default {
       width: 80%;
       padding: 5%;
       @include block;
-      border-radius: 8px;
+      border-radius: $borderRadius;
       margin: 0 auto 3%;
     }
     input, select{
@@ -337,7 +339,7 @@ export default {
       @include block;
       color: $colorText;
       margin-right: 2%;
-      border-radius: 8px;
+      border-radius: $borderRadius;
     }
     .col-5{
       padding: 4px;
@@ -369,7 +371,7 @@ export default {
       padding: 2% 0;
       & > div {
         @include block;
-        border-radius: 8px;
+        border-radius: $borderRadius;
         padding: 2.5%;
         width: 100%;
         height: 100%;
@@ -396,11 +398,6 @@ export default {
     .col-4{
       padding: 0 !important;
     }
-  }
-  h1,h2,p, #FormEntry button, li, input{
-    font-family: $fontFamily;
-    font-weight: 300;
-    z-index: 7;
   }
   @media screen and (min-width: 992px) and (max-width: 1200px){
     .name_company{
