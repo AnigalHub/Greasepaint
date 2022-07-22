@@ -284,7 +284,13 @@ export default {
       width: 100%;
       text-align: center;
       border-radius: $borderRadius;
-      padding: 1%;
+      margin: 6% auto 2%;
+      border: none;
+      display: block;
+      padding: 2% 0;
+      сolor: rgba(255, 255, 255, 0.75);
+      background: rgba(60, 136, 181, 0.43);
+      font-size: 1.5rem;
     }
     img{
       @include img;
@@ -299,7 +305,7 @@ export default {
     }
     form{
       width: 80%;
-      padding: 5%;
+      padding: 3% 5% 5%;
       @include block;
       border-radius: $borderRadius;
       margin: 0 auto 3%;
@@ -319,16 +325,6 @@ export default {
     }
     input::placeholder, select:optional {
       color: rgba(142, 154, 175, 0.8);
-    }
-    button{
-      width: 80%;
-      margin: 4% auto 2%;
-      border: none;
-      display: block;
-      padding: 2% 0;
-      color: rgba(255, 255, 255, 0.75);
-      background: rgba(60, 136, 181, 0.43);
-      font-size: 1.5rem;
     }
   }
   #Tourneys{
