@@ -69,11 +69,10 @@
     .nav-link{
         color: #2b6584 !important;
         padding-right: 1rem !important;
-        padding-left: 1rem !important;font-family: 'Forum', cursive;
+        padding-left: 1rem !important;
+        font-family: 'Forum', cursive;
         font-size: 1.5rem !important;
-        //font-family: 'Bitter', serif;
     }
-
     /*надпись "производственная компания" в логотипе*/
     .description_name{
         font-size: 0.65rem;

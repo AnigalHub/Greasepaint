@@ -9,9 +9,8 @@
                             <img :src="tourney.src" :alt="tourney.name">
                         </b-col>
                         <b-col>
-                            <p>{{tourney.date}}</p> <hr>
-                            <p>{{tourney.name}}</p>
-                            <hr>
+                            <p>{{tourney.date}}</p><hr>
+                            <p>{{tourney.name}}</p><hr>
                             <p> {{tourney.address}}</p>
                         </b-col>
                     </b-row>

@@ -4,9 +4,7 @@
             <div class="text">
                 <component :is="copyright"/> 2022 #polyakovsteam
             </div>
-
-                <component :is="svg"/>
-
+            <component :is="svg"/>
         </b-container>
     </div>
 </template>
@@ -38,9 +36,7 @@
         line-height: 1.8rem;
         font-weight: 600;
         float: left;
-        svg{
-            float: left;
-        }
+        svg{float: left;}
     }
     #Myfooter{
         padding: 1.5% 0 3.5%;
