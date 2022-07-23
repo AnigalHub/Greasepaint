@@ -77,7 +77,7 @@ export default {
     padding-left: 15px !important;
   }
   .background{
-    background: url("../public/fog-1.png") repeat fixed;
+    //background: url("../public/fog-1.png") repeat fixed;
   }
   /*название компании "Аваконт" в логотипе*/
   .name_company{
@@ -201,6 +201,7 @@ export default {
     }
   }
   #Preparation{
+    padding-bottom: 90px;
     .preparation{
       padding-top:5% !important;
     }
@@ -271,6 +272,7 @@ export default {
     color: $colorText;
   }
   #FormEntry{
+    padding-bottom: 50px;
     h2{
       color: #3c88b5;
       padding-bottom: 1%;
@@ -328,6 +330,7 @@ export default {
     }
   }
   #Tourneys{
+    padding-bottom: 40px;
     img{
       filter: brightness(89%);
     }
@@ -350,6 +353,7 @@ export default {
     }
   }
   #Portfolio{
+    padding-bottom: 40px;
     /*блоки с картинками*/
     .flex-container > img {
       width: 16.5%;
@@ -363,6 +367,7 @@ export default {
     }
   }
   #Contacts{
+    padding-bottom: 40px;
     .flex-container{
       padding: 2% 0;
       & > div {
