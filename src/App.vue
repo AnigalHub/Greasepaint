@@ -122,10 +122,10 @@ export default {
   #Home{
     padding-bottom: 240px;
     .imgBg{
-      @include imgBg;
+      background-image: radial-gradient(ellipse 47% 50%, rgba(20, 102, 141, 0.55), transparent );
       width: 130%;
       height: 145%;
-      left: -5%;
+      margin-left: -9%;
       top:-15%;
     }
     p,a{
