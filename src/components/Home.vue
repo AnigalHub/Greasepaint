@@ -5,7 +5,7 @@
                 <b-col cols="4">
                     <h1>Мы команда <br/> #polyakovsteam</h1>
                     <p>Профессиональные гримеры спортсменов NBC перед выступлениями</p>
-                    <p><a href="">Узнать больше</a></p>
+                    <b-button href="">Подробнее...</b-button>
                 </b-col>
                 <b-col>
                     <img src="../../public/99.png">
