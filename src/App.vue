@@ -120,7 +120,7 @@ export default {
     text-align: center;
   }
   #Home{
-    padding-bottom: 240px;
+    padding-bottom: 220px;
     .imgBg{
       background-image: radial-gradient(ellipse 47% 50%, rgba(20, 102, 141, 0.55), transparent );
       width: 130%;
@@ -132,27 +132,27 @@ export default {
       font-size: 2rem;
       line-height: 2.2rem;
       letter-spacing: .5px;
-      text-align: center;
+      text-align: center; width: 140%;
     }
-    p:first-child{
-      padding: 140px 0 0;
+    h1{
+      padding: 140px 0 6%;
+      width: 140%;
       position: relative;
-      text-transform: uppercase;
-      font-family: 'Rubik Dirt', cursive;
+      font-family: "Rubik Dirt", cursive;
       color: #457490;
       text-shadow: 1px 1px 5px #032645;
-      letter-spacing: 1.2px;
-      font-size: 3.3rem;
+      font-size: 3.4rem;
       line-height: 3.8rem;
+      text-align: center;
+      z-index: 10;
     }
     img{
-      padding-top: 4%;
       width: 100%;
       @include img;
     }
   }
   #About{
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     .about{
       padding-top: 3% !important;
       .col-2 img{
