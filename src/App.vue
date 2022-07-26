@@ -128,25 +128,45 @@ export default {
       margin-left: -9%;
       top:-15%;
     }
-    p,a{
+    p{
       font-size: 2rem;
-      line-height: 2.2rem;
+      line-height: 2rem;
       letter-spacing: .5px;
-      text-align: center; width: 140%;
+      text-align: center;
+      width: 140%;
+      border: 2px solid #8e9aaf;
+      padding: 5%;
+      margin-left: 3%;
+      background:  rgba(24, 57, 80, 0.5);
+      border: $borderBlock;
+      border-radius: $borderRadius;
+    }
+    .col-4{
+      z-index: 10;
+    }
+    button{
+      font-size: 1.3rem;font-family: $fontFamily; letter-spacing: .5px;
+      display: block;
+      margin: 0 45%;
+      border: 2px solid #8e9aaf;
+      padding: 3% 4%;
+      border-radius: $borderBlock;
+      width: max-content;
     }
     h1{
-      padding: 140px 0 6%;
+      padding: 120px 0 6%;
       width: 140%;
       position: relative;
       font-family: "Rubik Dirt", cursive;
       color: #457490;
-      text-shadow: 1px 1px 5px #032645;
-      font-size: 3.4rem;
+      text-shadow: 2px 2px 12px #1a1818, 1px 1px 5px #032645;
+      font-size: 3.6rem;
       line-height: 3.8rem;
       text-align: center;
       z-index: 10;
     }
     img{
+      padding-top: 1%;
       width: 100%;
       @include img;
     }
