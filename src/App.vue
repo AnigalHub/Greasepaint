@@ -129,39 +129,54 @@ export default {
       top:-15%;
     }
     p{
-      font-size: 2rem;
-      line-height: 2rem;
+      font-size: 2.2rem;
+      line-height: 2.5rem;
       letter-spacing: .5px;
       text-align: center;
       width: 140%;
-      border: 2px solid #8e9aaf;
-      padding: 5%;
-      margin-left: 3%;
-      background:  rgba(24, 57, 80, 0.5);
-      border: $borderBlock;
+      padding: 5% 4% 4%;
       border-radius: $borderRadius;
+    }
+    .allButton{
+      width: 140%;
+    }
+    a{
+      font-size: 2rem;
+      line-height: 2rem;
+      letter-spacing: .5px;
     }
     .col-4{
       z-index: 10;
     }
     button{
-      font-size: 1.3rem;font-family: $fontFamily; letter-spacing: .5px;
+      width: 47%;
+      text-align: center;
+      border-radius: 10px;
+      margin: 4% 1.5% 2%;
       display: block;
-      margin: 0 45%;
+      padding: 2% 3%;
+      сolor: rgba(255, 255, 255, 0.75);
       border: 2px solid #8e9aaf;
-      padding: 3% 4%;
-      border-radius: $borderBlock;
-      width: max-content;
+      background:  rgba(24, 57, 80, 0.5);
+      border: $borderBlock;
+      font-size: 1.3rem;
+      float: left;
+      z-index: 10;
+      &:last-child{
+        background: transparent;
+      }
     }
     h1{
-      padding: 120px 0 6%;
+      padding: 120px 0 0;
       width: 140%;
+      margin-left: -4%;
       position: relative;
       font-family: "Rubik Dirt", cursive;
+      letter-spacing: -1px;
       color: #457490;
       text-shadow: 2px 2px 12px #1a1818, 1px 1px 5px #032645;
-      font-size: 3.6rem;
-      line-height: 3.8rem;
+      font-size: 3.8rem;
+      line-height: 4rem;
       text-align: center;
       z-index: 10;
     }
