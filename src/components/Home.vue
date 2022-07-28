@@ -5,7 +5,10 @@
                 <b-col cols="4">
                     <h1>Мы команда <br/> #polyakovsteam</h1>
                     <p>Профессиональные гримеры спортсменов NBC перед выступлениями</p>
-                    <b-button href="">Подробнее...</b-button>
+                    <div class="allButton">
+                        <b-button>Запись на грим</b-button>
+                        <b-button>Узнать больше</b-button>
+                    </div>
                 </b-col>
                 <b-col>
                     <img src="../../public/99.png">
