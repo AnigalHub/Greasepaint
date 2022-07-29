@@ -12,11 +12,12 @@
                             <h2>Запись на грим</h2>
                             <b-form-input v-model="formEntry.name" type="text" placeholder="ФИО"/>
                             <b-form-input v-model="formEntry.phone" type="tel" placeholder="Телефон"/>
-                            <b-form-input v-model="formEntry.email" type="email" placeholder="Email"/>
                             <b-form-select v-model="selected" :options="Tourneys" placeholder="Выберите турнир"/>
                             <b-form-input v-model="formEntry.time" type="time" placeholder="Выберите время"/>
                             <button>Записаться</button>
                         </form>
+                        <p class="aboutMoney">Предварительная стоимость:
+                            <span class="money">2500 руб.</span></p>
                         <p>Напоминаем, что на грим надо записываться уже сейчас!
                             Не подводите себя и других спортсменов, не оставляйте на последний день.</p>
                     </b-col>
@@ -35,7 +36,6 @@
                 formEntry:{
                     name: '',
                     phone: '',
-                    email: '',
                     time: '',
                 },
                 Tourneys:[
