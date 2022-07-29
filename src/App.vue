@@ -308,6 +308,16 @@ export default {
   }
   #FormEntry{
     padding-bottom: 50px;
+    .aboutMoney{
+      //margin-bottom: 0 !important;
+      margin: 0 auto 3% !important;
+      display: block;
+      text-align: center;
+    }
+    .money{
+      font-size: 2.5rem !important;
+      color: #3c88b5;
+    }
     h2{
       color: #3c88b5;
       padding-bottom: 1%;
@@ -342,7 +352,7 @@ export default {
     }
     form{
       width: 80%;
-      padding: 3% 5% 5%;
+      padding: 2% 5% 2%;
       @include block;
       border-radius: $borderRadius;
       margin: 0 auto 3%;
@@ -355,7 +365,7 @@ export default {
       font-size: 1.35rem !important;
       background: transparent;
       padding: 2%;
-      margin-bottom: 6%;
+      margin-bottom: 4%;
       font-family: $fontFamily;
       border-bottom: 1px solid #293655;
       color: $colorText;
