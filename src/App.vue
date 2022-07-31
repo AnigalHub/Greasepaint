@@ -129,7 +129,7 @@ export default {
       top:-15%;
     }
     p{
-      font-size: 2.2rem;
+      font-size: 2rem;
       line-height: 2.5rem;
       letter-spacing: .5px;
       text-align: center;
@@ -154,12 +154,13 @@ export default {
       border-radius: 10px;
       margin: 4% 1.5% 2%;
       display: block;
+      font-family: $fontFamily;
       padding: 2% 3%;
-      сolor: rgba(255, 255, 255, 0.75);
+      сolor: $colorText !important;
       border: 2px solid #8e9aaf;
       background:  rgba(24, 57, 80, 0.5);
       border: $borderBlock;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       float: left;
       z-index: 10;
       &:last-child{
@@ -171,10 +172,10 @@ export default {
       width: 140%;
       margin-left: -4%;
       position: relative;
-      font-family: "Rubik Dirt", cursive;
-      letter-spacing: -1px;
+      font-family: 'Philosopher', sans-serif;
+      letter-spacing: 2px;
       color: #457490;
-      text-shadow: 2px 2px 12px #1a1818, 1px 1px 5px #032645;
+      text-shadow: 2px 2px 2px #1a1818, 1px 1px 2px #032645;
       font-size: 3.8rem;
       line-height: 4rem;
       text-align: center;
@@ -309,7 +310,6 @@ export default {
   #FormEntry{
     padding-bottom: 50px;
     .aboutMoney{
-      //margin-bottom: 0 !important;
       margin: 0 auto 3% !important;
       display: block;
       text-align: center;
@@ -335,7 +335,7 @@ export default {
       border: none;
       display: block;
       padding: 2% 0;
-      сolor: rgba(255, 255, 255, 0.75);
+      сolor: rgba(255, 255, 255, 0.95);
       background: rgba(60, 136, 181, 0.43);
       font-size: 1.5rem;
     }
