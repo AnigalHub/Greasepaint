@@ -47,7 +47,7 @@
                     },
                     {
                         svg:Instagram_svg,
-                        href:'',
+                        href:'https://instagram.com/polyakovs_team?igshid=YmMyMTA2M2Y=',
                         target:'_blank',
                         name:'Инстаграм:',
                         http:'polyakovs_team',
