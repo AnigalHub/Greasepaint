@@ -173,11 +173,11 @@ export default {
       margin-left: -4%;
       position: relative;
       font-family: 'Philosopher', sans-serif;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       color: #457490;
       text-shadow: 2px 2px 2px #1a1818, 1px 1px 2px #032645;
-      font-size: 3.8rem;
-      line-height: 4rem;
+      font-size: 3.6rem;
+      line-height: 3.6rem;
       text-align: center;
       z-index: 10;
     }
@@ -310,12 +310,26 @@ export default {
   #FormEntry{
     padding-bottom: 50px;
     .aboutMoney{
-      margin: 0 auto 3% !important;
+      box-shadow: 0px -1px 12px 2px rgba(34, 60, 80, 0.5) inset;
+      margin: 6% auto 5% !important;
       display: block;
+      line-height: 2rem;
+      width: 100%;
       text-align: center;
+      padding: 3% 2%;
+    }
+    hr{
+      background: rgba(67, 103, 167, 0.61);
+      height: .1px;
+      width: 80%;
+      margin: 0 auto 4%;
+    }
+    p{
+      width: 80%;
+      margin: 0 auto 3%;
     }
     .money{
-      font-size: 2.5rem !important;
+      font-size: 2.2rem !important;
       color: #3c88b5;
     }
     h2{
@@ -331,7 +345,7 @@ export default {
       width: 100%;
       text-align: center;
       border-radius: $borderRadius;
-      margin: 6% auto 2%;
+      margin: 3% auto 2%;
       border: none;
       display: block;
       padding: 2% 0;
@@ -351,11 +365,13 @@ export default {
       top:-15%;
     }
     form{
-      width: 80%;
+      width: 85%;
+      margin: 0 auto 3%;
+    }
+    form{
+      border-radius: $borderRadius;
       padding: 2% 5% 2%;
       @include block;
-      border-radius: $borderRadius;
-      margin: 0 auto 3%;
     }
     input, select{
       border-top: none !important;
