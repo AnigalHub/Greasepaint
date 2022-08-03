@@ -18,7 +18,7 @@
                         </b-col>
                     </b-row>
                     <p>Гримеры обладают только высшей квалификацией и регулярно проходят курсы по её повышению.</p>
-                    <b-row>
+                    <b-row class="products">
                         <b-col cols="3">
                             <img class="imgLast" src="../../public/fitnessFormula.png">
                             <img class="imgLast" src="../../public/jantana.png">
