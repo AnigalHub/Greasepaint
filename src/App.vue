@@ -802,25 +802,45 @@ export default {
     }
     #About{
       padding-bottom: 20px;
+      .row:first-child{
+        flex-direction: column-reverse;
+      }
       .col-5{
-        flex: 0 0 40%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        img{
+          width: 35%;
+          margin: 0 auto;
+          position: relative;
+        }
+      }
+      .important{
+        padding: 2px;
+        .col-2{
+          padding-top: 0;
+        }
       }
       .about {
         padding-top: 0 !important;
+        padding-left: 0 !important;
+        .col-2{
+          flex: 0 0 10%;
+        }
         .col-2 img {
-          width: 400%;
-          margin: 0 0 0 -200%;
+          width: 70%;
+          position: absolute;
+          margin: 0 0 0 -40%;
         }
       }
-      .row .col-3{
-        padding: 0 0 0 5px !important;
+      .col-3{
+        padding: 0 15px !important;
       }
       .row .row:last-child .col{
-        padding: 0 0 0 10px !important;
+        padding: 0 !important;
       }
       .imgLast{
-        padding: .5%;
-        margin: 8% 10px 8% 0;
+        padding: 3%;
+        margin: 0 10px 8% 0;
       }
     }
     #Preparation{
@@ -828,20 +848,25 @@ export default {
       .preparation{
         padding-top: 0 !important;
       }
+      .row:first-child{
+        flex-direction: column;
+      }
       li {
         padding: 8px 3px 8px 11px;
-        margin: 8px 0 8px 30px;
+        margin: 8px 20px 8px 10px;
         &::before{
           font-size: .8rem;
           line-height: 18px;
           width: 20px;
           height: 18px;
           left: -20px;
+          top:4px;
         }
         &:hover:before {
           width: 26px;
         }
         &::after {
+          top:4px;
           border: 9px solid transparent;
           border-left-color: #2b6584;
         }
@@ -849,6 +874,16 @@ export default {
       .imgBg{
         width: 100%;
       }
+      .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+        img{
+          width: 35%;
+          margin: 0 auto;
+          position: relative;
+        }
+      }
+
     }
     #FormEntry{
       padding-bottom: 10px;
@@ -871,6 +906,18 @@ export default {
       }
       .money{
         font-size: .7rem !important;
+      }
+      .row:first-child{
+        flex-direction: column-reverse;
+      }
+      .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+        img{
+          width: 35%;
+          margin: 0 auto;
+          position: relative;
+        }
       }
     }
     #Tourneys{
