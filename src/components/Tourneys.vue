@@ -2,7 +2,7 @@
     <div id="Tourneys">
         <b-container>
             <h2>Ближайшие турниры федерации NBC:</h2>
-            <b-row>
+            <b-row class="tourney">
                 <b-col v-for="tourney in Tourneys">
                     <b-row>
                         <b-col cols="4">
