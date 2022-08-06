@@ -747,8 +747,6 @@ export default {
       padding-bottom: 10px;
       .flex-container > img {
         width: 13%;
-        height: 100%;
-        margin: 0 1.5% 2.5% 1.5% !important;
       }
     }
     #Contacts{
@@ -770,34 +768,40 @@ export default {
       font-size: .6rem;
     }
     p,a,button,ol, #Contacts div, .text{
-      font-size: .6rem;
-      line-height: .55rem;
+      font-size: .7rem;
+      line-height: .6rem;
     }
     h2{
       font-size: .7rem !important;
       margin-bottom: 0 !important;
     }
     #Home{
-      padding-bottom: 60px;
+      padding-bottom: 20%;
       h1{
-        padding: 40% 0 0;
-        width: 190%;
-        font-size: 1rem;
-        line-height: .9rem;
+        padding: 115% 0 0;
+        width: 380%;
+        font-size: 1.15rem;
+        line-height: 1.2rem;
       }
       img{
-        margin-left: -8%;
+        margin-top: 4%;
+        width: 130%;
+        margin-left: -50%;
+      }
+      .imgBg{
+        left: -45%;
       }
       p{
-        font-size: .6rem;
-        line-height: .6rem;
+        margin-top: 1%;
+        font-size: .7rem;
+        line-height: .7rem;
       }
       p,.allButton{
-        width: 220%;
+        width: 380%;
       }
       button{
         margin: 2% 1.5%;
-        font-size: .6rem;
+        font-size: .7rem;
       }
     }
     #About{
@@ -809,13 +813,17 @@ export default {
         flex: 0 0 100%;
         max-width: 100%;
         img{
-          width: 35%;
+          width: 45%;
           margin: 0 auto;
           position: relative;
         }
       }
+      .imgBg{
+        width: 110%;
+      }
       .important{
-        padding: 2px;
+        padding: 5px;
+        margin: 1% 2% 2% 0;
         .col-2{
           padding-top: 0;
         }
@@ -825,15 +833,16 @@ export default {
         padding-left: 0 !important;
         .col-2{
           flex: 0 0 10%;
-        }
-        .col-2 img {
-          width: 70%;
-          position: absolute;
-          margin: 0 0 0 -40%;
+          img {
+            width: 85%;
+            position: absolute;
+            margin: 0 0 0 -40%;
+          }
         }
       }
       .col-3{
-        padding: 0 15px !important;
+        flex: 0 0 23%;
+        padding: 0 5px !important;
       }
       .row .row:last-child .col{
         padding: 0 !important;
@@ -855,7 +864,7 @@ export default {
         padding: 8px 3px 8px 11px;
         margin: 8px 20px 8px 10px;
         &::before{
-          font-size: .8rem;
+          font-size: .7rem;
           line-height: 18px;
           width: 20px;
           height: 18px;
@@ -878,21 +887,20 @@ export default {
         flex: 0 0 100%;
         max-width: 100%;
         img{
-          width: 35%;
+          width: 45%;
           margin: 0 auto;
           position: relative;
         }
       }
-
     }
     #FormEntry{
       padding-bottom: 10px;
       input,select{
-        font-size: .7rem !important;
+        font-size: .6rem !important;
         margin-bottom: 0;
       }
       form,p{
-        width: 95%;
+        width: 90%;
       }
       form{
         padding: 1% 4%;
@@ -910,11 +918,14 @@ export default {
       .row:first-child{
         flex-direction: column-reverse;
       }
+      .imgBg{
+        width: 110%;
+      }
       .col-5{
         flex: 0 0 100%;
         max-width: 100%;
         img{
-          width: 35%;
+          width: 45%;
           margin: 0 auto;
           position: relative;
         }
@@ -922,10 +933,16 @@ export default {
     }
     #Tourneys{
       padding-bottom: 10px;
+      .tourney{
+        flex-direction: column;
+        .col:first-child{
+          margin-bottom: 3%;
+        }
+      }
       img{
         filter: brightness(89%);
         height: auto;
-        padding: 40% 0;
+        padding: 25% 0;
       }
       .row .col .col {
         padding: 4% 1% 1% !important;
@@ -944,15 +961,20 @@ export default {
     #Portfolio{
       padding-bottom: 10px;
       .flex-container > img {
-        width: 13%;
-        height: 100%;
-        margin: 0 1.5% 2.5% 1.5% !important;
+        width: 22%;
       }
     }
     #Contacts{
       padding-bottom: 10px;
+      .row:first-child{
+        flex-direction: column;
+      }
       span{
         display: none;
+      }
+      .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
       }
     }
     #Contacts, #MyFooter{
