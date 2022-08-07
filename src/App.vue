@@ -407,21 +407,11 @@ export default {
       filter: brightness(89%);
       height: 100%;
     }
-    .col .row{
-      @include block;
-      color: $colorText;
-      border-radius: $borderRadius;
+    .row{
+      margin-bottom: 3%;
     }
-    .col-4{
-      padding: 4px;
-    }
-    .col .col{
-      text-align: center;
-      padding: 3% 3%;
-    }
-    hr{
-      margin: .5rem 0;
-      border-top: 1px solid $colorText;
+    .col{
+      padding:4% 2%;
     }
   }
   #Portfolio{
