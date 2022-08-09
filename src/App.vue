@@ -413,6 +413,19 @@ export default {
     .col{
       padding:4% 2%;
     }
+    .date{
+      background: rgba(24, 57, 80, 0.3);
+      padding: 2% 4%;
+      color: #3c88b5;
+      margin-bottom: 0 !important;
+    }
+    .flex-container > div {
+      width: 45%;
+      margin: 0 1% !important;
+      background: $bgBlock;
+      border: $borderBlock;
+      border-radius: 8px;
+    }
   }
   #Portfolio{
     padding-bottom: 40px;
@@ -931,13 +944,17 @@ export default {
       img{
         filter: brightness(89%);
         height: auto;
-        padding: 25% 0;
+        padding: 12% 0 0;
       }
       .row .col {
-        padding: 4% 1% 1% !important;
+        padding: 8% 1% 1% !important;
       }
-      p{
-        margin: 2% 0 !important;
+      .date{
+        padding: 2%;
+      }
+      .flex-container > div {
+        width: 100%;
+        margin: 1% 1% !important;
       }
     }
     #Portfolio{
