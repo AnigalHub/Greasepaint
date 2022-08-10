@@ -3,7 +3,7 @@
         <b-container>
             <h2>Ближайшие турниры федерации NBC:</h2>
             <div class="flex-container" >
-                <div v-for="tourney in Tourneys" class="tou">
+                <div v-for="tourney in Tourneys">
                     <p class="date">{{tourney.date}}</p>
                     <b-row>
                         <b-col cols="4">
