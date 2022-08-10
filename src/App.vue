@@ -777,15 +777,15 @@ export default {
       margin-bottom: 0 !important;
     }
     #Home{
-      padding-bottom: 20%;
+      padding-bottom: 10%;
       h1{
-        padding: 115% 0 0;
+        padding: 20% 0 0;
         width: 380%;
         font-size: 1.4rem;
         line-height: 1.35rem;
       }
       img{
-        margin-top: 4%;
+        margin-top: 25%;
         width: 130%;
         margin-left: -50%;
       }
@@ -793,12 +793,12 @@ export default {
         left: -45%;
       }
       p{
-        margin-top: 1%;
+        margin-top: 150%;
         font-size: 1.2rem;
         line-height: 1.2rem;
       }
       p,.allButton{
-        width: 380%;
+        width: 360%;
       }
       button{
         margin: 2% 1.5%;

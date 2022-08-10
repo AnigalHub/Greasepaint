@@ -3,7 +3,7 @@
         <b-container>
             <b-row>
                 <b-col cols="4">
-                    <h1>Мы команда  #polyakovsteam</h1>
+                    <h1>Мы команда #polyakovsteam</h1>
                     <p>Профессиональные гримеры спортсменов NBC перед выступлениями</p>
                     <div class="allButton">
                         <b-button>Запись на грим</b-button>
