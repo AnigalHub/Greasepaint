@@ -341,10 +341,10 @@ export default {
     }
     .money{
       font-size: 2rem !important;
-      color: #3c88b5;
+      color: #1496cf;
     }
     h2{
-      color: #3c88b5;
+      color: #1496cf;
       padding-bottom: 1%;
     }
     .block{
@@ -398,7 +398,7 @@ export default {
       color: #d7dbe5;
     }
     input::placeholder, select:optional {
-      color: rgba(142, 154, 175, 0.8);
+      color: #e3e5ea;
     }
   }
   #Tourneys{
