@@ -632,26 +632,32 @@ export default {
       margin-bottom: 0 !important;
     }
     #Home{
-      padding-bottom: 90px;
+      padding-bottom: 20%;
       h1{
-        padding: 40% 0 0;
-        width: 190%;
-        font-size: 1.4rem;
-        line-height: 1.4rem;
+        padding: 20% 0 0;
+        width: 350%;
+        font-size: 1.6rem;
+        line-height: 1.5rem;
       }
       img{
-        margin-left: -8%;
+        margin-top: 15%;
+        width: 130%;
+        margin-left: -45%;
+      }
+      .imgBg{
+        left: -45%;
       }
       p{
+        margin-top: 120%;
         font-size: 1.2rem;
         line-height: 1.2rem;
       }
       p,.allButton{
-        width: 185%;
+        width: 360%;
       }
       button{
         margin: 2% 1.5%;
-        font-size: .8rem;
+        font-size: 1.2rem;
       }
     }
     #About{
@@ -802,7 +808,7 @@ export default {
       }
       button{
         margin: 2% 1.5%;
-        font-size: .8rem;
+        font-size: 1rem;
       }
     }
     #About{
