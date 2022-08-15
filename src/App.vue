@@ -294,8 +294,11 @@ export default {
     display: block;
     width: 100%;
   }
-  p,button,ol,input{
-    color: $colorText;
+  p,button,ol,input,a{
+    color: $colorText !important;
+  }
+  a{
+    text-decoration: none !important;
   }
   p{
     margin-bottom: 3.5% !important;
@@ -340,11 +343,6 @@ export default {
     }
     .allButton{
       width: 140%;
-    }
-    a{
-      font-size: 2rem;
-      line-height: 2rem;
-      letter-spacing: .5px;
     }
     .col-4{
       z-index: 10;
