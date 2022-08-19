@@ -9,8 +9,8 @@
                 <b-col>
                     <form>
                         <h2>Запись на грим</h2>
-                        <b-form-input v-model="formEntry.name" type="text" placeholder="ФИО"/>
-                        <b-form-input v-model="formEntry.phone" type="tel" placeholder="Телефон"/>
+                        <b-form-input v-model="formEntry.name" type="text" placeholder="Введите фио"/>
+                        <b-form-input v-model="formEntry.phone" type="tel" placeholder="Введите телефон"/>
                         <b-form-select v-model="selected" :options="Tourneys" placeholder="Выберите турнир"/>
                         <b-form-input v-model="formEntry.time" type="time" placeholder="Выберите время"/>
                         <p class="aboutMoney">Предварительная стоимость:
@@ -39,7 +39,7 @@
                 Tourneys:[
                     { value: null, text: 'GRAND PRIX MOSCOW' },
                     { value: null, text: 'GRAND PRIX NBC 7' },
-                ]
+                ],
             }
         },
     }
