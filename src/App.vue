@@ -518,6 +518,12 @@ export default {
       text-align: center;
       padding: 3% 2%;
     }
+    .mx-datepicker {
+      width: 100%;
+      svg{
+        display: none;
+      }
+    }
     p{
       width: 85%;
       margin: 0 auto 3%;
@@ -546,6 +552,7 @@ export default {
       @include img;
       width: 90%;
     }
+
     .imgBg{
       @include imgBg;
       width: 130%;
