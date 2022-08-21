@@ -9,10 +9,10 @@
                 <b-col>
                     <form>
                         <h2>Запись на грим</h2>
-                        <b-form-input v-model="formEntry.name" type="text" placeholder="Введите фио"/>
-                        <b-form-input v-model="formEntry.phone" type="tel" placeholder="Введите телефон"/>
+                        <b-form-input v-model="formEntry.name" type="text" placeholder="Введите ваше имя"/>
+                        <b-form-input v-model="formEntry.phone" type="tel" placeholder="Введите ваш телефон"/>
                         <b-form-select v-model="selected" :options="Tourneys" placeholder="Выберите турнир"/>
-                        <b-form-input v-model="formEntry.time" type="time" placeholder="Выберите время"/>
+                        <date-picker v-model="formEntry.time" type="time" format="HH:mm" :time-picker-options="Times" placeholder="Выберите время"></date-picker>
                         <p class="aboutMoney">Предварительная стоимость:
                             <span class="money">2500 руб.</span></p>
                         <button>Записаться</button>
@@ -26,11 +26,19 @@
 </template>
 
 <script>
+    import DatePicker from 'vue2-datepicker';
+    import 'vue2-datepicker/index.css';
     export default {
         name: "FormEntry",
+        components: { DatePicker },
         data(){
             return {
                 selected:null,
+                Times:{
+                    start:'10:00',
+                    step:'00:15',
+                    end:'20:00'
+                },
                 formEntry:{
                     name: '',
                     phone: '',
