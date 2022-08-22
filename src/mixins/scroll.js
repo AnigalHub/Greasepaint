@@ -5,9 +5,6 @@ export const scroll = {
         }
     },
     methods:{
-        scrollToTop(){
-            window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
-        },
         scrollToId(event){
             let offsetY = 50;
             if(this.isExpanded){
