@@ -4,8 +4,8 @@
             <b-row>
                 <b-col cols="4">
                     <h1 class="css-typing">Мы команда <br/> #polyakovsteam</h1>
-                    <p>Профессиональные гримеры спортсменов NBC перед выступлениями</p>
-                    <div class="allButton">
+                    <p class="text-typing" >Профессиональные гримеры спортсменов NBC перед выступлениями</p>
+                    <div class="allButton text-typing">
                         <b-button><a @click="scrollToId" href="#FormEntry">Запись на грим</a></b-button>
                         <b-button><a @click="scrollToId" href="#About">Узнать больше</a></b-button>
                     </div>
