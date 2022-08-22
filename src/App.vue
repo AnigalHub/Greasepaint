@@ -42,12 +42,14 @@ export default {
 </script>
 
 <style lang="scss">
-  $bgBlock: rgba(24, 57, 80, 0.5);
+  $bgBlock: rgba(24, 57, 80, 0.35);
   $borderBlock: 2px solid rgba(67, 103, 167, 0.41);
   $fontFamily: 'Forum', cursive;
   $colorText: #d7dbe5;
   $bgImg: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
   $borderRadius: 8px;
+  $hoverBgBlock: rgba(24, 57, 80, 0.5);
+  $hoverEffectBlock:scale(1.03);
 
   @mixin imgBg{
     z-index: 3;
@@ -60,7 +62,7 @@ export default {
   }
   @mixin block{
     background: $bgBlock;
-    border: $borderBlock;
+    //border: $borderBlock;
     border-radius: $borderRadius;
   }
   @mixin Col5WithImg768{
@@ -136,7 +138,6 @@ export default {
         margin: 0 10px 8% 0;
       }
     }
-
   }
   @mixin PreparationLess768{
     #Preparation{
@@ -355,14 +356,14 @@ export default {
       display: block;
       padding: 2% 3%;
       сolor: $colorText !important;
-      border: 2px solid #8e9aaf;
       background:  rgba(24, 57, 80, 0.7);
-      border: $borderBlock;
+      border: none;
       font-size: 1.5rem;
       float: left;
       z-index: 10;
-      &:last-child{
-        background: transparent;
+      &:hover{
+        transform: $hoverEffectBlock;
+        background:  rgba(24, 57, 80, 1);
       }
     }
     h1{
@@ -378,6 +379,16 @@ export default {
       line-height: 3.6rem;
       text-align: center;
       z-index: 10;
+    }
+    .css-typing
+    {
+      width: 155%;
+      white-space:nowrap;
+      overflow:hidden;
+      animation: type 2s steps(50, end);
+    }
+    @keyframes type{
+      from { width: 0; }
     }
     img{
       padding-top: 1%;
@@ -420,6 +431,9 @@ export default {
       margin: 6% 2%;
       padding: 5px;
       position: relative;
+      &:hover{
+        transform: $hoverEffectBlock;
+      }
     }
     img{
       @include img;
@@ -446,7 +460,7 @@ export default {
     li {
       position: relative;
       background: $bgBlock;
-      border: $borderBlock;
+
       padding: 12px 25px 18px;
       margin: 12px 50px 25px 60px;
       transition-duration: 0.3s;
@@ -454,6 +468,7 @@ export default {
       &:hover {
         background: rgba(17, 31, 40, 0.95);
         cursor: default;
+        transform: $hoverEffectBlock;
       }
       &:before {
         line-height: 32px;
@@ -524,6 +539,10 @@ export default {
         display: none;
       }
     }
+    .mx-datepicker-popup {
+      border: none;
+      box-shadow: none;
+    }
     p{
       width: 85%;
       margin: 0 auto 3%;
@@ -547,6 +566,9 @@ export default {
       сolor: rgba(255, 255, 255, 0.95);
       background: rgba(60, 136, 181, 0.43);
       font-size: 1.5rem;
+      &:hover{
+        transform: $hoverEffectBlock;
+      }
     }
     img{
       @include img;
@@ -600,11 +622,14 @@ export default {
       margin-bottom: 4% !important;
     }
     .flex-container > div {
-      width: 45%;
-      margin: 0 1% !important;
+      width: 47%;
+      margin: 0 1.5% !important;
       background: $bgBlock;
-      border: $borderBlock;
       border-radius: $borderRadius;
+      &:hover{
+        background: $hoverBgBlock;
+        transform: $hoverEffectBlock;
+      }
     }
   }
   #Portfolio{
@@ -618,6 +643,7 @@ export default {
       /*при наведении*/
       &:hover{
         box-shadow: 0 1px 8px 1px #293655;
+        transform: $hoverEffectBlock;
       }
     }
   }
@@ -630,6 +656,10 @@ export default {
         width: 100%;
         height: 100%;
         margin: 0 0 4% 0 !important;
+        &:hover{
+          background: $hoverBgBlock;
+          transform: $hoverEffectBlock;
+        }
         p{
           margin: 0 !important;
         }
