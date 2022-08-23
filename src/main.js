@@ -1,5 +1,9 @@
-import Vue from 'vue'
+
 import App from './App.vue'
+import Vue from 'vue';
+import VueMask from 'v-mask';
+
+Vue.use(VueMask);
 
 import {BootstrapVue, BootstrapVueIcons} from 'bootstrap-vue';
 
