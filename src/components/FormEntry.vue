@@ -10,7 +10,7 @@
                     <form>
                         <h2>Запись на грим</h2>
                         <b-form-input v-model="formEntry.name" type="text" placeholder="Введите ваше имя"/>
-                        <b-form-input v-model="formEntry.phone" type="tel" placeholder="Введите ваш телефон"/>
+                        <b-form-input v-model="formEntry.phone" type="tel" v-mask="'+7 (###) ###-##-##'" placeholder="Введите ваш телефон"/>
                         <b-form-select v-model="selected" :options="Tourneys" placeholder="Выберите турнир"/>
                         <date-picker v-model="formEntry.time" type="time" format="HH:mm" :time-picker-options="Times" placeholder="Выберите время"></date-picker>
                         <p class="aboutMoney">Предварительная стоимость:
