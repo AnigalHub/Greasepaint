@@ -230,7 +230,7 @@ export default {
   @mixin PortfolioLess768{
     #Portfolio{
       padding-bottom: 10px;
-      .flex-container > img {
+      .flex-container > a {
         width: 22%;
       }
     }
@@ -635,7 +635,7 @@ export default {
   #Portfolio{
     padding-bottom: 40px;
     /*блоки с картинками*/
-    .flex-container > img {
+    .flex-container > a {
       width: 16.5%;
       height: 100%;
       margin: 0 1.5% 2.5% 1.5% !important;
