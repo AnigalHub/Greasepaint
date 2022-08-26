@@ -5,7 +5,7 @@
                 <component :is="copyright"/>
                 <span>2022 #polyakovsteam</span>
             </div>
-            <a href="https://instagram.com/polyakovs_team?igshid=YmMyMTA2M2Y=">
+            <a target="_blank" href="https://instagram.com/polyakovs_team?igshid=YmMyMTA2M2Y=">
                 <component :is="svg"/>
             </a>
         </b-container>
