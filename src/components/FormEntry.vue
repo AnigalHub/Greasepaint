@@ -64,11 +64,6 @@
                         address:"Москва, Орджоникидзе, д. 11 стр. 1. STUDIO HALL"
                     },
                 ],
-
-                TourneysOld:[
-                    { value: null, text: 'GRAND PRIX MOSCOW' },
-                    { value: null, text: 'GRAND PRIX NBC 7' },
-                ],
             }
         },
     }
