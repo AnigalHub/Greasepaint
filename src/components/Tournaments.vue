@@ -22,7 +22,7 @@
 
 <script>
     export default {
-        name: "Tourneys",
+        name: "Tournaments",
         data(){
             return{
                 today: new Date(),

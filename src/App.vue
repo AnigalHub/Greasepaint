@@ -6,7 +6,7 @@
       <About/>
       <Preparation/>
       <FormEntry/>
-      <Tourneys/>
+      <Tournaments/>
       <Portfolio/>
       <Contacts/>
       <MyFooter/>
@@ -19,7 +19,7 @@ import Home from "@/components/Home";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import FormEntry from "@/components/FormEntry";
-import Tourneys from "@/components/Tourneys";
+import Tournaments from "@/components/Tournaments";
 import Portfolio from "@/components/Portfolio";
 import MyFooter from "@/components/MyFooter";
 import Contacts from "@/components/Contacts";
@@ -32,7 +32,7 @@ export default {
     Contacts,
     MyFooter,
     Portfolio,
-    Tourneys,
+    Tournaments,
     FormEntry,
     About,
     Navbar,
