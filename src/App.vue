@@ -200,8 +200,8 @@ export default {
       width: 110%;
     }
   }
-  @mixin TourneysLess768{
-    #Tourneys{
+  @mixin TournamentsLess768{
+    #Tournaments{
       padding-bottom: 10px;
       .tourney{
         flex-direction: column;
@@ -269,7 +269,7 @@ export default {
     background-size: cover;
     opacity: .8;
   }
-  #Home,#About,#Preparation,#FormEntry,#Tourneys,#Portfolio,#Contacts{
+  #Home,#About,#Preparation,#FormEntry,#Tournaments,#Portfolio,#Contacts{
     .row{
       margin: 0;
     }
@@ -518,7 +518,7 @@ export default {
       top: -20%;
     }
   }
-  #Portfolio h2, #Tourneys h2{
+  #Portfolio h2, #Tournaments h2{
     text-shadow: #293655 3px 0 120px;
     color: $colorText;
   }
@@ -604,7 +604,7 @@ export default {
       color: #e3e5ea;
     }
   }
-  #Tourneys{
+  #Tournaments{
     padding-bottom: 40px;
     img{
       height: 100%;
@@ -815,7 +815,7 @@ export default {
         font-size: 1rem !important;
       }
     }
-    #Tourneys{
+    #Tournaments{
       padding-bottom: 6%;
       .col {
         padding: 4% 1% 1%;
@@ -874,7 +874,7 @@ export default {
         font-size: 1.2rem !important;
       }
     }
-    @include TourneysLess768;
+    @include TournamentsLess768;
     @include PortfolioLess768;
     @include Contacts768;
     #Contacts, #MyFooter{
@@ -930,7 +930,7 @@ export default {
         font-size: 1.2rem !important;
       }
     }
-    @include TourneysLess768;
+    @include TournamentsLess768;
     @include PortfolioLess768;
     @include Contacts768;
     #Contacts, #MyFooter{
