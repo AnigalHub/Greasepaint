@@ -52,6 +52,9 @@
 </script>
 
 <style scoped lang="scss">
+    .navbar-light .navbar-toggler {
+        color: #3798c5;
+    }
     /*блок под логотип(картинка, название компании, что за компания(производственная))*/
     .navbar-brand{
         padding-top: 0.2rem !important;
