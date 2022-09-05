@@ -77,7 +77,8 @@ export default {
     padding-left: 15px !important;
   }
   .background{
-    background: url("../public/bg-blur-mobile.svg") no-repeat 100% 100%;
+    background: url("../public/bg-blur-mobile.svg") no-repeat;
+    background-size: cover;
     opacity: .7;
   }
   #Home,#About,#Preparation,#FormEntry,#Tourneys,#Portfolio,#Contacts{
