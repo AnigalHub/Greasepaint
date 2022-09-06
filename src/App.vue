@@ -662,25 +662,51 @@ export default {
     }
     #About{
       padding-bottom: 20px;
-      .about {
-        padding-top: 0 !important;
-        .col-2 img {
-          width: 350%;
-          margin: 0 0 0 -110%;
+      padding-bottom: 20px;
+      .row:first-child{
+        flex-direction: column-reverse;
+      }
+      .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+        img{
+          width: 45%;
+          margin: 0 auto;
+          position: relative;
         }
       }
-      .row .col-3{
-        padding: 0 0 0 5px !important;
-      }
-      .row .row:last-child .col{
-        padding: 0 0 0 5px !important;
+      .imgBg{
+        width: 110%;
       }
       .important{
-        padding: 2px;
+        padding: 5px;
+        margin: 1% 2% 2% 0;
+        .col-2{
+          padding-top: 0;
+        }
+      }
+      .about {
+        padding-top: 0 !important;
+        padding-left: 0 !important;
+        .col-2{
+          flex: 0 0 10%;
+          img {
+            width: 85%;
+            position: absolute;
+            margin: 0 0 0 -40%;
+          }
+        }
+      }
+      .col-3{
+        flex: 0 0 23%;
+        padding: 0 5px !important;
+      }
+      .row .row:last-child .col{
+        padding: 0 !important;
       }
       .imgLast{
-        padding: .5%;
-        margin: 8% 10px 8% 0;
+        padding: 3%;
+        margin: 0 10px 8% 0;
       }
     }
     #Preparation{
@@ -688,26 +714,40 @@ export default {
       .preparation{
         padding-top: 0 !important;
       }
+      .row:first-child{
+        flex-direction: column;
+      }
       li {
         padding: 8px 3px 8px 11px;
-        margin: 5px 0 5px 15px;
+        margin: 8px 20px 8px 10px;
         &::before{
-          font-size: .8rem;
+          font-size: .7rem;
           line-height: 18px;
           width: 20px;
           height: 18px;
           left: -20px;
+          top:4px;
         }
         &:hover:before {
           width: 26px;
         }
         &::after {
+          top:4px;
           border: 9px solid transparent;
           border-left-color: #2b6584;
         }
       }
       .imgBg{
         width: 100%;
+      }
+      .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+        img{
+          width: 45%;
+          margin: 0 auto;
+          position: relative;
+        }
       }
     }
     #FormEntry{
@@ -717,7 +757,7 @@ export default {
         margin-bottom: 0;
       }
       form,p{
-        width: 95%;
+        width: 90%;
       }
       form{
         padding: 1% 4%;
@@ -730,36 +770,66 @@ export default {
         margin: 2% 0 !important;
       }
       .money{
+        display: block;
         font-size: 1.2rem !important;
+      }
+      .row:first-child{
+        flex-direction: column-reverse;
+      }
+      .imgBg{
+        width: 110%;
+      }
+      .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+        img{
+          width: 45%;
+          margin: 0 auto;
+          position: relative;
+        }
       }
     }
     #Tourneys{
       padding-bottom: 10px;
+      .tourney{
+        flex-direction: column;
+        .col:first-child{
+          margin-bottom: 3%;
+        }
+      }
       img{
         filter: brightness(89%);
         height: auto;
-        padding: 10% 0;
-      }
-      .row{
-        margin-bottom: 0;
-      }
-      .col-4{
-        padding: 0 10px !important;
+        padding: 12% 0 0;
       }
       .row .col {
-        padding: 4% 1% 1% !important;
+        padding: 8% 1% 1% !important;
+      }
+      .date{
+        padding: 2%;
+      }
+      .flex-container > div {
+        width: 100%;
+        margin: 1% 1% !important;
       }
     }
     #Portfolio{
       padding-bottom: 10px;
       .flex-container > img {
-        width: 13%;
+        width: 22%;
       }
     }
     #Contacts{
       padding-bottom: 10px;
+      .row:first-child{
+        flex-direction: column;
+      }
       span{
         display: none;
+      }
+      .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
       }
     }
     #Contacts, #MyFooter{
