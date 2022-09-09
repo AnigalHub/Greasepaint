@@ -473,7 +473,6 @@ export default {
     }
     #Home{
       h1{
-        width: 140%;
         font-size: 3rem;
         line-height: 3rem;
       }
@@ -487,6 +486,40 @@ export default {
   @media screen and (min-width: 768px) and (max-width: 992px){
     .name_company{
       font-size: 1.3rem;
+    }
+    p,a,button,ol, #Contacts div{
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+    #Home{
+      padding-bottom: 150px;
+      h1{
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+      p{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+      button{
+        font-size: 1.1rem;
+      }
+    }
+    #About{
+      padding-bottom: 50px;
+      .about{
+        padding-top: 0 !important;
+      }
+    }
+    #Preparation{
+      .preparation{
+        padding-top: 0 !important;
+      }
+    }
+    #FormEntry{
+      .money{
+        font-size: 1.2rem !important;
+      }
     }
   }
   @media screen and (min-width: 500px) and (max-width: 768px){
