@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style lang="scss">
-  $bgBlock: rgba(24, 57, 80, 0.45);
+  $bgBlock: rgba(24, 57, 80, 0.5);
   $borderBlock: 2px solid rgba(67, 103, 167, 0.41);
   $fontFamily: 'Forum', cursive;
   $colorText: #d7dbe5;
@@ -171,7 +171,7 @@ export default {
       padding: 2% 3%;
       сolor: $colorText !important;
       border: 2px solid #8e9aaf;
-      background:  rgba(24, 57, 80, 0.5);
+      background:  rgba(24, 57, 80, 0.7);
       border: $borderBlock;
       font-size: 1.5rem;
       float: left;
@@ -207,7 +207,6 @@ export default {
       .col-2 img{
         width: 115%;
         margin: 0 0 0 -20%;
-        filter: invert(0.3);
         position: relative;
       }
     }
@@ -233,7 +232,6 @@ export default {
     .imgLast{
       @include block;
       width: 100%;
-      filter: brightness(80%);
       float: left;
       margin: 6% 2%;
       padding: 5px;
@@ -406,7 +404,6 @@ export default {
   #Tourneys{
     padding-bottom: 40px;
     img{
-      filter: brightness(89%);
       height: 100%;
     }
     .row{
@@ -416,10 +413,10 @@ export default {
       padding:4% 2%;
     }
     .date{
-      background: rgba(24, 57, 80, 0.3);
+      background: rgba(24, 57, 80, 0.7);
       padding: 2% 4%;
       color: #3c88b5;
-      margin-bottom: 0 !important;
+      margin-bottom: 4% !important;
     }
     .flex-container > div {
       width: 45%;
