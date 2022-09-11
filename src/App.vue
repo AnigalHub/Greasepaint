@@ -62,6 +62,29 @@ export default {
     background: $bgBlock;
     border: $borderBlock;
   }
+  @mixin HomeLess768{
+    h1{
+      padding: 20% 0 0;
+    }
+    img{
+      width: 130%;
+    }
+    .imgBg{
+      left: -45%;
+    }
+    p{
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
+    p,.allButton{
+      width: 360%;
+    }
+    button{
+      margin: 2% 1.5%;
+      font-size: 1rem;
+    }
+  }
+
 
   /*вся страница*/
   #app{
@@ -634,30 +657,20 @@ export default {
     }
     #Home{
       padding-bottom: 20%;
+      @include HomeLess768;
       h1{
-        padding: 20% 0 0;
         width: 350%;
         font-size: 1.6rem;
         line-height: 1.5rem;
       }
       img{
         margin-top: 15%;
-        width: 130%;
         margin-left: -45%;
-      }
-      .imgBg{
-        left: -45%;
       }
       p{
         margin-top: 120%;
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-      }
-      p,.allButton{
-        width: 360%;
       }
       button{
-        margin: 2% 1.5%;
         font-size: 1.2rem;
       }
     }
@@ -855,30 +868,20 @@ export default {
     }
     #Home{
       padding-bottom: 10%;
+      @include HomeLess768;
       h1{
-        padding: 20% 0 0;
         width: 380%;
         font-size: 1.4rem;
         line-height: 1.35rem;
       }
       img{
         margin-top: 25%;
-        width: 130%;
         margin-left: -50%;
-      }
-      .imgBg{
-        left: -45%;
       }
       p{
         margin-top: 150%;
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-      }
-      p,.allButton{
-        width: 360%;
       }
       button{
-        margin: 2% 1.5%;
         font-size: 1rem;
       }
     }
