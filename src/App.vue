@@ -62,6 +62,17 @@ export default {
     background: $bgBlock;
     border: $borderBlock;
   }
+  @mixin Col5WithImg768{
+    .col-5{
+      flex: 0 0 100%;
+      max-width: 100%;
+      img{
+        width: 45%;
+        margin: 0 auto;
+        position: relative;
+      }
+    }
+  }
   @mixin HomeLess768{
     h1{
       padding: 20% 0 0;
@@ -86,17 +97,9 @@ export default {
   }
   @mixin AboutLess768{
     padding-bottom: 20px;
+    @include Col5WithImg768;
     .row:first-child{
       flex-direction: column-reverse;
-    }
-    .col-5{
-      flex: 0 0 100%;
-      max-width: 100%;
-      img{
-        width: 45%;
-        margin: 0 auto;
-        position: relative;
-      }
     }
     .imgBg{
       width: 110%;
@@ -133,6 +136,7 @@ export default {
     }
   }
   @mixin PreparationLess768{
+    @include Col5WithImg768;
     padding-bottom: 10px;
     .preparation{
       padding-top: 0 !important;
@@ -160,20 +164,12 @@ export default {
         border-left-color: #2b6584;
       }
     }
-    .imgBg{
+    .imgBg {
       width: 100%;
-    }
-    .col-5{
-      flex: 0 0 100%;
-      max-width: 100%;
-      img{
-        width: 45%;
-        margin: 0 auto;
-        position: relative;
-      }
     }
   }
   @mixin FormEntryLess768{
+    @include Col5WithImg768;
     padding-bottom: 10px;
     input,select{
       margin-bottom: 0;
@@ -196,15 +192,6 @@ export default {
     }
     .imgBg{
       width: 110%;
-    }
-    .col-5{
-      flex: 0 0 100%;
-      max-width: 100%;
-      img{
-        width: 45%;
-        margin: 0 auto;
-        position: relative;
-      }
     }
   }
   @mixin TourneysLess768{
