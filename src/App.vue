@@ -84,7 +84,7 @@ export default {
       font-size: 1rem;
     }
   }
-  @mixin About768{
+  @mixin AboutLess768{
     padding-bottom: 20px;
     .row:first-child{
       flex-direction: column-reverse;
@@ -132,7 +132,7 @@ export default {
       margin: 0 10px 8% 0;
     }
   }
-  @mixin Preparation768{
+  @mixin PreparationLess768{
     padding-bottom: 10px;
     .preparation{
       padding-top: 0 !important;
@@ -173,7 +173,7 @@ export default {
       }
     }
   }
-  @mixin FormEntry768{
+  @mixin FormEntryLess768{
     padding-bottom: 10px;
     input,select{
       margin-bottom: 0;
@@ -207,7 +207,7 @@ export default {
       }
     }
   }
-  @mixin Tourneys768{
+  @mixin TourneysLess768{
     padding-bottom: 10px;
     .tourney{
       flex-direction: column;
@@ -229,6 +229,25 @@ export default {
     .flex-container > div {
       width: 100%;
       margin: 1% 1% !important;
+    }
+  }
+  @mixin PortfolioLess768{
+    padding-bottom: 10px;
+    .flex-container > img {
+      width: 22%;
+    }
+  }
+  @mixin Contacts768{
+    padding-bottom: 10px;
+    .row:first-child{
+      flex-direction: column;
+    }
+    span{
+      display: none;
+    }
+    .col-5{
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 
@@ -821,13 +840,13 @@ export default {
       }
     }
     #About{
-      @include About768;
+      @include AboutLess768;
     }
     #Preparation{
-      @include Preparation768;
+      @include PreparationLess768;
     }
     #FormEntry{
-      @include FormEntry768;
+      @include FormEntryLess768;
       input,select{
         font-size: 1.2rem !important;
       }
@@ -839,26 +858,13 @@ export default {
       }
     }
     #Tourneys{
-      @include Tourneys768;
+      @include TourneysLess768;
     }
     #Portfolio{
-      padding-bottom: 10px;
-      .flex-container > img {
-        width: 22%;
-      }
+      @include PortfolioLess768;
     }
     #Contacts{
-      padding-bottom: 10px;
-      .row:first-child{
-        flex-direction: column;
-      }
-      span{
-        display: none;
-      }
-      .col-5{
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
+      @include Contacts768;
     }
     #Contacts, #MyFooter{
       svg{
@@ -900,13 +906,13 @@ export default {
       }
     }
     #About{
-      @include About768;
+      @include AboutLess768;
     }
     #Preparation{
-      @include Preparation768;
+      @include PreparationLess768;
     }
     #FormEntry{
-      @include FormEntry768;
+      @include FormEntryLess768;
       input,select{
         font-size: 1rem !important;
       }
@@ -918,26 +924,13 @@ export default {
       }
     }
     #Tourneys{
-      @include Tourneys768;
+      @include TourneysLess768;
     }
     #Portfolio{
-      padding-bottom: 10px;
-      .flex-container > img {
-        width: 22%;
-      }
+      @include PortfolioLess768;
     }
     #Contacts{
-      padding-bottom: 10px;
-      .row:first-child{
-        flex-direction: column;
-      }
-      span{
-        display: none;
-      }
-      .col-5{
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
+      @include Contacts768;
     }
     #Contacts, #MyFooter{
       svg{
