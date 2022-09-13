@@ -173,6 +173,64 @@ export default {
       }
     }
   }
+  @mixin FormEntry768{
+    padding-bottom: 10px;
+    input,select{
+      margin-bottom: 0;
+    }
+    form,p{
+      width: 90%;
+    }
+    form{
+      padding: 1% 4%;
+    }
+    .aboutMoney{
+      padding: 0;
+      margin: 2% 0 !important;
+    }
+    .money{
+      display: block;
+    }
+    .row:first-child{
+      flex-direction: column-reverse;
+    }
+    .imgBg{
+      width: 110%;
+    }
+    .col-5{
+      flex: 0 0 100%;
+      max-width: 100%;
+      img{
+        width: 45%;
+        margin: 0 auto;
+        position: relative;
+      }
+    }
+  }
+  @mixin Tourneys768{
+    padding-bottom: 10px;
+    .tourney{
+      flex-direction: column;
+      .col:first-child{
+        margin-bottom: 3%;
+      }
+    }
+    img{
+      filter: brightness(89%);
+      height: auto;
+      padding: 12% 0 0;
+    }
+    .row .col {
+      padding: 8% 1% 1% !important;
+    }
+    .date{
+      padding: 2%;
+    }
+    .flex-container > div {
+      width: 100%;
+      margin: 1% 1% !important;
+    }
+  }
 
   /*вся страница*/
   #app{
@@ -748,8 +806,8 @@ export default {
       @include HomeLess768;
       h1{
         width: 350%;
-        font-size: 1.6rem;
-        line-height: 1.5rem;
+        font-size: 1.8rem;
+        line-height: 1.6rem;
       }
       img{
         margin-top: 15%;
@@ -769,67 +827,19 @@ export default {
       @include Preparation768;
     }
     #FormEntry{
-      padding-bottom: 10px;
+      @include FormEntry768;
       input,select{
         font-size: 1.2rem !important;
-        margin-bottom: 0;
-      }
-      form,p{
-        width: 90%;
-      }
-      form{
-        padding: 1% 4%;
       }
       button{
         font-size: 1.2rem;
       }
-      .aboutMoney{
-        padding: 0;
-        margin: 2% 0 !important;
-      }
       .money{
-        display: block;
         font-size: 1.2rem !important;
-      }
-      .row:first-child{
-        flex-direction: column-reverse;
-      }
-      .imgBg{
-        width: 110%;
-      }
-      .col-5{
-        flex: 0 0 100%;
-        max-width: 100%;
-        img{
-          width: 45%;
-          margin: 0 auto;
-          position: relative;
-        }
       }
     }
     #Tourneys{
-      padding-bottom: 10px;
-      .tourney{
-        flex-direction: column;
-        .col:first-child{
-          margin-bottom: 3%;
-        }
-      }
-      img{
-        filter: brightness(89%);
-        height: auto;
-        padding: 12% 0 0;
-      }
-      .row .col {
-        padding: 8% 1% 1% !important;
-      }
-      .date{
-        padding: 2%;
-      }
-      .flex-container > div {
-        width: 100%;
-        margin: 1% 1% !important;
-      }
+      @include Tourneys768;
     }
     #Portfolio{
       padding-bottom: 10px;
@@ -871,19 +881,19 @@ export default {
       margin-bottom: 0 !important;
     }
     #Home{
-      padding-bottom: 10%;
+      padding-bottom: 15%;
       @include HomeLess768;
       h1{
         width: 380%;
-        font-size: 1.4rem;
-        line-height: 1.35rem;
+        font-size: 1.8rem;
+        line-height: 1.6rem;
       }
       img{
         margin-top: 25%;
         margin-left: -50%;
       }
       p{
-        margin-top: 150%;
+        margin-top: 120%;
       }
       button{
         font-size: 1rem;
@@ -896,67 +906,19 @@ export default {
       @include Preparation768;
     }
     #FormEntry{
-      padding-bottom: 10px;
+      @include FormEntry768;
       input,select{
         font-size: 1rem !important;
-        margin-bottom: 0;
-      }
-      form,p{
-        width: 90%;
-      }
-      form{
-        padding: 1% 4%;
       }
       button{
         font-size: 1rem;
       }
-      .aboutMoney{
-        padding: 0;
-        margin: 2% 0 !important;
-      }
       .money{
-        display: block;
         font-size: 1.2rem !important;
-      }
-      .row:first-child{
-        flex-direction: column-reverse;
-      }
-      .imgBg{
-        width: 110%;
-      }
-      .col-5{
-        flex: 0 0 100%;
-        max-width: 100%;
-        img{
-          width: 45%;
-          margin: 0 auto;
-          position: relative;
-        }
       }
     }
     #Tourneys{
-      padding-bottom: 10px;
-      .tourney{
-        flex-direction: column;
-        .col:first-child{
-          margin-bottom: 3%;
-        }
-      }
-      img{
-        filter: brightness(89%);
-        height: auto;
-        padding: 12% 0 0;
-      }
-      .row .col {
-        padding: 8% 1% 1% !important;
-      }
-      .date{
-        padding: 2%;
-      }
-      .flex-container > div {
-        width: 100%;
-        margin: 1% 1% !important;
-      }
+      @include Tourneys768;
     }
     #Portfolio{
       padding-bottom: 10px;
