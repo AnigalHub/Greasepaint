@@ -61,6 +61,7 @@ export default {
   @mixin block{
     background: $bgBlock;
     border: $borderBlock;
+    border-radius: $borderRadius;
   }
   @mixin Col5WithImg768{
     .col-5{
@@ -310,7 +311,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
   }
-  h2,p, #FormEntry button, li, input{
+  h2,p,#Home button, #FormEntry button, li, #FormEntry input, #FormEntry select{
     font-family: $fontFamily;
     font-weight: 300;
     z-index: 7;
@@ -354,7 +355,6 @@ export default {
       border-radius: 10px;
       margin: 4% 1.5% 2%;
       display: block;
-      font-family: $fontFamily;
       padding: 2% 3%;
       сolor: $colorText !important;
       border: 2px solid #8e9aaf;
@@ -400,7 +400,6 @@ export default {
     .important{
       padding: 5px;
       @include block;
-      border-radius: $borderRadius;
       margin: 3% 0;
       .col{
         padding: 1%;
@@ -422,7 +421,6 @@ export default {
       float: left;
       margin: 6% 2%;
       padding: 5px;
-      border-radius: $borderRadius;
       position: relative;
     }
     img{
@@ -567,7 +565,6 @@ export default {
       margin: 0 auto 3%;
     }
     form{
-      border-radius: $borderRadius;
       padding: 2% 5% 2%;
       @include block;
     }
@@ -580,7 +577,6 @@ export default {
       background: transparent;
       padding: 2%;
       margin-bottom: 4%;
-      font-family: $fontFamily;
       border-bottom: 1px solid #293655;
       color: #d7dbe5;
     }
@@ -610,7 +606,7 @@ export default {
       margin: 0 1% !important;
       background: $bgBlock;
       border: $borderBlock;
-      border-radius: 8px;
+      border-radius: $borderRadius;
     }
   }
   #Portfolio{
@@ -632,7 +628,6 @@ export default {
     .flex-container{
       & > div {
         @include block;
-        border-radius: $borderRadius;
         padding: 2%;
         width: 100%;
         height: 100%;
