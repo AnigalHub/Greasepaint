@@ -92,80 +92,84 @@ export default {
     }
     button{
       margin: 2% 1.5%;
-      font-size: 1rem;
     }
   }
   @mixin AboutLess768{
-    padding-bottom: 20px;
-    @include Col5WithImg768;
-    .row:first-child{
-      flex-direction: column-reverse;
-    }
-    .imgBg{
-      width: 110%;
-    }
-    .important{
-      padding: 5px;
-      margin: 1% 2% 2% 0;
-      .col-2{
-        padding-top: 0;
+    #About{
+      padding-bottom: 20px;
+      @include Col5WithImg768;
+      .row:first-child{
+        flex-direction: column-reverse;
       }
-    }
-    .about {
-      padding-top: 0 !important;
-      padding-left: 0 !important;
-      .col-2{
-        flex: 0 0 10%;
-        img {
-          width: 85%;
-          position: absolute;
-          margin: 0 0 0 -40%;
+      .imgBg{
+        width: 110%;
+      }
+      .important{
+        padding: 5px;
+        margin: 1% 2% 2% 0;
+        .col-2{
+          padding-top: 0;
         }
       }
+      .about {
+        padding-top: 0 !important;
+        padding-left: 0 !important;
+        .col-2{
+          flex: 0 0 10%;
+          img {
+            width: 85%;
+            position: absolute;
+            margin: 0 0 0 -40%;
+          }
+        }
+      }
+      .col-3{
+        flex: 0 0 23%;
+        padding: 0 5px !important;
+      }
+      .row .row:last-child .col{
+        padding: 0 !important;
+      }
+      .imgLast{
+        padding: 3%;
+        margin: 0 10px 8% 0;
+      }
     }
-    .col-3{
-      flex: 0 0 23%;
-      padding: 0 5px !important;
-    }
-    .row .row:last-child .col{
-      padding: 0 !important;
-    }
-    .imgLast{
-      padding: 3%;
-      margin: 0 10px 8% 0;
-    }
+
   }
   @mixin PreparationLess768{
-    @include Col5WithImg768;
-    padding-bottom: 10px;
-    .preparation{
-      padding-top: 0 !important;
-    }
-    .row:first-child{
-      flex-direction: column;
-    }
-    li {
-      padding: 8px 3px 8px 11px;
-      margin: 8px 20px 8px 10px;
-      &::before{
-        font-size: .7rem;
-        line-height: 18px;
-        width: 20px;
-        height: 18px;
-        left: -20px;
-        top:4px;
+    #Preparation{
+      @include Col5WithImg768;
+      padding-bottom: 10px;
+      .preparation{
+        padding-top: 0 !important;
       }
-      &:hover:before {
-        width: 26px;
+      .row:first-child{
+        flex-direction: column;
       }
-      &::after {
-        top:4px;
-        border: 9px solid transparent;
-        border-left-color: #2b6584;
+      li {
+        padding: 8px 3px 8px 11px;
+        margin: 8px 20px 8px 10px;
+        &::before{
+          font-size: .7rem;
+          line-height: 18px;
+          width: 20px;
+          height: 18px;
+          left: -20px;
+          top:4px;
+        }
+        &:hover:before {
+          width: 26px;
+        }
+        &::after {
+          top:4px;
+          border: 9px solid transparent;
+          border-left-color: #2b6584;
+        }
       }
-    }
-    .imgBg {
-      width: 100%;
+      .imgBg {
+        width: 100%;
+      }
     }
   }
   @mixin FormEntryLess768{
@@ -195,46 +199,53 @@ export default {
     }
   }
   @mixin TourneysLess768{
-    padding-bottom: 10px;
-    .tourney{
-      flex-direction: column;
-      .col:first-child{
-        margin-bottom: 3%;
+    #Tourneys{
+      padding-bottom: 10px;
+      .tourney{
+        flex-direction: column;
+        .col:first-child{
+          margin-bottom: 3%;
+        }
+      }
+      img{
+        filter: brightness(89%);
+        height: auto;
+        padding: 12% 0 0;
+      }
+      .row .col {
+        padding: 8% 1% 1% !important;
+      }
+      .date{
+        padding: 2%;
+      }
+      .flex-container > div {
+        width: 100%;
+        margin: 1% 1% !important;
       }
     }
-    img{
-      filter: brightness(89%);
-      height: auto;
-      padding: 12% 0 0;
-    }
-    .row .col {
-      padding: 8% 1% 1% !important;
-    }
-    .date{
-      padding: 2%;
-    }
-    .flex-container > div {
-      width: 100%;
-      margin: 1% 1% !important;
-    }
+
   }
   @mixin PortfolioLess768{
-    padding-bottom: 10px;
-    .flex-container > img {
-      width: 22%;
+    #Portfolio{
+      padding-bottom: 10px;
+      .flex-container > img {
+        width: 22%;
+      }
     }
   }
   @mixin Contacts768{
-    padding-bottom: 10px;
-    .row:first-child{
-      flex-direction: column;
-    }
-    span{
-      display: none;
-    }
-    .col-5{
-      flex: 0 0 100%;
-      max-width: 100%;
+    #Contracts{
+      padding-bottom: 10px;
+      .row:first-child{
+        flex-direction: column;
+      }
+      span{
+        display: none;
+      }
+      .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
     }
   }
 
@@ -826,12 +837,8 @@ export default {
         font-size: 1.2rem;
       }
     }
-    #About{
-      @include AboutLess768;
-    }
-    #Preparation{
-      @include PreparationLess768;
-    }
+    @include AboutLess768;
+    @include PreparationLess768;
     #FormEntry{
       @include FormEntryLess768;
       input,select{
@@ -844,15 +851,9 @@ export default {
         font-size: 1.2rem !important;
       }
     }
-    #Tourneys{
-      @include TourneysLess768;
-    }
-    #Portfolio{
-      @include PortfolioLess768;
-    }
-    #Contacts{
-      @include Contacts768;
-    }
+    @include TourneysLess768;
+    @include PortfolioLess768;
+    @include Contacts768;
     #Contacts, #MyFooter{
       svg{
         width: 24px;
@@ -892,12 +893,8 @@ export default {
         font-size: 1rem;
       }
     }
-    #About{
-      @include AboutLess768;
-    }
-    #Preparation{
-      @include PreparationLess768;
-    }
+    @include AboutLess768;
+    @include PreparationLess768;
     #FormEntry{
       @include FormEntryLess768;
       input,select{
@@ -910,15 +907,9 @@ export default {
         font-size: 1.2rem !important;
       }
     }
-    #Tourneys{
-      @include TourneysLess768;
-    }
-    #Portfolio{
-      @include PortfolioLess768;
-    }
-    #Contacts{
-      @include Contacts768;
-    }
+    @include TourneysLess768;
+    @include PortfolioLess768;
+    @include Contacts768;
     #Contacts, #MyFooter{
       svg{
         width: 20px;
