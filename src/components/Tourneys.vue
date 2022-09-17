@@ -50,6 +50,7 @@
     background: rgba(24, 57, 80, 0.3);
     padding: 2% 4%;
     color: #3c88b5;
+    margin-bottom: 0 !important;
 }
 .flex-container > div {
     width: 45%;
