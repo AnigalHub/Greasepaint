@@ -84,7 +84,95 @@ export default {
       font-size: 1rem;
     }
   }
-
+  @mixin About768{
+    padding-bottom: 20px;
+    .row:first-child{
+      flex-direction: column-reverse;
+    }
+    .col-5{
+      flex: 0 0 100%;
+      max-width: 100%;
+      img{
+        width: 45%;
+        margin: 0 auto;
+        position: relative;
+      }
+    }
+    .imgBg{
+      width: 110%;
+    }
+    .important{
+      padding: 5px;
+      margin: 1% 2% 2% 0;
+      .col-2{
+        padding-top: 0;
+      }
+    }
+    .about {
+      padding-top: 0 !important;
+      padding-left: 0 !important;
+      .col-2{
+        flex: 0 0 10%;
+        img {
+          width: 85%;
+          position: absolute;
+          margin: 0 0 0 -40%;
+        }
+      }
+    }
+    .col-3{
+      flex: 0 0 23%;
+      padding: 0 5px !important;
+    }
+    .row .row:last-child .col{
+      padding: 0 !important;
+    }
+    .imgLast{
+      padding: 3%;
+      margin: 0 10px 8% 0;
+    }
+  }
+  @mixin Preparation768{
+    padding-bottom: 10px;
+    .preparation{
+      padding-top: 0 !important;
+    }
+    .row:first-child{
+      flex-direction: column;
+    }
+    li {
+      padding: 8px 3px 8px 11px;
+      margin: 8px 20px 8px 10px;
+      &::before{
+        font-size: .7rem;
+        line-height: 18px;
+        width: 20px;
+        height: 18px;
+        left: -20px;
+        top:4px;
+      }
+      &:hover:before {
+        width: 26px;
+      }
+      &::after {
+        top:4px;
+        border: 9px solid transparent;
+        border-left-color: #2b6584;
+      }
+    }
+    .imgBg{
+      width: 100%;
+    }
+    .col-5{
+      flex: 0 0 100%;
+      max-width: 100%;
+      img{
+        width: 45%;
+        margin: 0 auto;
+        position: relative;
+      }
+    }
+  }
 
   /*вся страница*/
   #app{
@@ -675,94 +763,10 @@ export default {
       }
     }
     #About{
-      padding-bottom: 20px;
-      padding-bottom: 20px;
-      .row:first-child{
-        flex-direction: column-reverse;
-      }
-      .col-5{
-        flex: 0 0 100%;
-        max-width: 100%;
-        img{
-          width: 45%;
-          margin: 0 auto;
-          position: relative;
-        }
-      }
-      .imgBg{
-        width: 110%;
-      }
-      .important{
-        padding: 5px;
-        margin: 1% 2% 2% 0;
-        .col-2{
-          padding-top: 0;
-        }
-      }
-      .about {
-        padding-top: 0 !important;
-        padding-left: 0 !important;
-        .col-2{
-          flex: 0 0 10%;
-          img {
-            width: 85%;
-            position: absolute;
-            margin: 0 0 0 -40%;
-          }
-        }
-      }
-      .col-3{
-        flex: 0 0 23%;
-        padding: 0 5px !important;
-      }
-      .row .row:last-child .col{
-        padding: 0 !important;
-      }
-      .imgLast{
-        padding: 3%;
-        margin: 0 10px 8% 0;
-      }
+      @include About768;
     }
     #Preparation{
-      padding-bottom: 10px;
-      .preparation{
-        padding-top: 0 !important;
-      }
-      .row:first-child{
-        flex-direction: column;
-      }
-      li {
-        padding: 8px 3px 8px 11px;
-        margin: 8px 20px 8px 10px;
-        &::before{
-          font-size: .7rem;
-          line-height: 18px;
-          width: 20px;
-          height: 18px;
-          left: -20px;
-          top:4px;
-        }
-        &:hover:before {
-          width: 26px;
-        }
-        &::after {
-          top:4px;
-          border: 9px solid transparent;
-          border-left-color: #2b6584;
-        }
-      }
-      .imgBg{
-        width: 100%;
-      }
-      .col-5{
-        flex: 0 0 100%;
-        max-width: 100%;
-        img{
-          width: 45%;
-          margin: 0 auto;
-          position: relative;
-        }
-      }
+      @include Preparation768;
     }
     #FormEntry{
       padding-bottom: 10px;
@@ -886,93 +890,10 @@ export default {
       }
     }
     #About{
-      padding-bottom: 20px;
-      .row:first-child{
-        flex-direction: column-reverse;
-      }
-      .col-5{
-        flex: 0 0 100%;
-        max-width: 100%;
-        img{
-          width: 45%;
-          margin: 0 auto;
-          position: relative;
-        }
-      }
-      .imgBg{
-        width: 110%;
-      }
-      .important{
-        padding: 5px;
-        margin: 1% 2% 2% 0;
-        .col-2{
-          padding-top: 0;
-        }
-      }
-      .about {
-        padding-top: 0 !important;
-        padding-left: 0 !important;
-        .col-2{
-          flex: 0 0 10%;
-          img {
-            width: 85%;
-            position: absolute;
-            margin: 0 0 0 -40%;
-          }
-        }
-      }
-      .col-3{
-        flex: 0 0 23%;
-        padding: 0 5px !important;
-      }
-      .row .row:last-child .col{
-        padding: 0 !important;
-      }
-      .imgLast{
-        padding: 3%;
-        margin: 0 10px 8% 0;
-      }
+      @include About768;
     }
     #Preparation{
-      padding-bottom: 10px;
-      .preparation{
-        padding-top: 0 !important;
-      }
-      .row:first-child{
-        flex-direction: column;
-      }
-      li {
-        padding: 8px 3px 8px 11px;
-        margin: 8px 20px 8px 10px;
-        &::before{
-          font-size: .7rem;
-          line-height: 18px;
-          width: 20px;
-          height: 18px;
-          left: -20px;
-          top:4px;
-        }
-        &:hover:before {
-          width: 26px;
-        }
-        &::after {
-          top:4px;
-          border: 9px solid transparent;
-          border-left-color: #2b6584;
-        }
-      }
-      .imgBg{
-        width: 100%;
-      }
-      .col-5{
-        flex: 0 0 100%;
-        max-width: 100%;
-        img{
-          width: 45%;
-          margin: 0 auto;
-          position: relative;
-        }
-      }
+      @include Preparation768;
     }
     #FormEntry{
       padding-bottom: 10px;
