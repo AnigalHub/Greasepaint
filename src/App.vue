@@ -770,11 +770,11 @@ export default {
       font-size: .6rem;
     }
     p,a,button,ol, #Contacts div, .text{
-      font-size: .7rem;
-      line-height: .6rem;
+      font-size: .8rem;
+      line-height: .75rem;
     }
     h2{
-      font-size: .7rem !important;
+      font-size: .9rem !important;
       margin-bottom: 0 !important;
     }
     #Home{
@@ -782,7 +782,7 @@ export default {
       h1{
         padding: 115% 0 0;
         width: 380%;
-        font-size: 1.15rem;
+        font-size: 1.2rem;
         line-height: 1.2rem;
       }
       img{
@@ -795,15 +795,15 @@ export default {
       }
       p{
         margin-top: 1%;
-        font-size: .7rem;
-        line-height: .7rem;
+        font-size: .85rem;
+        line-height: .8rem;
       }
       p,.allButton{
         width: 380%;
       }
       button{
         margin: 2% 1.5%;
-        font-size: .7rem;
+        font-size: .8rem;
       }
     }
     #About{
@@ -908,14 +908,14 @@ export default {
         padding: 1% 4%;
       }
       button{
-        font-size: .7rem;
+        font-size: .8rem;
       }
       .aboutMoney{
         padding: 0;
         margin: 2% 0 !important;
       }
       .money{
-        font-size: .7rem !important;
+        font-size: .8rem !important;
       }
       .row:first-child{
         flex-direction: column-reverse;

@@ -14,7 +14,6 @@
                             <p> {{tourney.address}}</p>
                         </b-col>
                     </b-row>
-
                 </div>
             </div>
         </b-container>

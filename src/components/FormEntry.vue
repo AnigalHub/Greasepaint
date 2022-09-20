@@ -8,7 +8,6 @@
                         <div class="imgBg"></div>
                     </b-col>
                     <b-col>
-
                         <form>
                             <h2>Запись на грим</h2>
                             <div>
