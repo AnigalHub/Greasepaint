@@ -335,14 +335,8 @@ export default {
       text-align: center;
       padding: 3% 2%;
     }
-    hr{
-      background: rgba(67, 103, 167, 0.61);
-      height: .1px;
-      width: 80%;
-      margin: 0 auto 3%;
-    }
     p{
-      width: 80%;
+      width: 85%;
       margin: 0 auto 3%;
     }
     .money{
@@ -771,5 +765,155 @@ export default {
       }
     }
   }
-
+  @media screen and  (max-width: 500px){
+    .name_company{
+      font-size: .6rem;
+    }
+    p,a,button,ol, #Contacts div, .text{
+      font-size: .6rem;
+      line-height: .55rem;
+    }
+    h2{
+      font-size: .7rem !important;
+      margin-bottom: 0 !important;
+    }
+    #Home{
+      padding-bottom: 60px;
+      h1{
+        padding: 40% 0 0;
+        width: 190%;
+        font-size: 1rem;
+        line-height: .9rem;
+      }
+      img{
+        margin-left: -8%;
+      }
+      p{
+        font-size: .6rem;
+        line-height: .6rem;
+      }
+      p,.allButton{
+        width: 220%;
+      }
+      button{
+        margin: 2% 1.5%;
+        font-size: .6rem;
+      }
+    }
+    #About{
+      padding-bottom: 20px;
+      .col-5{
+        flex: 0 0 40%;
+      }
+      .about {
+        padding-top: 0 !important;
+        .col-2 img {
+          width: 400%;
+          margin: 0 0 0 -200%;
+        }
+      }
+      .row .col-3{
+        padding: 0 0 0 5px !important;
+      }
+      .row .row:last-child .col{
+        padding: 0 0 0 10px !important;
+      }
+      .imgLast{
+        padding: .5%;
+        margin: 8% 10px 8% 0;
+      }
+    }
+    #Preparation{
+      padding-bottom: 10px;
+      .preparation{
+        padding-top: 0 !important;
+      }
+      li {
+        padding: 8px 3px 8px 11px;
+        margin: 8px 0 8px 30px;
+        &::before{
+          font-size: .8rem;
+          line-height: 18px;
+          width: 20px;
+          height: 18px;
+          left: -20px;
+        }
+        &:hover:before {
+          width: 26px;
+        }
+        &::after {
+          border: 9px solid transparent;
+          border-left-color: #2b6584;
+        }
+      }
+      .imgBg{
+        width: 100%;
+      }
+    }
+    #FormEntry{
+      padding-bottom: 10px;
+      input,select{
+        font-size: .7rem !important;
+        margin-bottom: 0;
+      }
+      form,p{
+        width: 95%;
+      }
+      form{
+        padding: 1% 4%;
+      }
+      button{
+        font-size: .7rem;
+      }
+      .aboutMoney{
+        padding: 0;
+        margin: 2% 0 !important;
+      }
+      .money{
+        font-size: .7rem !important;
+      }
+    }
+    #Tourneys{
+      padding-bottom: 10px;
+      img{
+        filter: brightness(89%);
+        height: auto;
+        padding: 40% 0;
+      }
+      .row .col .col {
+        padding: 4% 1% 1% !important;
+      }
+      .col .col-4{
+        flex: 0 0 25%;
+      }
+      p{
+        margin: 2% 0 !important;
+      }
+      hr{
+        margin: 2% 0;
+        border-top: 1px solid rgba(67, 103, 167, 0.51);
+      }
+    }
+    #Portfolio{
+      padding-bottom: 10px;
+      .flex-container > img {
+        width: 13%;
+        height: 100%;
+        margin: 0 1.5% 2.5% 1.5% !important;
+      }
+    }
+    #Contacts{
+      padding-bottom: 10px;
+      span{
+        display: none;
+      }
+    }
+    #Contacts, #MyFooter{
+      svg{
+        width: 12px;
+        height: 12px;
+        margin-top: -.5%;
+      }
+    }
+  }
 </style>
