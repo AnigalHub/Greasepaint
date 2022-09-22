@@ -636,7 +636,7 @@ export default {
       margin-bottom: 0 !important;
     }
     #Home{
-      padding-bottom: 70px;
+      padding-bottom: 90px;
       h1{
         padding: 40% 0 0;
         width: 190%;
@@ -647,14 +647,15 @@ export default {
         margin-left: -8%;
       }
       p{
-        font-size: 1rem;
-        line-height: 1rem;
+        font-size: .8rem;
+        line-height: .8rem;
       }
       p,.allButton{
-        width: 190%;
+        width: 185%;
       }
       button{
-        font-size: 1rem;
+        margin: 2% 1.5%;
+        font-size: .8rem;
       }
     }
     #About{
