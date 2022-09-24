@@ -517,7 +517,7 @@ export default {
       font-size: 1.35rem !important;
     }
     #Home{
-      padding-bottom: 120px;
+      padding-bottom: 15%;
       h1{
         padding: 40% 0 0;
         font-size: 2.25rem;
@@ -535,7 +535,7 @@ export default {
       }
     }
     #About{
-      padding-bottom: 30px;
+      padding-bottom: 6%;
       .about {
         padding-top: 0 !important;
 
@@ -556,7 +556,7 @@ export default {
       }
     }
     #Preparation{
-      padding-bottom: 30px;
+      padding-bottom: 6%;
       .preparation{
         padding-top: 0 !important;
       }
@@ -578,7 +578,7 @@ export default {
       }
     }
     #FormEntry{
-      padding-bottom: 30px;
+      padding-bottom: 6%;
       input,select{
         font-size: 1rem !important;
         margin-bottom: 1%;
@@ -594,7 +594,7 @@ export default {
       }
     }
     #Tourneys{
-      padding-bottom: 30px;
+      padding-bottom: 6%;
       .col {
         padding: 4% 1% 1%;
       }
@@ -647,15 +647,18 @@ export default {
       .about {
         padding-top: 0 !important;
         .col-2 img {
-          width: 400%;
-          margin: 0 0 0 -200%;
+          width: 350%;
+          margin: 0 0 0 -110%;
         }
       }
       .row .col-3{
         padding: 0 0 0 5px !important;
       }
       .row .row:last-child .col{
-        padding: 0 0 0 10px !important;
+        padding: 0 0 0 5px !important;
+      }
+      .important{
+        padding: 2px;
       }
       .imgLast{
         padding: .5%;
@@ -669,7 +672,7 @@ export default {
       }
       li {
         padding: 8px 3px 8px 11px;
-        margin: 8px 0 8px 30px;
+        margin: 5px 0 5px 15px;
         &::before{
           font-size: .8rem;
           line-height: 18px;
@@ -717,13 +720,16 @@ export default {
       img{
         filter: brightness(89%);
         height: auto;
-        padding: 40% 0;
+        padding: 10% 0;
+      }
+      .row{
+        margin-bottom: 0;
+      }
+      .col-4{
+        padding: 0 10px !important;
       }
       .row .col {
         padding: 4% 1% 1% !important;
-      }
-      p{
-        margin: 2% 0 !important;
       }
     }
     #Portfolio{
