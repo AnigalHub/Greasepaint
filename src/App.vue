@@ -595,7 +595,7 @@ export default {
     }
     #Tourneys{
       padding-bottom: 30px;
-      .col .col {
+      .col {
         padding: 4% 1% 1%;
       }
     }
@@ -719,18 +719,11 @@ export default {
         height: auto;
         padding: 40% 0;
       }
-      .row .col .col {
+      .row .col {
         padding: 4% 1% 1% !important;
-      }
-      .col .col-4{
-        flex: 0 0 25%;
       }
       p{
         margin: 2% 0 !important;
-      }
-      hr{
-        margin: 2% 0;
-        border-top: 1px solid rgba(67, 103, 167, 0.51);
       }
     }
     #Portfolio{
@@ -934,18 +927,11 @@ export default {
         height: auto;
         padding: 25% 0;
       }
-      .row .col .col {
+      .row .col {
         padding: 4% 1% 1% !important;
-      }
-      .col .col-4{
-        flex: 0 0 25%;
       }
       p{
         margin: 2% 0 !important;
-      }
-      hr{
-        margin: 2% 0;
-        border-top: 1px solid rgba(67, 103, 167, 0.51);
       }
     }
     #Portfolio{
