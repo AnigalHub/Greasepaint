@@ -632,11 +632,11 @@ export default {
       line-height: .7rem;
     }
     h2{
-      font-size: 1rem !important;
+      font-size: .9rem !important;
       margin-bottom: 0 !important;
     }
     #Home{
-      padding-bottom: 100px;
+      padding-bottom: 70px;
       h1{
         padding: 40% 0 0;
         width: 190%;
@@ -658,13 +658,27 @@ export default {
       }
     }
     #About{
-      padding-bottom: 50px;
-      .about{
+      padding-bottom: 20px;
+      .about {
         padding-top: 0 !important;
+        .col-2 img {
+          width: 400%;
+          margin: 0 0 0 -200%;
+        }
+      }
+      .row .col-3{
+        padding: 0 0 0 5px !important;
+      }
+      .row .row:last-child .col{
+        padding: 0 0 0 10px !important;
+      }
+      .imgLast{
+        padding: .5%;
+        margin: 8% 10px 8% 0;
       }
     }
     #Preparation{
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       .preparation{
         padding-top: 0 !important;
       }
@@ -691,7 +705,7 @@ export default {
       }
     }
     #FormEntry{
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       input,select{
         font-size: .7rem !important;
         margin-bottom: 0;
@@ -707,13 +721,14 @@ export default {
       }
       .aboutMoney{
         padding: 0;
+        margin: 2% 0 !important;
       }
       .money{
         font-size: .7rem !important;
       }
     }
     #Tourneys{
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       img{
         filter: brightness(89%);
         height: auto;
@@ -734,7 +749,7 @@ export default {
       }
     }
     #Portfolio{
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       .flex-container > img {
         width: 13%;
         height: 100%;
@@ -742,7 +757,7 @@ export default {
       }
     }
     #Contacts{
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       span{
         display: none;
       }
@@ -755,4 +770,5 @@ export default {
       }
     }
   }
+
 </style>
