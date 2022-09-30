@@ -84,7 +84,6 @@ export default {
       margin: 0;
     }
   }
-
   /*название компании  в логотипе*/
   .name_company{
     font-size: 1.5rem;
@@ -184,7 +183,7 @@ export default {
       width: 140%;
       margin-left: -4%;
       position: relative;
-      font-family: 'Philosopher', sans-serif;
+      font-family: 'Rubik Dirt', sans-serif;
       letter-spacing: 1px;
       color: #457490;
       text-shadow: 2px 2px 2px #1a1818, 1px 1px 2px #032645;
@@ -478,17 +477,20 @@ export default {
       padding: 0 8px 0 0 !important;
     }
   }
-  #Myfooter{
+  #MyFooter{
     padding: 1.5% 0 3.5%;
     background: black;
     svg{
       fill:#8e9aaf;
-      width: 40px;
+      width: 35px;
+      margin-top: -1.5%;
       height: 35px;
       float: right;
+      &:last-child {
+        margin-top: -0.5%;
+      }
     }
     .text{
-      float: left;
       svg{float: left;}
     }
   }
@@ -511,7 +513,7 @@ export default {
         font-size: 1.5rem !important;
       }
     }
-    #Contacts{
+    #Contacts, #MyFooter{
       svg{
         margin-top: -1%;
         width: 30px;
@@ -523,7 +525,7 @@ export default {
     .name_company{
       font-size: 1.3rem;
     }
-    p,a,button,ol, #Contacts div{
+    p,a,button,ol, #Contacts div,.text{
       font-size: 1rem;
       line-height: 1.2rem;
     }
@@ -613,14 +615,11 @@ export default {
         padding: 4% 1% 1%;
       }
     }
-    #Contacts{
-      .col-4{
-      flex: 0 0 38% !important;
-      }
+    #Contacts,#MyFooter{
       svg{
+        margin-top: 1%;
         width: 17px;
         height: 17px;
-        margin-top: 1%;
       }
     }
   }
@@ -628,7 +627,7 @@ export default {
     .name_company{
       font-size: .9rem;
     }
-    p,a,button,ol, #Contacts div{
+    p,a,button,ol, #Contacts div, .text{
       font-size: .7rem;
       line-height: .7rem;
     }
@@ -718,7 +717,7 @@ export default {
       img{
         filter: brightness(89%);
         height: auto;
-        padding: 15% 0;
+        padding: 40% 0;
       }
       .row .col .col {
         padding: 4% 1% 1% !important;
@@ -727,28 +726,32 @@ export default {
         flex: 0 0 25%;
       }
       p{
-        margin: .2% 0 !important;
+        margin: 2% 0 !important;
       }
       hr{
-        margin: .2% 0;
+        margin: 2% 0;
         border-top: 1px solid rgba(67, 103, 167, 0.51);
       }
     }
     #Portfolio{
       padding-bottom: 20px;
+      .flex-container > img {
+        width: 13%;
+        height: 100%;
+        margin: 0 1.5% 2.5% 1.5% !important;
+      }
     }
     #Contacts{
       padding-bottom: 20px;
       span{
         display: none;
       }
+    }
+    #Contacts, #MyFooter{
       svg{
         width: 12px;
         height: 12px;
-        margin-top: 1%;
-      }
-      .col-4{
-        padding: 0 15px 0 0 !important;
+        margin-top: -.5%;
       }
     }
   }
