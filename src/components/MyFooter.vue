@@ -24,18 +24,5 @@
 </script>
 
 <style scoped lang="scss">
-    svg{
-        fill:#8e9aaf;
-        width: 40px;
-        height: 35px;
-        float: right;
-    }
-    .text{
-        float: left;
-        svg{float: left;}
-    }
-    #Myfooter{
-        padding: 1.5% 0 3.5%;
-        background: black;
-    }
+
 </style>
