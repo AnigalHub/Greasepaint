@@ -120,7 +120,7 @@ export default {
     text-align: center;
   }
   #Home{
-    padding-bottom: 190px;
+    padding-bottom: 210px;
     .imgBg{
       background-image: radial-gradient(ellipse 47% 50%, rgba(20, 102, 141, 0.55), transparent );
       width: 100%;
@@ -558,6 +558,79 @@ export default {
   @media screen and (min-width: 500px) and (max-width: 768px){
     .name_company{
       font-size: 1rem;
+    }
+    p,a,button,ol, #Contacts div{
+      font-size: .7rem;
+      line-height: 1rem;
+    }
+    h2{
+      font-size: 1.45rem !important;
+    }
+    #Home{
+      padding-bottom: 100px;
+      h1{
+        padding: 40% 0 0;
+        width: 190%;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+      }
+      img{
+        margin-left: -8%;
+      }
+      p{
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+      p,.allButton{
+        width: 190%;
+      }
+      button{
+        font-size: 1rem;
+      }
+    }
+    #About{
+      padding-bottom: 50px;
+      .about{
+        padding-top: 0 !important;
+      }
+    }
+    #Preparation{
+      padding-bottom: 40px;
+      .preparation{
+        padding-top: 0 !important;
+      }
+      li {
+        padding: 8px 20px 8px;
+        margin: 12px 10px 12px 30px;
+      }
+    }
+    #FormEntry{
+      padding-bottom: 30px;
+      input,select{
+        font-size: 1rem !important;
+        margin-bottom: 1%;
+      }
+      form,p{
+        width: 90%;
+      }
+      .money{
+        font-size: 1rem !important;
+      }
+    }
+    #Tourneys{
+      .col .col-5{
+        max-width: 38%;
+      }
+      .col .col {
+        padding: 4% 1% 1%;
+      }
+    }
+    #Contacts{
+      svg{
+        width: 17px;
+        height: 17px;
+        margin-top: 1%;
+      }
     }
   }
 </style>
