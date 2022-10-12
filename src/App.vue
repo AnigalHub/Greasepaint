@@ -478,6 +478,20 @@ export default {
       padding: 0 8px 0 0 !important;
     }
   }
+  #Myfooter{
+    padding: 1.5% 0 3.5%;
+    background: black;
+    svg{
+      fill:#8e9aaf;
+      width: 40px;
+      height: 35px;
+      float: right;
+    }
+    .text{
+      float: left;
+      svg{float: left;}
+    }
+  }
   @media screen and (min-width: 992px) and (max-width: 1200px){
     .name_company{
       font-size: 1.4rem;
