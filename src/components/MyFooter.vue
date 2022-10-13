@@ -2,7 +2,8 @@
     <div id="Myfooter">
         <b-container>
             <div class="text">
-                <component :is="copyright"/> 2022 #polyakovsteam
+                <component :is="copyright"/>
+                <span>2022 #polyakovsteam</span>
             </div>
             <component :is="svg"/>
         </b-container>
