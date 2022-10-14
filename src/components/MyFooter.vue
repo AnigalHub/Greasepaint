@@ -1,5 +1,5 @@
 <template>
-    <div id="Myfooter">
+    <div id="MyFooter">
         <b-container>
             <div class="text">
                 <component :is="copyright"/>
@@ -14,7 +14,7 @@
     import Copyright_svg from "./svg_contacts/copyright_svg";
     import Instagram_svg from "./svg_contacts/instagram_svg";
     export default {
-        name: "Myfooter",
+        name: "MyFooter",
         data(){
             return{
                 copyright:Copyright_svg,
