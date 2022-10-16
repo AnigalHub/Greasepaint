@@ -5,7 +5,7 @@
             <b-row>
                 <b-col v-for="tourney in Tourneys">
                     <b-row>
-                        <b-col cols="5">
+                        <b-col cols="4">
                             <img :src="tourney.src" :alt="tourney.name">
                         </b-col>
                         <b-col>
