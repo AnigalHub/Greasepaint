@@ -407,10 +407,9 @@ export default {
     .col .row{
       @include block;
       color: $colorText;
-      margin-right: 2%;
       border-radius: $borderRadius;
     }
-    .col-5{
+    .col-4{
       padding: 4px;
     }
     .col .col{
@@ -579,15 +578,14 @@ export default {
     }
     #Tourneys{
       padding-bottom: 30px;
-
-      .col .col-5{
-        max-width: 38%;
-      }
       .col .col {
         padding: 4% 1% 1%;
       }
     }
     #Contacts{
+      .col-4{
+      flex: 0 0 38% !important;
+      }
       svg{
         width: 17px;
         height: 17px;
@@ -689,10 +687,26 @@ export default {
       img{
         filter: brightness(89%);
         height: auto;
-        padding: 4% 0;
+        padding: 15% 0;
       }
-      .col .col {
+      .row .col .col {
         padding: 4% 1% 1% !important;
+      }
+      .col .col-4{
+        flex: 0 0 25%;
+      }
+      p{
+        margin: .2% 0 !important;
+      }
+      hr{
+        margin: .2% 0;
+        border-top: 1px solid rgba(67, 103, 167, 0.51);
+      }
+      .row .col:first-child{
+        padding: 0 5px 0 15px !important;
+      }
+      .row .col:last-child{
+        padding: 0 15px 0 5px !important;
       }
     }
     #Portfolio{
