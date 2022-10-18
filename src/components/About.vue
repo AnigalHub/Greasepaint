@@ -45,13 +45,9 @@
     box-shadow: 0 1px 5px rgb(78 106 159 / 40%);
     border-radius: 8px;
 }
-.about .col-4 img{
-  width: 50%;
-    height: 50%;
-    margin-bottom: 3%;
-}
+
     .about .col-2 img{
         width: 120%;
-        margin-top: 15%;
+        margin-top: 12%;
     }
 </style>
