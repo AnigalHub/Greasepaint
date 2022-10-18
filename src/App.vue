@@ -93,6 +93,7 @@ export default {
     }
     p:first-child{
       padding: 140px 0 0;
+      position: relative;
       text-transform: uppercase;
       font-family: 'Rubik Dirt', cursive;
       color: #457490;
@@ -119,7 +120,26 @@ export default {
     font-weight: 500;
     font-family: 'Forum', cursive;
   }
-
+  #About{
+    .about{
+      padding-top: 6% !important;
+      .col-2 img{
+        width: 120%;
+        margin-top: 12%;
+      }
+    }
+    .imgLast{
+      width: 130px;
+      filter: brightness(80%);
+      float: left;
+      margin: 0 10px;
+      padding: 5px;
+      border: 2px solid rgba(118, 123, 134, 0.67);
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: 0 1px 5px rgb(78 106 159 / 40%);
+      border-radius: 8px;
+    }
+  }
   .list2a {
     margin-bottom: 8px;
     padding:0;
@@ -174,14 +194,6 @@ export default {
   #Preparation{
     .about{
       padding-top:9% !important;
-    }
-  }
-  #About{
-    .about{
-      padding-top: 6% !important;
-    }
-    .grid{
-      grid-template-columns: 38% 62%;
     }
   }
   #Portfolio, #FormEntry{
