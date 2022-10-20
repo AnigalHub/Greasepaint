@@ -92,15 +92,13 @@
     .col-4{
         padding: 0 !important;
     }
-    /*блоки с картинками*/
     .flex-container > div {
-        //background: #071935;
         font-size: 1.5rem !important;
         font-family: 'Forum', cursive!important;
         border-radius: 8px;
         padding: .8% 2%;
         width: 100%;
-        box-shadow: 0px 1px 8px 1px #293655;
+        box-shadow: 0 1px 8px 1px #293655;
         height: 100%;
         margin: 0 1% 4% 1% !important;
     /*при наведении*/
