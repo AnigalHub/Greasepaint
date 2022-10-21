@@ -31,10 +31,6 @@
         float: right;
     }
     .text{
-        font-size: 1.7rem;
-        font-family: 'Forum', cursive;
-        line-height: 1.8rem;
-        font-weight: 600;
         float: left;
         svg{float: left;}
     }
