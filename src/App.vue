@@ -16,7 +16,7 @@
 
 <script>
 import Home from "@/components/Home";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import FormEntry from "@/components/FormEntry";
 import Tourneys from "@/components/Tourneys";
@@ -85,7 +85,7 @@ export default {
     }
   }
 
-  /*название компании "Аваконт" в логотипе*/
+  /*название компании  в логотипе*/
   .name_company{
     font-size: 1.5rem;
     letter-spacing: 2px;
@@ -93,6 +93,13 @@ export default {
     color: #2b6584 !important;
     font-weight: 500;
     font-family: $fontFamily;
+  }
+  .text{
+    font-size: 1.5rem;
+    font-family: 'Forum', cursive;
+    line-height: 1.8rem;
+    font-weight: 600;
+    float: left;
   }
   img{
     display: block;
@@ -197,19 +204,19 @@ export default {
     .about{
       padding-top: 3% !important;
       .col-2 img{
-        width: 110%;
+        width: 115%;
         margin: 0 0 0 -20%;
         filter: invert(0.3);
         position: relative;
       }
     }
     .important{
-      padding: 1%;
+      padding: 5px;
       @include block;
       border-radius: $borderRadius;
       margin: 3% 0;
       .col{
-        padding-top: 1.5%;
+        padding: 1%;
         p{
           margin: 0 !important;
         }
@@ -219,12 +226,15 @@ export default {
         padding-bottom: 1%;
       }
     }
+    .col-3{
+      padding-left: 0 !important;
+    }
     .imgLast{
       @include block;
       width: 100%;
       filter: brightness(80%);
       float: left;
-      margin: 8% 10px;
+      margin: 6% 2%;
       padding: 5px;
       border-radius: $borderRadius;
       position: relative;
@@ -330,14 +340,14 @@ export default {
       background: rgba(67, 103, 167, 0.61);
       height: .1px;
       width: 80%;
-      margin: 0 auto 4%;
+      margin: 0 auto 3%;
     }
     p{
       width: 80%;
       margin: 0 auto 3%;
     }
     .money{
-      font-size: 2.2rem !important;
+      font-size: 2rem !important;
       color: #3c88b5;
     }
     h2{
@@ -414,7 +424,7 @@ export default {
     }
     .col .col{
       text-align: center;
-      padding: 6% 3% 3%;
+      padding: 3% 3%;
     }
     hr{
       margin: .5rem 0;
@@ -438,7 +448,6 @@ export default {
   #Contacts{
     padding-bottom: 40px;
     .flex-container{
-      padding: 2% 0;
       & > div {
         @include block;
         border-radius: $borderRadius;
@@ -473,7 +482,7 @@ export default {
     .name_company{
       font-size: 1.4rem;
     }
-    p,a,button,ol, #Contacts div{
+    p,a,button,ol, #Contacts div,.text{
       font-size: 1.3rem;
       line-height: 1.35rem;
     }
@@ -486,6 +495,13 @@ export default {
     #FormEntry{
       .money{
         font-size: 1.5rem !important;
+      }
+    }
+    #Contacts{
+      svg{
+        margin-top: -1%;
+        width: 30px;
+        height: 30px;
       }
     }
   }
@@ -532,10 +548,11 @@ export default {
         padding: 0 0 0 5px !important;
       }
       .row .row:last-child .col{
-        padding: 0 0 0 20px !important;
+        padding: 0 0 0 10px !important;
       }
       .imgLast{
         padding: .5%;
+        margin: 8% 10px 8% 0;
       }
     }
     #Preparation{
@@ -595,11 +612,11 @@ export default {
   }
   @media screen and (min-width: 500px) and (max-width: 768px){
     .name_company{
-      font-size: 1rem;
+      font-size: .9rem;
     }
     p,a,button,ol, #Contacts div{
       font-size: .7rem;
-      line-height: .8rem;
+      line-height: .7rem;
     }
     h2{
       font-size: 1rem !important;
@@ -642,7 +659,7 @@ export default {
         padding: 8px 3px 8px 11px;
         margin: 8px 0 8px 30px;
         &::before{
-          font-size: .9rem;
+          font-size: .8rem;
           line-height: 18px;
           width: 20px;
           height: 18px;
@@ -667,7 +684,7 @@ export default {
         margin-bottom: 0;
       }
       form,p{
-        width: 90%;
+        width: 95%;
       }
       form{
         padding: 1% 4%;
@@ -701,12 +718,6 @@ export default {
       hr{
         margin: .2% 0;
         border-top: 1px solid rgba(67, 103, 167, 0.51);
-      }
-      .row .col:first-child{
-        padding: 0 5px 0 15px !important;
-      }
-      .row .col:last-child{
-        padding: 0 15px 0 5px !important;
       }
     }
     #Portfolio{
