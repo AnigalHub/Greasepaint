@@ -79,9 +79,12 @@ export default {
   .background{
     //background: url("../public/fog-1.png") repeat fixed;
   }
-  .row{
-    margin: 0;
+  #Home,#About,#Preparation,#FormEntry,#Tourneys,#Portfolio,#Contacts{
+    .row{
+      margin: 0;
+    }
   }
+
   /*название компании "Аваконт" в логотипе*/
   .name_company{
     font-size: 1.5rem;
@@ -456,7 +459,7 @@ export default {
       fill: $colorText;
       width: 35px;
       height: 35px;
-      margin-right: 2% .2%;
+      margin-right: 2%;
       margin-top: -1.5%;
       float: left;
     }
@@ -496,14 +499,17 @@ export default {
       line-height: 1.2rem;
     }
     h2{
-      font-size: 1.45rem !important;
+      font-size: 1.35rem !important;
     }
     #Home{
-      padding-bottom: 140px;
+      padding-bottom: 120px;
       h1{
         padding: 40% 0 0;
         font-size: 2.25rem;
         line-height: 2.5rem;
+      }
+      h1,p,.allButton{
+        width: 160%;
       }
       p{
         font-size: 1.2rem;
@@ -514,13 +520,27 @@ export default {
       }
     }
     #About{
-      padding-bottom: 50px;
-      .about{
+      padding-bottom: 30px;
+      .about {
         padding-top: 0 !important;
+
+        .col-2 img {
+          width: 190%;
+          margin: 0 0 0 -80%;
+        }
+      }
+      .row .col-3{
+        padding: 0 0 0 5px !important;
+      }
+      .row .row:last-child .col{
+        padding: 0 0 0 20px !important;
+      }
+      .imgLast{
+        padding: .5%;
       }
     }
     #Preparation{
-      padding-bottom: 40px;
+      padding-bottom: 30px;
       .preparation{
         padding-top: 0 !important;
       }
@@ -558,6 +578,8 @@ export default {
       }
     }
     #Tourneys{
+      padding-bottom: 30px;
+
       .col .col-5{
         max-width: 38%;
       }
@@ -566,9 +588,6 @@ export default {
       }
     }
     #Contacts{
-      .col-4{
-        padding: 0 15px 0 0 !important;
-      }
       svg{
         width: 17px;
         height: 17px;
