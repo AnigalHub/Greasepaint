@@ -79,6 +79,9 @@ export default {
   .background{
     //background: url("../public/fog-1.png") repeat fixed;
   }
+  .row{
+    margin: 0;
+  }
   /*название компании "Аваконт" в логотипе*/
   .name_company{
     font-size: 1.5rem;
@@ -437,7 +440,7 @@ export default {
       & > div {
         @include block;
         border-radius: $borderRadius;
-        padding: 2.5%;
+        padding: 2%;
         width: 100%;
         height: 100%;
         margin: 0 0 4% 0 !important;
@@ -453,7 +456,7 @@ export default {
       fill: $colorText;
       width: 35px;
       height: 35px;
-      margin-right: 2%;
+      margin-right: 2% .2%;
       margin-top: -1.5%;
       float: left;
     }
@@ -461,7 +464,7 @@ export default {
       margin-left: -4%;
     }
     .col-4{
-      padding: 0 !important;
+      padding: 0 8px 0 0 !important;
     }
   }
   @media screen and (min-width: 992px) and (max-width: 1200px){
@@ -563,6 +566,9 @@ export default {
       }
     }
     #Contacts{
+      .col-4{
+        padding: 0 15px 0 0 !important;
+      }
       svg{
         width: 17px;
         height: 17px;
@@ -666,12 +672,6 @@ export default {
         height: auto;
         padding: 4% 0;
       }
-      .col{
-        padding: 0 8px !important;
-      }
-      .col .col-5{
-        max-width: 38%;
-      }
       .col .col {
         padding: 4% 1% 1% !important;
       }
@@ -688,6 +688,9 @@ export default {
         width: 12px;
         height: 12px;
         margin-top: 1%;
+      }
+      .col-4{
+        padding: 0 15px 0 0 !important;
       }
     }
   }
