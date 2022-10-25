@@ -579,7 +579,8 @@ export default {
       line-height: .8rem;
     }
     h2{
-      font-size: 1.1rem !important;
+      font-size: 1rem !important;
+      margin-bottom: 0 !important;
     }
     #Home{
       padding-bottom: 100px;
@@ -610,7 +611,7 @@ export default {
       }
     }
     #Preparation{
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       .preparation{
         padding-top: 0 !important;
       }
@@ -632,32 +633,60 @@ export default {
           border-left-color: #2b6584;
         }
       }
+      .imgBg{
+        width: 100%;
+      }
     }
     #FormEntry{
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       input,select{
         font-size: .7rem !important;
-        margin-bottom: .5%;
+        margin-bottom: 0;
       }
       form,p{
         width: 90%;
+      }
+      form{
+        padding: 1% 4%;
+      }
+      button{
+        font-size: .7rem;
+      }
+      .aboutMoney{
+        padding: 0;
       }
       .money{
         font-size: .7rem !important;
       }
     }
     #Tourneys{
+      padding-bottom: 20px;
+      img{
+        filter: brightness(89%);
+        height: auto;
+        padding: 4% 0;
+      }
+      .col{
+        padding: 0 8px !important;
+      }
       .col .col-5{
         max-width: 38%;
       }
       .col .col {
-        padding: 4% 1% 1%;
+        padding: 4% 1% 1% !important;
       }
     }
+    #Portfolio{
+      padding-bottom: 20px;
+    }
     #Contacts{
+      padding-bottom: 20px;
+      span{
+        display: none;
+      }
       svg{
-        width: 17px;
-        height: 17px;
+        width: 12px;
+        height: 12px;
         margin-top: 1%;
       }
     }
