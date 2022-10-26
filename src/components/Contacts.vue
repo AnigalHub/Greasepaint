@@ -12,7 +12,7 @@
                         <div v-for="information in ContactsRow" :key="information.text">
                             <a :href="information.href" :target="information.target">
                                 <component :is="information.svg"/>
-                                <p class="text">{{information.name}} {{information.http}}</p>
+                                <p class="text"><span>{{information.name}}</span> {{information.http}}</p>
                             </a>
                         </div>
                     </div>
