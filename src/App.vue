@@ -524,6 +524,18 @@ export default {
       li {
         padding: 8px 20px 8px;
         margin: 12px 10px 12px 30px;
+         &::before{
+           width: 30px;
+           height: 28px;
+           left: -30px;
+         }
+        &:hover:before {
+          width: 36px;
+        }
+        &::after {
+          border: 14px solid transparent;
+          border-left-color: #2b6584;
+        }
       }
     }
     #FormEntry{
