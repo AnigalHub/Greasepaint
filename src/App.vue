@@ -544,6 +544,9 @@ export default {
         font-size: 1rem !important;
         margin-bottom: 1%;
       }
+      button{
+        font-size: 1rem;
+      }
       form,p{
         width: 90%;
       }
@@ -573,10 +576,10 @@ export default {
     }
     p,a,button,ol, #Contacts div{
       font-size: .7rem;
-      line-height: 1rem;
+      line-height: .8rem;
     }
     h2{
-      font-size: 1.45rem !important;
+      font-size: 1.1rem !important;
     }
     #Home{
       padding-bottom: 100px;
@@ -607,26 +610,40 @@ export default {
       }
     }
     #Preparation{
-      padding-bottom: 40px;
+      padding-bottom: 30px;
       .preparation{
         padding-top: 0 !important;
       }
       li {
-        padding: 8px 20px 8px;
-        margin: 12px 10px 12px 30px;
+        padding: 8px 3px 8px 11px;
+        margin: 8px 0 8px 30px;
+        &::before{
+          font-size: .9rem;
+          line-height: 18px;
+          width: 20px;
+          height: 18px;
+          left: -20px;
+        }
+        &:hover:before {
+          width: 26px;
+        }
+        &::after {
+          border: 9px solid transparent;
+          border-left-color: #2b6584;
+        }
       }
     }
     #FormEntry{
       padding-bottom: 30px;
       input,select{
-        font-size: 1rem !important;
-        margin-bottom: 1%;
+        font-size: .7rem !important;
+        margin-bottom: .5%;
       }
       form,p{
         width: 90%;
       }
       .money{
-        font-size: 1rem !important;
+        font-size: .7rem !important;
       }
     }
     #Tourneys{
