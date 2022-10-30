@@ -198,22 +198,47 @@ export default {
     }
   }
   #FormEntry{
+    padding-bottom: 2% !important;
+    h2{
+      text-align: center;
+      padding-bottom: 1.5%;
+    }
+    .block{
+      margin: 0 7%;
+      padding: 2% 4%;
+      //background: rgba(66, 74, 90, 0.25);
+      color: #8e9aaf;
+      border-radius: 8px;
+      border: 2px solid rgba(67, 103, 167, 0.21);
+      background: rgba(24, 57, 80, 0.1);
+      box-shadow: 0 1px 4px rgb(78 106 159 / 24%);
+      .col:last-child{
+        text-align: center;
+        margin: 8% 0 0 ;
+      }
+    }
     form{
-      width: 60%;
+      width: 100%;
+      padding: 4% 5% 6%;
+      background: rgba(24, 57, 80, 0.3);
+      border: 2px solid rgba(67, 103, 167, 0.21);
       margin: 0 auto;
+      border-radius: 8px;
     }
     input{
       border-top: none !important;
       border-left: none !important;
       border-right: none !important;
       width: 100%;
-      font-size: 1.45rem !important;
+      font-size: 1.2rem !important;
       background: transparent;
-      padding: 14px 0 15px 7px;
+      padding: 2%;
+      margin-bottom: 9%;
+      font-family: 'Forum', cursive;
       border-bottom: 1px solid #293655;
     }
     button{
-      margin-top: 10%;
+      margin-top: 4%;
       border: none;
       box-shadow: 0 1px 8px 1px #293655;
       background: #071935;
