@@ -60,7 +60,7 @@
 
 <style scoped lang="scss">
     #Contacts{
-        padding: 3% 0;
+        padding: 1% 0;
     }
     p{
         font-size: 1.7rem;
