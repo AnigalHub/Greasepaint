@@ -396,6 +396,7 @@ export default {
     padding-bottom: 40px;
     img{
       filter: brightness(89%);
+      height: 100%;
     }
     .col .row{
       @include block;
@@ -491,9 +492,13 @@ export default {
       font-size: 1rem;
       line-height: 1.2rem;
     }
+    h2{
+      font-size: 1.45rem !important;
+    }
     #Home{
-      padding-bottom: 150px;
+      padding-bottom: 140px;
       h1{
+        padding: 40% 0 0;
         font-size: 2.25rem;
         line-height: 2.5rem;
       }
@@ -512,13 +517,41 @@ export default {
       }
     }
     #Preparation{
+      padding-bottom: 40px;
       .preparation{
         padding-top: 0 !important;
       }
+      li {
+        padding: 8px 20px 8px;
+        margin: 12px 10px 12px 30px;
+      }
     }
     #FormEntry{
+      padding-bottom: 30px;
+      input,select{
+        font-size: 1rem !important;
+        margin-bottom: 1%;
+      }
+      form,p{
+        width: 90%;
+      }
       .money{
-        font-size: 1.2rem !important;
+        font-size: 1rem !important;
+      }
+    }
+    #Tourneys{
+      .col .col-5{
+        max-width: 38%;
+      }
+      .col .col {
+        padding: 4% 1% 1%;
+      }
+    }
+    #Contacts{
+      svg{
+        width: 17px;
+        height: 17px;
+        margin-top: 1%;
       }
     }
   }
