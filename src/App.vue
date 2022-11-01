@@ -120,13 +120,12 @@ export default {
     text-align: center;
   }
   #Home{
-    padding-bottom: 220px;
+    padding-bottom: 190px;
     .imgBg{
       background-image: radial-gradient(ellipse 47% 50%, rgba(20, 102, 141, 0.55), transparent );
-      width: 110%;
-      height: 145%;
+      width: 100%;
+      height: 120%;
       top:0;
-      left: -30%;
     }
     p{
       font-size: 2rem;
@@ -168,7 +167,7 @@ export default {
       }
     }
     h1{
-      padding: 120px 0 0;
+      padding: 30% 0 0;
       width: 140%;
       margin-left: -4%;
       position: relative;
@@ -237,7 +236,7 @@ export default {
     }
   }
   #Preparation{
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     .preparation{
       padding-top:5% !important;
     }
@@ -297,11 +296,13 @@ export default {
     }
     .imgBg{
       @include imgBg;
+      z-index: 3;
+      background-image: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent);
       position: absolute;
       width: 115%;
       height: 135%;
-      left: -10%;
-      top:-10%;
+      left: -12%;
+      top: -20%;
     }
   }
   #Portfolio h2, #Tourneys h2{
@@ -465,6 +466,22 @@ export default {
   @media screen and (min-width: 992px) and (max-width: 1200px){
     .name_company{
       font-size: 1.4rem;
+    }
+    p,a,button,ol, #Contacts div{
+      font-size: 1.3rem;
+      line-height: 1.35rem;
+    }
+    #Home{
+      h1{
+        width: 140%;
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+    }
+    #FormEntry{
+      .money{
+        font-size: 1.5rem !important;
+      }
     }
   }
   @media screen and (min-width: 768px) and (max-width: 992px){
