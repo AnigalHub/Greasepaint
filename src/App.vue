@@ -123,10 +123,10 @@ export default {
     padding-bottom: 220px;
     .imgBg{
       background-image: radial-gradient(ellipse 47% 50%, rgba(20, 102, 141, 0.55), transparent );
-      width: 130%;
+      width: 110%;
       height: 145%;
-      margin-left: -9%;
-      top:-15%;
+      top:0;
+      left: -30%;
     }
     p{
       font-size: 2rem;
@@ -297,10 +297,11 @@ export default {
     }
     .imgBg{
       @include imgBg;
-      width: 130%;
+      position: absolute;
+      width: 115%;
       height: 135%;
       left: -10%;
-      top:-15%;
+      top:-10%;
     }
   }
   #Portfolio h2, #Tourneys h2{
