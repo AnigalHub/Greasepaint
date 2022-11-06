@@ -59,7 +59,7 @@
     }
     /*меню на всех экранах (которое будет и складываться на маленьких экранах и раскрываться на больших)*/
     .navbar{
-        background: #0a0f18;
+        background: #0f151f;
         background-size:cover;
         border-bottom: 5px #8792a5 !important;
         padding: 0 !important;
@@ -67,7 +67,7 @@
     }
     /*все кнопки в меню*/
     .nav-link{
-        color: #2b6584 !important;
+        color: #3798c5 !important;
         padding-right: 1rem !important;
         padding-left: 1rem !important;
         font-family: 'Forum', cursive;

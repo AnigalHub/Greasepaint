@@ -42,10 +42,10 @@ export default {
 </script>
 
 <style lang="scss">
-  $bgBlock: rgba(24, 57, 80, 0.3);
-  $borderBlock: 2px solid rgba(67, 103, 167, 0.21);
+  $bgBlock: rgba(24, 57, 80, 0.45);
+  $borderBlock: 2px solid rgba(67, 103, 167, 0.41);
   $fontFamily: 'Forum', cursive;
-  $colorText: #8e9aaf;
+  $colorText: #d7dbe5;
   $bgImg: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
   $borderRadius: 8px;
 
@@ -78,6 +78,7 @@ export default {
   }
   .background{
     background: url("../public/bg-blur-mobile.svg") no-repeat 100% 100%;
+    opacity: .7;
   }
   #Home,#About,#Preparation,#FormEntry,#Tourneys,#Portfolio,#Contacts{
     .row{
@@ -86,10 +87,11 @@ export default {
   }
   /*название компании  в логотипе*/
   .name_company{
+    opacity: 1 !important;
     font-size: 1.5rem;
     letter-spacing: 2px;
     padding: 0 7px !important;
-    color: #2b6584 !important;
+    color: #3798c5 !important;
     font-weight: 500;
     font-family: $fontFamily;
   }
@@ -134,7 +136,7 @@ export default {
   #Home{
     padding-bottom: 210px;
     .imgBg{
-      background-image: radial-gradient(ellipse 47% 50%, rgba(20, 102, 141, 0.55), transparent );
+      background-image: radial-gradient(ellipse 47% 50%, rgba(20, 102, 141, 0.65), transparent );
       width: 100%;
       height: 120%;
       top:0;
@@ -185,7 +187,7 @@ export default {
       position: relative;
       font-family: 'Rubik Dirt', sans-serif;
       letter-spacing: 1px;
-      color: #457490;
+      color: #3798c5;
       text-shadow: 2px 2px 2px #1a1818, 1px 1px 2px #032645;
       font-size: 3.6rem;
       line-height: 3.6rem;
@@ -395,7 +397,7 @@ export default {
       margin-bottom: 4%;
       font-family: $fontFamily;
       border-bottom: 1px solid #293655;
-      color: $colorText;
+      color: #d7dbe5;
     }
     input::placeholder, select:optional {
       color: rgba(142, 154, 175, 0.8);
