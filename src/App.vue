@@ -77,7 +77,7 @@ export default {
     padding-left: 15px !important;
   }
   .background{
-    //background: url("../public/fog-1.png") repeat fixed;
+    background: url("../public/bg-blur-mobile.svg") no-repeat 100% 100%;
   }
   #Home,#About,#Preparation,#FormEntry,#Tourneys,#Portfolio,#Contacts{
     .row{
