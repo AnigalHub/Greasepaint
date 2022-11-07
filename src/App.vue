@@ -621,14 +621,14 @@ export default {
   }
   @media screen and (min-width: 500px) and (max-width: 768px){
     .name_company{
-      font-size: .9rem;
+      font-size: 1.2rem;
     }
     p,a,button,ol, #Contacts div, .text{
-      font-size: .7rem;
-      line-height: .7rem;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
     }
     h2{
-      font-size: .9rem !important;
+      font-size: 1.3rem !important;
       margin-bottom: 0 !important;
     }
     #Home{
@@ -643,8 +643,8 @@ export default {
         margin-left: -8%;
       }
       p{
-        font-size: .8rem;
-        line-height: .8rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
       }
       p,.allButton{
         width: 185%;
@@ -707,7 +707,7 @@ export default {
     #FormEntry{
       padding-bottom: 10px;
       input,select{
-        font-size: .7rem !important;
+        font-size: 1.2rem !important;
         margin-bottom: 0;
       }
       form,p{
@@ -717,14 +717,14 @@ export default {
         padding: 1% 4%;
       }
       button{
-        font-size: .7rem;
+        font-size: 1.2rem;
       }
       .aboutMoney{
         padding: 0;
         margin: 2% 0 !important;
       }
       .money{
-        font-size: .7rem !important;
+        font-size: 1.2rem !important;
       }
     }
     #Tourneys{
@@ -758,22 +758,22 @@ export default {
     }
     #Contacts, #MyFooter{
       svg{
-        width: 12px;
-        height: 12px;
+        width: 24px;
+        height: 24px;
         margin-top: -.5%;
       }
     }
   }
   @media screen and  (max-width: 500px){
     .name_company{
-      font-size: .6rem;
+      font-size: 1.2rem;
     }
     p,a,button,ol, #Contacts div, .text{
-      font-size: .8rem;
-      line-height: .75rem;
+      font-size: 1rem;
+      line-height: 1rem;
     }
     h2{
-      font-size: .9rem !important;
+      font-size: 1.2rem !important;
       margin-bottom: 0 !important;
     }
     #Home{
@@ -781,8 +781,8 @@ export default {
       h1{
         padding: 115% 0 0;
         width: 380%;
-        font-size: 1.2rem;
-        line-height: 1.2rem;
+        font-size: 1.4rem;
+        line-height: 1.35rem;
       }
       img{
         margin-top: 4%;
@@ -794,8 +794,8 @@ export default {
       }
       p{
         margin-top: 1%;
-        font-size: .85rem;
-        line-height: .8rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
       }
       p,.allButton{
         width: 380%;
@@ -897,7 +897,7 @@ export default {
     #FormEntry{
       padding-bottom: 10px;
       input,select{
-        font-size: .6rem !important;
+        font-size: 1rem !important;
         margin-bottom: 0;
       }
       form,p{
@@ -907,14 +907,15 @@ export default {
         padding: 1% 4%;
       }
       button{
-        font-size: .8rem;
+        font-size: 1rem;
       }
       .aboutMoney{
         padding: 0;
         margin: 2% 0 !important;
       }
       .money{
-        font-size: .8rem !important;
+        display: block;
+        font-size: 1.2rem !important;
       }
       .row:first-child{
         flex-direction: column-reverse;
@@ -977,8 +978,8 @@ export default {
     }
     #Contacts, #MyFooter{
       svg{
-        width: 12px;
-        height: 12px;
+        width: 20px;
+        height: 20px;
         margin-top: -.5%;
       }
     }
