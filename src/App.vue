@@ -532,11 +532,6 @@ export default {
       color: #1496cf;
       padding-bottom: 1%;
     }
-    .block{
-      padding: 3% 2% 0;
-      color: $colorText;
-      border-radius: $borderRadius;
-    }
     button{
       width: 100%;
       text-align: center;
@@ -563,8 +558,6 @@ export default {
     form{
       width: 85%;
       margin: 0 auto 3%;
-    }
-    form{
       padding: 2% 5% 2%;
       @include block;
     }
