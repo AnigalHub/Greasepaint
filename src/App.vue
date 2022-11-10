@@ -266,7 +266,7 @@ export default {
   .background{
     background: url("../public/bg-blur-mobile.svg") no-repeat;
     background-size: cover;
-    opacity: .7;
+    opacity: .8;
   }
   #Home,#About,#Preparation,#FormEntry,#Tourneys,#Portfolio,#Contacts{
     .row{
