@@ -26,7 +26,6 @@
         data(){
             return{
                 today: new Date(),
-                datetournaments:false,
                 Tournaments:[
                     {
                         src: "./qw.jpg",
