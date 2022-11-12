@@ -46,17 +46,18 @@
             tournamentsToShow(){
                 let tournaments = []
 
+
                 for (let i =0; i < this.Tournaments.length; i++){
-                    let date = this.Tournaments[i].date;
-                    console.log('date', date)
-                    let day = date.substr(0, 2)
-                    let year = (date.substring(date.length - 4));
-                    let month = this.SearchForTheNumberOfTheMonth(date,day,year);
-                    console.log(day,month,year)
+                    let date = (this.Tournaments[i].date).split(" ");
+
+                    let day = date[0]
+                    let year = date[2];
+                    let month = this.SearchForTheNumberOfTheMonth(date[1]);
+
                     const dataTournament = new Date(Number(year),month,Number( day));
 
                     let dm = this.today - dataTournament;
-                    console.log('dm', dm)
+
                     const ONE_DAY_IN_MS = 86400000;
                     if ( dm < ONE_DAY_IN_MS ){
                         tournaments.push(this.Tournaments[i])
@@ -66,7 +67,7 @@
             },
         },
         methods:{
-            SearchForTheNumberOfTheMonth(date,day,year){
+            SearchForTheNumberOfTheMonth(newstr){
                 const arrayMonths =  [
                     'января',
                     'февраля',
@@ -81,12 +82,6 @@
                     'ноября',
                     'декабря'
                 ]
-                //удаление числа
-                var newstr = date.replace(day, "");
-                //удаление года
-                newstr = newstr.replace(year, "")
-                //удаление пробелов
-                newstr = newstr.split(' ').join('')
                 let month = arrayMonths.indexOf(newstr);
                 return month;
             }
