@@ -44,11 +44,9 @@
         },
         computed:{
             tournamentsToShow(){
-                let tournaments = []
-
-
-                for (let i =0; i < this.Tournaments.length; i++){
-                    let date = (this.Tournaments[i].date).split(" ");
+                let tournaments = [];
+                for (let tournament of this.Tournaments){
+                    let date = (tournament.date).split(" ");
 
                     let day = date[0]
                     let year = date[2];
@@ -60,7 +58,7 @@
 
                     const ONE_DAY_IN_MS = 86400000;
                     if ( dm < ONE_DAY_IN_MS ){
-                        tournaments.push(this.Tournaments[i])
+                        tournaments.push(tournament)
                     }
                 }
                 return tournaments;
