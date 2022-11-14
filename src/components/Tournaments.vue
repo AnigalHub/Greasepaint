@@ -45,22 +45,22 @@
         computed:{
             tournamentsToShow(){
                 let tournaments = [];
-                for (let tournament of this.Tournaments){
-                    let date = (tournament.date).split(" ");
 
+                this.Tournaments.forEach((tournament) =>{
+                    let date = (tournament.date).split(" ");
                     let day = date[0]
                     let year = date[2];
                     let month = this.SearchForTheNumberOfTheMonth(date[1]);
 
-                    const dataTournament = new Date(Number(year),month,Number( day));
+                    const dateTournament = new Date(Number(year),month,Number( day));
 
-                    let dm = this.today - dataTournament;
+                    let dm = this.today - dateTournament;
 
                     const ONE_DAY_IN_MS = 86400000;
                     if ( dm < ONE_DAY_IN_MS ){
                         tournaments.push(tournament)
                     }
-                }
+                })
                 return tournaments;
             },
         },
