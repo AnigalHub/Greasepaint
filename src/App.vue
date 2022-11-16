@@ -622,8 +622,6 @@ export default {
       margin-bottom: 4% !important;
     }
     .flex-container > div {
-      width: 47%;
-      margin: 0 1.5% !important;
       background: $bgBlock;
       border-radius: $borderRadius;
       &:hover{
@@ -631,6 +629,15 @@ export default {
         transform: $hoverEffectBlock;
       }
     }
+    .manyTournaments{
+      width: 47%;
+      margin: 0 1.5% !important;
+    }
+    .oneTournaments{
+      width: 50%;
+      margin: 0 auto !important;
+    }
+
   }
   #Portfolio{
     padding-bottom: 40px;

@@ -2,8 +2,8 @@
     <div id="Tournaments" v-if="tournamentsToShow.length > 0">
         <b-container>
             <h2>Ближайшие турниры федерации NBC:</h2>
-            <div class="flex-container">
-                <div v-for="tournament in tournamentsToShow" >
+            <div class="flex-container" >
+                <div v-for="tournament in tournamentsToShow" :class="[tournamentsToShow.length === 1 ? 'oneTournament' : 'manyTournaments']" >
                     <p class="date" >{{tournament.date}}</p>
                     <b-row>
                         <b-col cols="4">
