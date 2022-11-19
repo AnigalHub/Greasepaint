@@ -25,6 +25,7 @@ import MyFooter from "@/components/MyFooter";
 import Contacts from "@/components/Contacts";
 import Preparation from "@/components/Preparation";
 
+const axios = require('axios');
 export default {
   name: 'App',
   components: {
@@ -37,6 +38,53 @@ export default {
     About,
     Navbar,
     Home,
+  },
+  data(){
+    return{
+
+    }
+  },
+  methods: {
+    getData(){
+      axios.get('https://nbcpro.ru/events/')
+      .then(resp =>{
+        console.log({status:resp.status, data: resp.data})
+        resp.data
+      })
+      .catch(error =>{
+        console.log(error)
+      })
+    }
+  },
+  computed:{
+     // parse(){
+      // axios.get('https://nbcpro.ru/events/')
+      //     .then(response => {
+      //         // console.log(response.data)
+      //         const root = parse(response.data)
+      //         const all = root.querySelectorAll('.product-info')
+      //         const all_title = root.querySelectorAll('.product-title')
+      //         const all_price = root.querySelectorAll('.price-with-discount')
+      //         //  console.log(all_title);console.log(all_price);console.log(all)
+      //         for (let i=0; i< all.length ; i++){
+      //             let title =  all_title[i].childNodes[1].childNodes[0]._rawText;
+      //             let price = all_price[i].childNodes[0]._rawText;
+      //             console.log(title + ": "+ price.split('&')[0] + "руб");
+      //         }
+      //         console.log("  ")
+      //     })
+      //     .catch(
+      //         error => console.log(error)
+      //     );
+      // console.log('wesdf')
+    },
+  created(){
+    // console.log(navigator.userAgent)
+    // axios
+    //     .defaults
+    //     .headers
+    //     .common['user-agent'] = navigator.userAgent;
+  this.getData()
   }
 }
 </script>
@@ -91,7 +139,7 @@ export default {
       line-height: 1.2rem;
     }
     p,.allButton{
-      width: 360%;
+      width: 380%;
     }
     button{
       margin: 2% 1.5%;
@@ -120,7 +168,7 @@ export default {
         .col-2{
           flex: 0 0 10%;
           img {
-            width: 85%;
+            width: 70%;
             position: absolute;
             margin: 0 0 0 -40%;
           }
@@ -135,6 +183,7 @@ export default {
       }
       .imgLast{
         padding: 3%;
+        width: 70%;
         margin: 0 10px 8% 0;
       }
     }
@@ -150,7 +199,7 @@ export default {
         flex-direction: column;
       }
       li {
-        padding: 8px 3px 8px 11px;
+        padding: 18px 3px 18px 11px;
         margin: 8px 20px 8px 10px;
         &::before{
           font-size: .7rem;
@@ -158,13 +207,13 @@ export default {
           width: 20px;
           height: 18px;
           left: -20px;
-          top:4px;
+          top: 14px;
         }
         &:hover:before {
           width: 26px;
         }
         &::after {
-          top:4px;
+          top: 14px;
           border: 9px solid transparent;
           border-left-color: #2b6584;
         }
@@ -177,11 +226,8 @@ export default {
   @mixin FormEntryLess768{
     @include Col5WithImg768;
     padding-bottom: 10px;
-    input,select{
-      margin-bottom: 0;
-    }
     form,p{
-      width: 90%;
+      width: 100%;
     }
     form{
       padding: 1% 4%;
@@ -189,9 +235,6 @@ export default {
     .aboutMoney{
       padding: 0;
       margin: 2% 0 !important;
-    }
-    .money{
-      display: block;
     }
     .row:first-child{
       flex-direction: column-reverse;
@@ -214,18 +257,16 @@ export default {
         height: auto;
         padding: 12% 0 0;
       }
-      .row .col {
-        padding: 8% 1% 1% !important;
-      }
       .date{
         padding: 2%;
       }
-      .flex-container > div {
-        width: 100%;
-        margin: 1% 1% !important;
+      .flex-container{
+        flex-direction: column;
+        & > div{
+          width: 100%;
+        }
       }
     }
-
   }
   @mixin PortfolioLess768{
     #Portfolio{
@@ -236,17 +277,14 @@ export default {
     }
   }
   @mixin Contacts768{
-    #Contracts{
+    #Contacts{
       padding-bottom: 10px;
-      .row:first-child{
-        flex-direction: column;
-      }
-      span{
-        display: none;
-      }
       .col-5{
         flex: 0 0 100%;
         max-width: 100%;
+      }
+      .row{
+        flex-direction: column;
       }
     }
   }
@@ -426,7 +464,6 @@ export default {
     }
     .imgLast{
       @include block;
-      width: 100%;
       float: left;
       margin: 6% 2%;
       padding: 5px;
@@ -624,20 +661,16 @@ export default {
     .flex-container > div {
       background: $bgBlock;
       border-radius: $borderRadius;
+      width: 47%;
+      margin: 0 auto 2%;
       &:hover{
         background: $hoverBgBlock;
         transform: $hoverEffectBlock;
       }
     }
     .manyTournaments{
-      width: 47%;
-      margin: 0 1.5% !important;
+      margin: 0 1.5%;
     }
-    .oneTournaments{
-      width: 50%;
-      margin: 0 auto !important;
-    }
-
   }
   #Portfolio{
     padding-bottom: 40px;
@@ -753,7 +786,10 @@ export default {
         line-height: 2.5rem;
       }
       h1,p,.allButton{
-        width: 160%;
+        width: 165%;
+      }
+      .css-typing {
+        width: 165%;
       }
       p{
         font-size: 1.2rem;
@@ -841,8 +877,8 @@ export default {
       font-size: 1.2rem;
     }
     p,a,button,ol, #Contacts div, .text{
-      font-size: 1.2rem;
-      line-height: 1.2rem;
+      font-size: 1.1rem;
+      line-height: 1.1rem;
     }
     h2{
       font-size: 1.3rem !important;
@@ -855,6 +891,9 @@ export default {
         width: 350%;
         font-size: 1.8rem;
         line-height: 1.6rem;
+      }
+      .css-typing {
+        width: 350%;
       }
       img{
         margin-top: 15%;
@@ -912,6 +951,9 @@ export default {
         font-size: 1.8rem;
         line-height: 1.6rem;
       }
+      .css-typing {
+        width: 380%;
+      }
       img{
         margin-top: 25%;
         margin-left: -50%;
@@ -934,6 +976,7 @@ export default {
         font-size: 1rem;
       }
       .money{
+        display: block;
         font-size: 1.2rem !important;
       }
     }
@@ -945,6 +988,11 @@ export default {
         width: 20px;
         height: 20px;
         margin-top: -.5%;
+      }
+    }
+    #MyFooter{
+      .text, svg:last-child{
+        margin-top: -4%;
       }
     }
   }
