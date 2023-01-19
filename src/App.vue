@@ -88,7 +88,14 @@ export default {
   }
 }
 </script>
-
+<style>
+  .mx-time-content{
+    background: #1f3446 !important;
+  }
+  .mx-datepicker-popup{
+    border: none !important;
+  }
+</style>
 <style lang="scss">
   $bgBlock: rgba(24, 57, 80, 0.35);
   $borderBlock: 2px solid rgba(67, 103, 167, 0.41);
@@ -98,6 +105,7 @@ export default {
   $borderRadius: 8px;
   $hoverBgBlock: rgba(24, 57, 80, 0.5);
   $hoverEffectBlock:scale(1.03);
+
 
   @mixin imgBg{
     z-index: 3;
@@ -637,8 +645,18 @@ export default {
       border-bottom: 1px solid #293655;
       color: #d7dbe5;
     }
+    option{
+      border: none !important;
+      background: #1f3446 !important;
+      &:disabled{
+        display: none;
+      }
+    }
     input::placeholder, select:optional {
       color: #e3e5ea;
+    }
+    input:focus, select:focus {
+      background-color: transparent !important;
     }
   }
   #Tournaments{
@@ -725,11 +743,12 @@ export default {
   }
   #MyFooter{
     padding: 1.5% 0 3.5%;
+    height: 25px;
     background: black;
     svg{
       fill:#8e9aaf;
       width: 35px;
-      margin-top: -1.5%;
+
       height: 35px;
       float: right;
       &:last-child {
