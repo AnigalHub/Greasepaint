@@ -21,25 +21,13 @@
 </template>
 
 <script>
+    import information from '../../public/documents/information.json';
     export default {
         name: "Tournaments",
         data(){
             return{
                 today: new Date(),
-                Tournaments:[
-                    {
-                        src: "./qw.jpg",
-                        date:"29 октября 2022",
-                        name:"GRAND PRIX MOSCOW",
-                        address:"Москва, Ленинский проспект, 49 стр. 3. ГЛАВCLUB",
-                    },
-                    {
-                        src: "./qe.jpg",
-                        date:"13 декабря 2022",
-                        name:"GRAND PRIX NBC 7",
-                        address:"Москва, Орджоникидзе, д. 11 стр. 1. STUDIO HALL"
-                    },
-                ],
+                Tournaments:information.Tournaments,
             }
         },
         computed:{

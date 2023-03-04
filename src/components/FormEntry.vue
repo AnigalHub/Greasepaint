@@ -3,7 +3,7 @@
         <b-container>
             <b-row>
                 <b-col cols="5">
-                    <img src="../../public/ww.png">
+                    <img src="../../public/componentsImg/formEntry.png">
                     <div class="imgBg"></div>
                 </b-col>
                 <b-col>
@@ -50,18 +50,22 @@
                 },
                 Tournaments:[
                     {
-                        id: 1,
-                        src: "./qw.jpg",
-                        date:"29 октября 2022",
-                        name:"GRAND PRIX MOSCOW",
-                        address:"Москва, Ленинский проспект, 49 стр. 3. ГЛАВCLUB",
+                        src: "./3.jpg",
+                        date:"18 марта 2023",
+                        name:"MUSCLE BATTLE 2. КАСТИНГ",
+                        address:"Москва",
                     },
                     {
-                        id: 2,
-                        src: "./qe.jpg",
-                        date:"13 декабря 2022",
-                        name:"GRAND PRIX NBC 7",
-                        address:"Москва, Орджоникидзе, д. 11 стр. 1. STUDIO HALL"
+                        src: "./2.jpg",
+                        date:"30 апреля 2023",
+                        name:"ГРАН-ПРИ ЛЮБЕР-2023",
+                        address:"Москва, Большая Новодмитровская, 36 с. 24. УРБАН"
+                    },
+                    {
+                        src: "./1.jpg",
+                        date:"13 мая 2023",
+                        name:"GRAND PRIX NBC 8",
+                        address:"Орджоникидзе, д. 11 стр. 1. ГЛАВCLUB"
                     },
                 ],
             }

@@ -3,7 +3,7 @@
         <b-container>
             <div class="text">
                 <component :is="copyright"/>
-                <span>2022 #polyakovsteam</span>
+                <span>2023 {{name}}</span>
             </div>
             <a target="_blank" href="https://instagram.com/polyakovs_team?igshid=YmMyMTA2M2Y=">
                 <component :is="svg"/>
@@ -15,10 +15,12 @@
 <script>
     import Copyright_svg from "./svg_contacts/copyright_svg";
     import Instagram_svg from "./svg_contacts/instagram_svg";
+    import information from '../../public/documents/information.json';
     export default {
         name: "MyFooter",
         data(){
             return{
+                name:information.name_company,
                 copyright:Copyright_svg,
                 svg:Instagram_svg,
             }

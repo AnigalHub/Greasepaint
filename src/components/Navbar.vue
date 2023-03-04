@@ -1,8 +1,8 @@
 <template>
     <b-navbar id="Nav" class="navbar-expand-xl sticky-top" toggleable>
         <b-container>
-            <b-navbar-brand href="#Home" @click.prevent="scrollToTop()">
-                <div class="name_company">#polyakovsteam</div>
+            <b-navbar-brand href="#Home" @click="scrollToId">
+                <div class="name_company">{{name}}</div>
             </b-navbar-brand>
             <b-navbar-toggle target="navbar-toggle-collapse">
                 <template v-slot:default="{ expanded }">
@@ -14,7 +14,7 @@
                 <b-navbar-nav>
                     <b-nav-item @click="scrollToId" href="#About">О нас</b-nav-item>
                     <b-nav-item @click="scrollToId" href="#FormEntry">Запись на грим</b-nav-item>
-                    <b-nav-item @click="scrollToId" href="#Tourneys">Турниры</b-nav-item>
+                    <b-nav-item @click="scrollToId" href="#Tournaments">Турниры</b-nav-item>
                     <b-nav-item @click="scrollToId" href="#Portfolio">Портфолио</b-nav-item>
                     <b-nav-item @click="scrollToId" href="#Contacts">Контакты</b-nav-item>
                 </b-navbar-nav>
@@ -23,12 +23,17 @@
     </b-navbar>
 </template>
 
-
 <script>
+    import information from '../../public/documents/information.json';
     import { scroll } from '@/mixins/scroll';
     export default {
         name: "navbar",
         mixins:[scroll],
+        data(){
+            return{
+                name:information.name_company
+            }
+        }
     }
 </script>
 

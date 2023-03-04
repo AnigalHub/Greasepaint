@@ -23,6 +23,7 @@
 </template>
 
 <script>
+    import information from '../../public/documents/information.json';
     import Telephone_svg from "./svg_contacts/telephone_svg";
     import Email_svg from "./svg_contacts/email_svg";
     import Instagram_svg from "./svg_contacts/instagram_svg";
@@ -33,24 +34,24 @@
                 ContactsRow:[
                     {
                         svg:Telephone_svg,
-                        href:'tel:' + '+7 968 824-80-96',
+                        href:'tel:' + information.phone,
                         target:'_self',
                         name:'Телефон:',
-                        http:'+7 968 824-80-96'
+                        http:information.phone
                     },
                     {
                         svg:Email_svg,
-                        href:'mailto:' + 'polyakovsteam@mail.ru',
+                        href:'mailto:' + information.mail,
                         target:'_self',
                         name:'Почта:',
-                        http:'polyakovsteam@mail.ru'
+                        http:information.mail
                     },
                     {
                         svg:Instagram_svg,
-                        href:'https://instagram.com/polyakovs_team?igshid=YmMyMTA2M2Y=',
+                        href:information.instagram_address,
                         target:'_blank',
                         name:'Инстаграм:',
-                        http:'polyakovs_team',
+                        http:information.instagram,
                     },
                 ]
             }
