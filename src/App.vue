@@ -25,7 +25,6 @@ import MyFooter from "@/components/MyFooter";
 import Contacts from "@/components/Contacts";
 import Preparation from "@/components/Preparation";
 
-const axios = require('axios');
 export default {
   name: 'App',
   components: {
@@ -39,53 +38,6 @@ export default {
     Navbar,
     Home,
   },
-  data(){
-    return{
-
-    }
-  },
-  methods: {
-    getData(){
-      axios.get('https://nbcpro.ru/events/')
-      .then(resp =>{
-        console.log({status:resp.status, data: resp.data})
-        resp.data
-      })
-      .catch(error =>{
-        console.log(error)
-      })
-    }
-  },
-  computed:{
-     // parse(){
-      // axios.get('https://nbcpro.ru/events/')
-      //     .then(response => {
-      //         // console.log(response.data)
-      //         const root = parse(response.data)
-      //         const all = root.querySelectorAll('.product-info')
-      //         const all_title = root.querySelectorAll('.product-title')
-      //         const all_price = root.querySelectorAll('.price-with-discount')
-      //         //  console.log(all_title);console.log(all_price);console.log(all)
-      //         for (let i=0; i< all.length ; i++){
-      //             let title =  all_title[i].childNodes[1].childNodes[0]._rawText;
-      //             let price = all_price[i].childNodes[0]._rawText;
-      //             console.log(title + ": "+ price.split('&')[0] + "руб");
-      //         }
-      //         console.log("  ")
-      //     })
-      //     .catch(
-      //         error => console.log(error)
-      //     );
-      // console.log('wesdf')
-    },
-  created(){
-    // console.log(navigator.userAgent)
-    // axios
-    //     .defaults
-    //     .headers
-    //     .common['user-agent'] = navigator.userAgent;
-  this.getData()
-  }
 }
 </script>
 <style>
@@ -118,7 +70,6 @@ export default {
   }
   @mixin block{
     background: $bgBlock;
-    //border: $borderBlock;
     border-radius: $borderRadius;
   }
   @mixin Col5WithImg768{
@@ -297,6 +248,9 @@ export default {
     }
   }
 
+  body{
+    background: rgba(10, 15, 24) !important;
+  }
   /*вся страница*/
   #app{
     height: 100%;
@@ -661,9 +615,6 @@ export default {
   }
   #Tournaments{
     padding-bottom: 40px;
-    img{
-      height: 100%;
-    }
     .row{
       margin-bottom: 3%;
     }
