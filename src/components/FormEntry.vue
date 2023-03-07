@@ -16,7 +16,13 @@
                                 <b-form-select-option :value="null" disabled>Выберите турнир</b-form-select-option>
                             </template>
                         </b-form-select>
-                        <date-picker v-model="formEntry.time" type="time" format="HH:mm" :time-picker-options="Times" placeholder="Выберите время"></date-picker>
+                        <b-form-select v-model="selected" :options="Times2" size="sm" value-field="id" text-field="name">
+                            <template #first >
+                                    <b-form-select-option :value="null" disabled>Выберите время</b-form-select-option>
+                            </template>
+                        </b-form-select>
+<!--                        <date-picker v-model="formEntry.time" type="time" format="HH:mm" :time-picker-options="Times" placeholder="Выберите время"></date-picker>-->
+<!--                        -->
                         <p class="aboutMoney">Предварительная стоимость:
                             <span class="money">2500 руб.</span></p>
                         <button>Записаться</button>
@@ -32,6 +38,7 @@
 <script>
     import DatePicker from 'vue2-datepicker';
     import 'vue2-datepicker/index.css';
+    import information from "../../public/documents/information.json";
     export default {
         name: "FormEntry",
         components: { DatePicker },
@@ -43,31 +50,43 @@
                     step:'00:15',
                     end:'20:00'
                 },
+                Times2: this.getTime('10:00', '20:00', 15),
                 formEntry:{
                     name: '',
                     phone: '',
                     time: '',
                 },
-                Tournaments:[
-                    {
-                        src: "./3.jpg",
-                        date:"18 марта 2023",
-                        name:"MUSCLE BATTLE 2. КАСТИНГ",
-                        address:"Москва",
-                    },
-                    {
-                        src: "./2.jpg",
-                        date:"30 апреля 2023",
-                        name:"ГРАН-ПРИ ЛЮБЕР-2023",
-                        address:"Москва, Большая Новодмитровская, 36 с. 24. УРБАН"
-                    },
-                    {
-                        src: "./1.jpg",
-                        date:"13 мая 2023",
-                        name:"GRAND PRIX NBC 8",
-                        address:"Орджоникидзе, д. 11 стр. 1. ГЛАВCLUB"
-                    },
-                ],
+                Tournaments:information.Tournaments,
+            }
+        },
+        methods:{
+            getDateFromHours(time) {
+                time = time.split(':');
+                let now = new Date();
+                return new Date(now.getFullYear(), now.getMonth(), now.getDate(), ...time);
+            },
+            getTime(start, end, step){
+                let companyX = this.getDateFromHours(start);
+                let companyY = this.getDateFromHours(end);
+                let times = [];
+                let j = 0;
+                for (let i = companyX.getTime(); i <= companyY.getTime(); i=i+60000*step) {
+                    let minutes;
+
+                    if(new Date(i).getMinutes() === 0){
+                        minutes = '00'
+                    }
+                    else{
+                        minutes = String(new Date(i).getMinutes())
+                    }
+                    let time = String(new Date(i).getHours()) + ':' + minutes
+                    times[j] ={
+                        name: time
+                    }
+                    j++;
+                }
+                console.log(times);
+                return times;
             }
         },
     }
