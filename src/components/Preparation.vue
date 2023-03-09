@@ -9,7 +9,7 @@
                     </ol>
                 </b-col>
                 <b-col cols="5">
-                    <img src="../../public/componentsImg/preparation.png">
+                    <img src="../../public/componentsImg/preparation.png" alt="Нанесение грима">
                     <div class="imgBg"></div>
                 </b-col>
             </b-row>

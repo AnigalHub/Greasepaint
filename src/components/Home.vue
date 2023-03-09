@@ -11,7 +11,7 @@
                     </div>
                 </b-col>
                 <b-col>
-                    <img src="../../public/componentsImg/home.png">
+                    <img src="../../public/componentsImg/home.png" :alt="name">
                     <div class="imgBg"></div>
                 </b-col>
             </b-row>

@@ -3,7 +3,7 @@
         <b-container>
             <b-row>
                 <b-col cols="5">
-                    <img src="../../public/componentsImg/formEntry.png">
+                    <img src="../../public/componentsImg/formEntry.png" alt="Запись на грим">
                     <div class="imgBg"></div>
                 </b-col>
                 <b-col>

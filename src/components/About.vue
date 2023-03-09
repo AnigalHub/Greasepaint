@@ -14,14 +14,14 @@
                             <p>На соревнованиях мы ни раз получали награды и благодарности от руководства федерации NBC.</p>
                         </b-col>
                         <b-col cols="2">
-                            <img src="../../public/componentsImg/nbc.png">
+                            <img src="../../public/componentsImg/nbc.png" alt="О нас">
                         </b-col>
                     </b-row>
                     <p>Гримеры обладают только высшей квалификацией и регулярно проходят курсы по её повышению.</p>
                     <b-row class="products">
                         <b-col cols="3">
-                            <img class="imgLast" src="../../public/componentsImg/fitnessFormula.png">
-                            <img class="imgLast" src="../../public/componentsImg/jantana.png">
+                            <img class="imgLast" src="../../public/componentsImg/fitnessFormula.png" alt="fitnessFormula">
+                            <img class="imgLast" src="../../public/componentsImg/jantana.png" alt="jantana">
                         </b-col>
                         <b-col>
                             <p>В своей работе мы используем самые лучшие средства, подчеркивающие все достоинства тела на соревнованиях. </p>
