@@ -77,7 +77,7 @@ export default {
       flex: 0 0 100%;
       max-width: 100%;
       img{
-        width: 45%;
+        width: 50%;
         margin: 0 auto;
         position: relative;
       }
@@ -87,9 +87,6 @@ export default {
     h1{
       padding: 20% 0 0;
     }
-    img{
-      width: 130%;
-    }
     .imgBg{
       left: -45%;
     }
@@ -97,54 +94,44 @@ export default {
       font-size: 1.2rem;
       line-height: 1.2rem;
     }
-    p,.allButton{
-      width: 380%;
-    }
     button{
       margin: 2% 1.5%;
     }
   }
   @mixin AboutLess768{
-    #About{
-      padding-bottom: 20px;
-      @include Col5WithImg768;
-      .row:first-child{
-        flex-direction: column-reverse;
+    @include Col5WithImg768;
+    .row:first-child{
+      flex-direction: column-reverse;
+    }
+    .imgBg{
+      width: 110%;
+    }
+    .important{
+      margin: 1% 2% 2% 0;
+      .col-2{
+        padding-top: 0;
       }
-      .imgBg{
-        width: 110%;
-      }
-      .important{
-        padding: 5px;
-        margin: 1% 2% 2% 0;
-        .col-2{
-          padding-top: 0;
+    }
+    .about {
+      padding-top: 0 !important;
+      padding-left: 0 !important;
+      .col-2{
+        flex: 0 0 10%;
+        img {
+          position: absolute;
         }
       }
-      .about {
-        padding-top: 0 !important;
-        padding-left: 0 !important;
-        .col-2{
-          flex: 0 0 10%;
-          img {
-            width: 70%;
-            position: absolute;
-            margin: 0 0 0 -40%;
-          }
-        }
-      }
-      .col-3{
-        flex: 0 0 23%;
-        padding: 0 5px !important;
-      }
-      .row .row:last-child .col{
-        padding: 0 !important;
-      }
-      .imgLast{
-        padding: 3%;
-        width: 70%;
-        margin: 0 10px 8% 0;
-      }
+    }
+    .col-3{
+      flex: 0 0 23%;
+      padding: 0 5px !important;
+    }
+    .row .row:last-child .col{
+      padding: 0 !important;
+    }
+    .imgLast{
+      padding: 3%;
+      margin: 0 10px 8% 0;
     }
   }
   @mixin PreparationLess768{
@@ -158,7 +145,7 @@ export default {
         flex-direction: column;
       }
       li {
-        padding: 18px 3px 18px 11px;
+        padding: 18px 3px 18px 14px;
         margin: 8px 20px 8px 10px;
         &::before{
           font-size: .7rem;
@@ -214,24 +201,19 @@ export default {
       img{
         filter: brightness(89%);
         height: auto;
-        padding: 12% 0 0;
+        padding: 0;
       }
       .date{
-        padding: 2%;
+        padding: .5%;
+      }
+      .row{
+        margin-bottom: 2%;
       }
       .flex-container{
         flex-direction: column;
         & > div{
           width: 100%;
         }
-      }
-    }
-  }
-  @mixin PortfolioLess768{
-    #Portfolio{
-      padding-bottom: 10px;
-      .flex-container > a {
-        width: 22%;
       }
     }
   }
@@ -391,7 +373,7 @@ export default {
       from { width: 0; }
     }
     img{
-      padding-top: 1%;
+      padding-top: 2%;
       width: 100%;
       @include img;
     }
@@ -408,6 +390,7 @@ export default {
     }
     .important{
       padding: 5px;
+      align-items: center;
       @include block;
       margin: 3% 0;
       .col{
@@ -423,6 +406,7 @@ export default {
     }
     .col-3{
       padding-left: 0 !important;
+      padding-right: 0 !important;
     }
     .imgLast{
       @include block;
@@ -532,16 +516,6 @@ export default {
       text-align: center;
       padding: 3% 2%;
     }
-    .mx-datepicker {
-      width: 100%;
-      svg{
-        display: none;
-      }
-    }
-    .mx-datepicker-popup {
-      border: none;
-      box-shadow: none;
-    }
     p{
       width: 85%;
       margin: 0 auto 3%;
@@ -583,8 +557,8 @@ export default {
     }
     form{
       width: 85%;
-      margin: 0 auto 3%;
-      padding: 2% 5% 2%;
+      margin: 3% auto;
+      padding: 2% 5%;
       @include block;
     }
     input, select{
@@ -749,6 +723,10 @@ export default {
       font-size: 1.35rem !important;
     }
     #Home{
+      img{
+        width: 108%;
+        margin-left: -8%;
+      }
       padding-bottom: 15%;
       h1{
         padding: 40% 0 0;
@@ -786,6 +764,7 @@ export default {
         padding: 0 0 0 10px !important;
       }
       .imgLast{
+        width: 100%;
         padding: .5%;
         margin: 8% 10px 8% 0;
       }
@@ -813,7 +792,7 @@ export default {
       }
     }
     #FormEntry{
-      padding-bottom: 6%;
+      padding-bottom: 4%;
       input,select{
         font-size: 1rem !important;
         margin-bottom: 1%;
@@ -829,7 +808,7 @@ export default {
       }
     }
     #Tournaments{
-      padding-bottom: 6%;
+      padding-bottom: 4%;
       .col {
         padding: 4% 1% 1%;
       }
@@ -847,16 +826,24 @@ export default {
       font-size: 1.2rem;
     }
     p,a,button,ol, #Contacts div, .text{
-      font-size: 1.1rem;
-      line-height: 1.1rem;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
     }
     h2{
       font-size: 1.3rem !important;
       margin-bottom: 0 !important;
     }
     #Home{
-      padding-bottom: 20%;
+      padding-bottom: 27%;
       @include HomeLess768;
+      img {
+        width: 150%;
+        margin-top: 25%;
+        margin-left: -55%;
+      }
+      p,.allButton{
+        width: 340%;
+      }
       h1{
         width: 350%;
         font-size: 1.8rem;
@@ -865,18 +852,27 @@ export default {
       .css-typing {
         width: 350%;
       }
-      img{
-        margin-top: 15%;
-        margin-left: -45%;
-      }
       p{
-        margin-top: 120%;
+        margin-top: 130%;
       }
       button{
         font-size: 1.2rem;
       }
     }
-    @include AboutLess768;
+    #About{
+      @include AboutLess768;
+      padding-bottom: 20px;
+       .about .col-2 img {
+        width: 100%;
+        margin: -45% 0 0 -35%;
+      }
+      .imgLast{
+        width: 100%;
+      }
+      .important{
+        padding: 10px;
+      }
+    }
     @include PreparationLess768;
     #FormEntry{
       @include FormEntryLess768;
@@ -891,14 +887,22 @@ export default {
       }
     }
     @include TournamentsLess768;
-    @include PortfolioLess768;
+    #Portfolio{
+      padding-bottom: 10px;
+      .flex-container > a {
+        width: 22%;
+      }
+    }
     @include Contacts768;
     #Contacts, #MyFooter{
       svg{
-        width: 24px;
-        height: 24px;
+        width: 28px;
+        height: 28px;
         margin-top: -.5%;
       }
+    }
+    #MyFooter {
+      padding: 3% 0 6%;
     }
   }
   @media screen and  (max-width: 500px){
@@ -906,44 +910,72 @@ export default {
       font-size: 1.2rem;
     }
     p,a,button,ol, #Contacts div, .text{
-      font-size: 1rem;
-      line-height: 1rem;
+      font-size: 1.15rem;
+      line-height: 1.25rem;
     }
     h2{
-      font-size: 1.2rem !important;
+      font-size: 1.1rem !important;
       margin-bottom: 0 !important;
     }
     #Home{
-      padding-bottom: 15%;
+      padding-bottom: 22%;
       @include HomeLess768;
       h1{
         width: 380%;
         font-size: 1.8rem;
         line-height: 1.6rem;
       }
+      img {
+        width: 150%;
+        margin-top: 32%;
+        margin-left: -55%;
+      }
+      p,.allButton{
+        width: 340%;
+      }
       .css-typing {
         width: 380%;
       }
-      img{
-        margin-top: 25%;
-        margin-left: -50%;
-      }
       p{
-        margin-top: 120%;
+        margin-top: 150%;
       }
       button{
         font-size: 1rem;
       }
     }
-    @include AboutLess768;
+    #About{
+      @include AboutLess768;
+      padding-bottom: 20px;
+      .col{
+        max-width: 100%;
+      }
+      .about .col-2 img {
+        display: none;
+      }
+      .imgLast{
+        width: 125%;
+        margin-bottom: 20%;
+      }
+      .important{
+        flex-direction: column;
+        padding: 10px;
+      }
+      .products{
+        flex-direction: column-reverse;
+        .col-3{
+          display: flex;
+          margin-left: 20%;
+        }
+      }
+    }
     @include PreparationLess768;
     #FormEntry{
       @include FormEntryLess768;
       input,select{
-        font-size: 1rem !important;
+        font-size: 1.1rem !important;
       }
       button{
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
       .money{
         display: block;
@@ -951,12 +983,17 @@ export default {
       }
     }
     @include TournamentsLess768;
-    @include PortfolioLess768;
+    #Portfolio{
+      padding-bottom: 10px;
+      .flex-container > a {
+        width: 29.8%;
+      }
+    }
     @include Contacts768;
     #Contacts, #MyFooter{
       svg{
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
         margin-top: -.5%;
       }
     }
@@ -964,6 +1001,9 @@ export default {
       .text, svg:last-child{
         margin-top: -4%;
       }
+    }
+    #MyFooter {
+      padding: 7% 0 4%;
     }
   }
 </style>

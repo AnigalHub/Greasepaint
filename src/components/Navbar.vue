@@ -73,7 +73,7 @@
     @media screen and (max-width: 768px) {
         /*все кнопки в меню*/
         .nav-link {
-            font-size: 1rem !important;
+            font-size: 1.15rem !important;
             padding: 0.35rem 1rem !important;
         }
     }
