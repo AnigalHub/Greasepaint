@@ -6,7 +6,7 @@ export const scroll = {
     },
     methods:{
         scrollToId(event){
-            let offsetY = 50;
+            let offsetY = 70;
             if(this.isExpanded){
                 let nav = document.getElementById(("Nav"));
                 let bounds =  nav.getBoundingClientRect();
