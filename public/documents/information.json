@@ -5,24 +5,28 @@
       "src": "./tournaments/4.jpg",
       "date":"29 апреля 2023",
       "name":"CLASSIC BATTLE",
-      "address":"Москва"
+      "city": "Москва",
+      "address":"Место будет объявлено дополнительно"
     },
     {
       "src": "./tournaments/3.jpg",
       "date":"2 апреля 2023",
       "name":"MUSCLE BATTLE 2. КАСТИНГ",
-      "address":"Москва"
+      "city": "Москва",
+      "address":"Место будет объявлено дополнительно"
     },
     {
       "src": "./tournaments/2.jpg",
       "date":"30 апреля 2023",
       "name":"ГРАН-ПРИ ЛЮБЕР-2023",
-      "address":"Москва, Большая Новодмитровская, 36 с. 24. УРБАН"
+      "city": "Москва",
+      "address":"Большая Новодмитровская, 36 с. 24. УРБАН"
     },
     {
       "src": "./tournaments/1.jpg",
       "date":"13 мая 2023",
       "name":"GRAND PRIX NBC 8",
+      "city": "Москва",
       "address":"Орджоникидзе, д. 11 стр. 1. ГЛАВCLUB"
     }
   ],
