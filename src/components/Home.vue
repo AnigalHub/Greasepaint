@@ -3,12 +3,16 @@
         <b-container>
             <b-row>
                 <b-col cols="4">
-                    <h1 class="css-typing">Мы команда <br/>{{name}}</h1>
-                    <p class="text-typing" >Профессиональные гримеры спортсменов NBC перед выступлениями</p>
-                    <div class="allButton text-typing">
-                        <b-button><a @click="scrollToId" href="#FormEntry">Запись на грим</a></b-button>
-                        <b-button><a @click="scrollToId" href="#About">Узнать больше</a></b-button>
-                    </div>
+                    <b-row>
+                        <b-col>
+                            <h1 class="css-typing">Мы команда <br/><span>{{name}}</span></h1>
+                            <p class="text-typing" >Профессиональные гримеры спортсменов на соревнованиях
+                                National Bodybuilding Community по бодибилдингу и фитнесу</p>
+                            <div class="allButton text-typing">
+                                <b-button><a @click="scrollToId" href="#FormEntry">Запись на грим</a></b-button>
+                            </div>
+                        </b-col>
+                    </b-row>
                 </b-col>
                 <b-col>
                     <img src="../../public/componentsImg/home.png" :alt="name">
