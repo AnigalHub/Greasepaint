@@ -2,6 +2,7 @@
     <b-navbar id="Nav" class="navbar-expand-xl sticky-top" toggleable>
         <b-container>
             <b-navbar-brand href="#Home" @click="scrollToId">
+                <img src="../../public/1.png"  height="45px" style="float: left; margin-right: 5%; width: 45px !important;">
                 <div class="name_company">{{name}}</div>
             </b-navbar-brand>
             <b-navbar-toggle target="navbar-toggle-collapse">
@@ -13,6 +14,7 @@
             <b-collapse id="navbar-toggle-collapse" class="justify-content-end" is-nav v-model="isExpanded">
                 <b-navbar-nav>
                     <b-nav-item @click="scrollToId" href="#About">О нас</b-nav-item>
+                    <b-nav-item @click="scrollToId" href="#Preparation">Подготовка</b-nav-item>
                     <b-nav-item @click="scrollToId" href="#FormEntry">Запись на грим</b-nav-item>
                     <b-nav-item @click="scrollToId" href="#Tournaments">Турниры</b-nav-item>
                     <b-nav-item @click="scrollToId" href="#Portfolio">Портфолио</b-nav-item>
@@ -51,16 +53,17 @@
         background: #0f151f;
         background-size:cover;
         border-bottom: 5px #8792a5 !important;
-        padding: 0 !important;
-        box-shadow: 7px 7px 7px -7px rgb(34 60 80 / 90%)
+        //padding: 0 !important;
+        box-shadow: 7px 7px 7px -7px rgb(34 60 80 / 90%);
+        padding: 5px 0
     }
     /*все кнопки в меню*/
     .nav-link{
         color: #3798c5 !important;
         padding-right: 1rem !important;
         padding-left: 1rem !important;
-        font-family: 'Forum', cursive;
-        font-size: 1.5rem !important;
+        font-family: 'Charis SIL', serif;
+        font-size: 1.35rem !important;
     }
     /*надпись "производственная компания" в логотипе*/
     .description_name{
