@@ -5,7 +5,7 @@
                 <b-col>
                     <p>К каждому клиенту мы подходим индивидуально, делаем всё возможное, чтобы Вы остались довольны результатом нашего грима.</p>
                     <p>Задать любой интересующий Вас вопрос можно удобным для вас способом и мы ответим Вам в ближайшее время!</p>
-                    <p>До встречи на соревнованиях! </p>
+                    <p class="desc">До встречи на соревнованиях! </p>
                 </b-col>
                 <b-col cols="5">
                     <div class="flex-container">
@@ -13,6 +13,7 @@
                             <a :href="information.href" :target="information.target">
                                 <component :is="information.svg"/>
                                 <p class="text"><span>{{information.name}}</span> {{information.http}}</p>
+                                <hr>
                             </a>
                         </div>
                     </div>
