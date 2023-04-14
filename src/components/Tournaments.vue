@@ -4,16 +4,13 @@
             <h2>Ближайшие турниры федерации NBC:</h2>
             <div class="flex-container" >
                 <div v-for="tournament in tournamentsToShow" :class="[tournamentsToShow.length > 1 ? 'manyTournaments' : '']" >
+                    <p class="name_tournament">{{tournament.name}}</p>
+                    <img :src="tournament.src" :alt="tournament.name">
                     <p class="date" >{{tournament.date}}</p>
-                    <b-row>
-                        <b-col cols="4">
-                            <img :src="tournament.src" :alt="tournament.name">
-                        </b-col>
-                        <b-col>
-                            <p>{{tournament.name}}</p>
-                            <p> {{tournament.address}}</p>
-                        </b-col>
-                    </b-row>
+                    <hr>
+                    <p> {{tournament.city}}</p>
+                    <hr>
+                    <p> {{tournament.address}}</p>
                 </div>
             </div>
         </b-container>
