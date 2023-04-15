@@ -16,12 +16,14 @@
                                 <b-form-select-option :value="null" disabled>Выберите турнир</b-form-select-option>
                             </template>
                         </b-form-select>
+                        <button>Записаться</button>
                         <p class="aboutMoney">Предварительная стоимость:
                             <span class="money">2500 руб.</span></p>
-                        <button>Записаться</button>
                     </form>
-                    <p>Напоминаем, что на грим надо записываться уже сейчас!
+                    <hr/>
+                    <p class="desc">Напоминаем, что на грим надо записываться уже сейчас!
                         Не подводите себя и других спортсменов, не оставляйте на последний день.</p>
+                    <hr/>
                 </b-col>
             </b-row>
         </b-container>
