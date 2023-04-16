@@ -7,6 +7,7 @@
       <Preparation/>
       <FormEntry/>
       <Tournaments/>
+      <Awards/>
       <Portfolio/>
       <Contacts/>
       <MyFooter/>
@@ -23,6 +24,7 @@ import Tournaments from "@/components/Tournaments";
 import Portfolio from "@/components/Portfolio";
 import MyFooter from "@/components/MyFooter";
 import Contacts from "@/components/Contacts";
+import Awards from "@/components/Awards";
 import Preparation from "@/components/Preparation";
 
 export default {
@@ -35,6 +37,7 @@ export default {
     Tournaments,
     FormEntry,
     About,
+    Awards,
     Navbar,
     Home,
   },
@@ -49,13 +52,13 @@ export default {
   }
 </style>
 <style lang="scss">
-  $bgBlock: rgba(24, 57, 80, 0.35);
+  $bgBlock: rgba(24, 57, 80, 0.2);
   $borderBlock: 2px solid rgba(67, 103, 167, 0.41);
-  $fontFamily: 'Forum', cursive;
+  $fontFamily:'Roboto Slab', serif;
   $colorText: #d7dbe5;
   $bgImg: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
   $borderRadius: 8px;
-  $hoverBgBlock: rgba(24, 57, 80, 0.5);
+  $hoverBgBlock: rgba(53, 59, 62, 0.25);
   $hoverEffectBlock:scale(1.03);
 
 
@@ -67,10 +70,6 @@ export default {
   @mixin img{
     z-index: 4;
     position: absolute;
-  }
-  @mixin block{
-    background: $bgBlock;
-    border-radius: $borderRadius;
   }
   @mixin Col5WithImg768{
     .col-5{
@@ -260,22 +259,40 @@ export default {
   .name_company{
     opacity: 1 !important;
     font-size: 1.5rem;
-    letter-spacing: 2px;
-    padding: 0 7px !important;
+    padding: 3% 2px 0 !important;
+    letter-spacing: -1px;
     color: #3798c5 !important;
     font-weight: 500;
-    font-family: $fontFamily;
+    font-family: 'Alkatra', cursive;
   }
   .text{
     font-size: 1.5rem;
     font-family: 'Forum', cursive;
     line-height: 1.8rem;
-    font-weight: 600;
-    float: left;
+    font-weight: 500;
   }
   img{
     display: block;
     width: 100%;
+  }
+  button{
+    text-align: center;
+    border-radius: 13px;
+    display: block;
+    padding: 2% 3%;
+    сolor: $colorText !important;
+    box-shadow:
+            0 0.5px 3.5px 0.5px rgba(55, 152, 197, 0.52),
+            inset 2px 2px 2px 0px rgba(55, 152, 197, 0.52),
+            7px 7px 20px 0px rgba(0,0,0,.1),
+            4px 4px 5px 0px rgba(0,0,0,.1);
+    background: $hoverBgBlock;
+    border: none;
+    z-index: 10;
+    &:hover{
+      transform: $hoverEffectBlock;
+      background:  rgba(24, 57, 80, 1);
+    }
   }
   p,button,ol,input,a{
     color: $colorText !important;
@@ -284,11 +301,12 @@ export default {
     text-decoration: none !important;
   }
   p{
-    margin-bottom: 3.5% !important;
+    margin-bottom: 2.5% !important;
   }
   p,a,button,ol, #Contacts div{
-    font-size: 1.5rem;
-    line-height: 1.6rem;
+    font-size: 1.45rem;
+    font-weight: 200;
+    line-height: 1.7rem;
   }
   input{
     line-height: 1.2rem;
@@ -304,8 +322,31 @@ export default {
   }
   h2{
     padding: 2%;
-    font-size: 1.8rem !important;
+    font-size: 1.6rem !important;
     text-align: center;
+    text-shadow: #293655 3px 0 120px;
+    color: #3798c5;
+  }
+  span{
+      font-family: 'Alkatra', cursive;
+      letter-spacing: -.5px;
+  }
+  #Home button, #Preparation button{
+      text-align: center;
+      display: block;
+      сolor: $colorText !important;
+      box-shadow:
+              0 0.5px 3.5px 0.5px rgba(55, 152, 197, 0.52),
+              inset 2px 2px 2px 0px rgba(55, 152, 197, 0.52),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+      background: $hoverBgBlock;
+      border: none;
+      z-index: 10;
+      &:hover{
+        transform: $hoverEffectBlock;
+        background:  rgba(24, 57, 80, .4) !important;
+      }
   }
   #Home{
     padding-bottom: 210px;
@@ -316,13 +357,12 @@ export default {
       top:0;
     }
     p{
-      font-size: 2rem;
-      line-height: 2.5rem;
+      font-size: 1.45rem;
+      line-height: 1.9rem;
       letter-spacing: .5px;
       text-align: center;
-      width: 140%;
-      padding: 5% 4% 4%;
-      border-radius: $borderRadius;
+      width: 145%;
+      padding: 5% 0 4%;
     }
     .allButton{
       width: 140%;
@@ -331,39 +371,35 @@ export default {
       z-index: 10;
     }
     button{
-      width: 47%;
-      text-align: center;
-      border-radius: 10px;
-      margin: 4% 1.5% 2%;
-      display: block;
+      border-radius: $borderRadius !important;
+      width: 80%;
+      margin: 5% auto 0;
       padding: 2% 3%;
-      сolor: $colorText !important;
-      background:  rgba(24, 57, 80, 0.7);
-      border: none;
-      font-size: 1.5rem;
-      float: left;
-      z-index: 10;
-      &:hover{
-        transform: $hoverEffectBlock;
-        background:  rgba(24, 57, 80, 1);
-      }
+      font-size: 1.5rem !important;
+
     }
     h1{
       padding: 30% 0 0;
-      width: 140%;
-      margin-left: -4%;
+      width: 142%;
+      margin-left: -10%;
       position: relative;
-      font-family: 'Rubik Dirt', sans-serif;
-      letter-spacing: 1px;
+      font-weight: 500;
+      font-family: 'Vollkorn', serif;
+      letter-spacing: -1px;
       color: #3798c5;
-      text-shadow: 2px 2px 2px #1a1818, 1px 1px 2px #032645;
-      font-size: 3.6rem;
-      line-height: 3.6rem;
+      text-shadow:
+              0 0 5px #000,
+              0 0 6px rgba(6, 41, 57, 0.52),
+              0 0 10px #111,
+              0 0 6px  #44a3e2,
+              2px 2px 2px #1a1818,
+              1px 1px 2px #032645;
+      font-size: 4.4rem;
+      line-height: 4.8rem;
       text-align: center;
       z-index: 10;
     }
-    .css-typing
-    {
+    .css-typing{
       width: 155%;
       white-space:nowrap;
       overflow:hidden;
@@ -380,43 +416,9 @@ export default {
   }
   #About{
     padding-bottom: 60px;
-    .about{
-      padding-top: 3% !important;
-      .col-2 img{
-        width: 115%;
-        margin: 0 0 0 -20%;
-        position: relative;
-      }
-    }
-    .important{
-      padding: 5px;
-      align-items: center;
-      @include block;
-      margin: 3% 0;
-      .col{
-        padding: 1%;
-        p{
-          margin: 0 !important;
-        }
-      }
-      .col-2{
-        padding-top: 1%;
-        padding-bottom: 1%;
-      }
-    }
     .col-3{
       padding-left: 0 !important;
       padding-right: 0 !important;
-    }
-    .imgLast{
-      @include block;
-      float: left;
-      margin: 6% 2%;
-      padding: 5px;
-      position: relative;
-      &:hover{
-        transform: $hoverEffectBlock;
-      }
     }
     img{
       @include img;
@@ -429,11 +431,22 @@ export default {
       left: -10%;
       top:-10%;
     }
+    .imgLast{
+      background: $bgBlock;
+      border-radius: $borderRadius;
+      float: left;
+      margin: 0 2% 7%;
+      padding: 5px;
+      position: relative;
+      &:hover{
+        transform: $hoverEffectBlock;
+      }
+    }
   }
   #Preparation{
-    padding-bottom: 60px;
+    padding-bottom: 110px;
     .preparation{
-      padding-top:5% !important;
+      padding-top: 5% !important;
     }
     ol {
       padding:0;
@@ -442,48 +455,68 @@ export default {
     }
     li {
       position: relative;
-      background: $bgBlock;
-
-      padding: 12px 25px 18px;
-      margin: 12px 50px 25px 60px;
+      padding: 17px 20px 22px 28px;
+      margin-left: 40px;
       transition-duration: 0.3s;
-      border-radius: $borderRadius;
-      &:hover {
-        background: rgba(17, 31, 40, 0.95);
-        cursor: default;
-        transform: $hoverEffectBlock;
-      }
       &:before {
-        line-height: 32px;
+        border: 6px solid transparent;
+        line-height: 30px;
         position: absolute;
-        top: 15px;
-        left: -40px;
-        width: 40px;
+        top: 14px;
+        left: -30px;
+        width: 46px;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: bold;
-        color: white;
-        background: #2b6584;
+        color: #77AEDB;
         counter-increment: li;
         content: counter(li);
-        transition-duration: 0.2s;
+        transition-duration: 0.3s;
+        box-sizing: border-box;
       }
       &:hover:before {
-        width:46px;
+        color: #337AB7;
       }
       &:after {
         position: absolute;
-        left: 0;
-        top: 15px;
-        content: "";
-        height: 0;
-        width: 0;
-        border: 16px solid transparent;
-        border-left-color: #2b6584;
-        transition-duration: 0.2s
+        top: 10px;
+        left: -30px;
+        width: 48px;
+        height: 48px;
+        border-color: rgba(55, 152, 197, 0.7);
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 50%;
+        content: '';
+        opacity: 0.5;
+        box-sizing: border-box;
       }
       &:hover:after {
-        margin-left: 6px;
+        animation: 500ms ease-in-out 0s bounceIn;
+        opacity: 1;
+      }
+    }
+    @keyframes bounceIn {
+      0%{
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+      }
+      20%{
+        transform: scale3d(1.3, 1.3, 1.3);
+      }
+      40%{
+        transform: scale3d(.9, .9, .9);
+      }
+      60%{
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+      }
+      80%{
+        transform: scale3d(.97, .97, .97);
+      }
+      to{
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
       }
     }
     img{
@@ -501,20 +534,16 @@ export default {
       top: -20%;
     }
   }
-  #Portfolio h2, #Tournaments h2{
-    text-shadow: #293655 3px 0 120px;
-    color: $colorText;
-  }
   #FormEntry{
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     .aboutMoney{
-      box-shadow: 0px -1px 12px 2px rgba(34, 60, 80, 0.5) inset;
-      margin: 6% auto 5% !important;
+      margin: 3% auto 0 !important;
       display: block;
       line-height: 2rem;
       width: 100%;
       text-align: center;
       padding: 3% 2%;
+      font-style: italic;
     }
     p{
       width: 85%;
@@ -522,32 +551,27 @@ export default {
     }
     .money{
       font-size: 2rem !important;
+      font-family: $fontFamily;
       color: #1496cf;
     }
+    hr{
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(22, 185, 191, 0.33), rgba(0, 0, 0, 0));
+    }
     h2{
-      color: #1496cf;
       padding-bottom: 1%;
     }
     button{
+      border-radius: $borderRadius !important;
       width: 100%;
-      text-align: center;
-      border-radius: $borderRadius;
       margin: 3% auto 2%;
-      border: none;
-      display: block;
       padding: 2% 0;
-      сolor: rgba(255, 255, 255, 0.95);
-      background: rgba(60, 136, 181, 0.43);
       font-size: 1.5rem;
-      &:hover{
-        transform: $hoverEffectBlock;
-      }
     }
     img{
       @include img;
       width: 90%;
     }
-
     .imgBg{
       @include imgBg;
       width: 130%;
@@ -556,10 +580,9 @@ export default {
       top:-15%;
     }
     form{
-      width: 85%;
+      width: 90%;
       margin: 3% auto;
       padding: 2% 5%;
-      @include block;
     }
     input, select{
       border-top: none !important;
@@ -570,8 +593,9 @@ export default {
       background: transparent;
       padding: 2%;
       margin-bottom: 4%;
-      border-bottom: 1px solid #293655;
+      border-bottom: 1px solid rgba(55, 152, 197, 0.52);
       color: #d7dbe5;
+      border-radius: 0 !important;
     }
     option{
       border: none !important;
@@ -579,6 +603,9 @@ export default {
       &:disabled{
         display: none;
       }
+    }
+    .desc{
+      color: rgba(85, 144, 165) !important;
     }
     input::placeholder, select:optional {
       color: #e3e5ea;
@@ -589,37 +616,75 @@ export default {
   }
   #Tournaments{
     padding-bottom: 40px;
-    .row{
-      margin-bottom: 3%;
-    }
-    .col{
-      padding:4% 2%;
-    }
     .date{
-      background: rgba(24, 57, 80, 0.7);
       padding: 2% 4%;
-      color: #3c88b5;
-      margin-bottom: 4% !important;
+      color: #3c88b5 !important;
+      margin-bottom: 1% !important;
+    }
+    hr{
+      background: rgba(55, 152, 197, 0.52);
+      width: 50%;
+      margin: .3rem auto;
     }
     .flex-container > div {
-      background: $bgBlock;
+      background: $hoverBgBlock;
       border-radius: $borderRadius;
-      width: 47%;
-      margin: 0 auto 2%;
+      box-shadow: 0 0.5px 3.5px 0.5px rgba(55, 152, 197, 0.52);
+      width: 29%;
+      text-align: center;
+      .name_tournament{
+        background: rgba(24, 57, 80, 0.45);
+        padding: 3% 0 !important;
+        margin-bottom: 0 !important;
+      }
+      p{
+        padding: 1%;
+      }
+      img{
+        width: 70%;
+        display: block;
+        margin: 5% auto 0;
+        opacity: .8;
+        filter: blur(0.5px);
+      }
       &:hover{
         background: $hoverBgBlock;
         transform: $hoverEffectBlock;
       }
     }
     .manyTournaments{
-      margin: 0 1.5%;
+      margin: 0 1.8%;
+    }
+  }
+  #Awards{
+    padding-bottom: 20px;
+    .awards{
+      font-size: 1.4rem;
+      line-height: 2rem;
+      letter-spacing: 0.5px;
+      font-family: 'Roboto Slab', serif;
+      padding: 1.2% 1.2% 0;
+      color: #c5c4bf;
+      font-style: italic;
+      margin-right: 4%;
+      margin-bottom: 0 !important;
+    }
+    img{
+      margin-top: -2%;
+    }
+    .author{
+      font-size: 1.4rem;
+      margin-top: -1%;
+      text-align: right !important;
+      color: #95c2d4 !important;
+      font-style: initial;
     }
   }
   #Portfolio{
     padding-bottom: 40px;
     /*блоки с картинками*/
     .flex-container > a {
-      width: 16.5%;
+      width: 13.5%;
       height: 100%;
       margin: 0 1.5% 2.5% 1.5% !important;
       box-shadow: 0 1px 8px 1px #071935;
@@ -632,15 +697,21 @@ export default {
   }
   #Contacts{
     padding-bottom: 40px;
+    span{
+      font-family: $fontFamily ;
+    }
+    hr {
+      background: rgba(55, 152, 197, 0.52);
+      width: 100%;
+      margin: .3rem auto;
+    }
     .flex-container{
       & > div {
-        @include block;
         padding: 2%;
         width: 100%;
         height: 100%;
         margin: 0 0 4% 0 !important;
         &:hover{
-          background: $hoverBgBlock;
           transform: $hoverEffectBlock;
         }
         p{
@@ -652,7 +723,7 @@ export default {
       color:  $colorText;
     }
     svg{
-      fill: $colorText;
+      fill: rgba(55, 152, 197, 0.52);
       width: 35px;
       height: 35px;
       margin-right: 2%;
@@ -661,6 +732,10 @@ export default {
     }
     .text{
       margin-left: -4%;
+      font-weight: 200 !important;
+    }
+    .desc{
+      color: #3798c5 !important;
     }
     .col-4{
       padding: 0 8px 0 0 !important;
@@ -673,11 +748,10 @@ export default {
     svg{
       fill:#8e9aaf;
       width: 35px;
-
       height: 35px;
       float: right;
       &:last-child {
-        margin-top: -0.5%;
+        margin-top: -2.7%;
       }
     }
     .text{
@@ -688,20 +762,41 @@ export default {
     .name_company{
       font-size: 1.4rem;
     }
-    p,a,button,ol, #Contacts div,.text{
-      font-size: 1.3rem;
-      line-height: 1.35rem;
+    p{
+      margin-bottom: 2% !important;
+    }
+    #Home p, p,a,button,ol, #Contacts div,.text{
+      font-size: 1.25rem;
+      line-height: 1.45rem;
+    }
+    #About, #Preparation, #FormEntry{
+      img{
+        margin-top: 10%;
+      }
     }
     #Home{
       h1{
-        font-size: 3rem;
+        font-size: 3.5rem;
         line-height: 3rem;
       }
+    }
+    #Preparation{
+      padding-bottom: 60px;
     }
     #FormEntry{
       .money{
         font-size: 1.5rem !important;
       }
+      button{
+        font-size: 1.2rem;
+      }
+      input, select{
+        font-size: 1.2rem !important;
+      }
+    }
+    #Awards .awards{
+      font-size: 1.35rem;
+      line-height: 1.5rem;
     }
     #Contacts, #MyFooter{
       svg{
@@ -712,15 +807,18 @@ export default {
     }
   }
   @media screen and (min-width: 768px) and (max-width: 992px){
+    p{
+      margin-bottom: 1.5% !important;
+    }
     .name_company{
       font-size: 1.3rem;
     }
-    p,a,button,ol, #Contacts div,.text{
+    #Home p, #Awards .awards,#Awards .author, p,a,button,ol, #Contacts div,.text{
       font-size: 1rem;
       line-height: 1.2rem;
     }
     h2{
-      font-size: 1.35rem !important;
+      font-size: 1.2rem !important;
     }
     #Home{
       img{
@@ -729,39 +827,34 @@ export default {
       }
       padding-bottom: 15%;
       h1{
-        padding: 40% 0 0;
-        font-size: 2.25rem;
+        padding: 50% 0 0;
+        font-size: 2.5rem;
         line-height: 2.5rem;
-      }
-      h1,p,.allButton{
-        width: 165%;
       }
       .css-typing {
         width: 165%;
       }
-      p{
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-      }
       button{
+        width: 60%;
         font-size: 1.1rem;
+      }
+    }
+    #About, #Preparation, #FormEntry{
+      img{
+        width: 95%;
       }
     }
     #About{
       padding-bottom: 6%;
       .about {
         padding-top: 0 !important;
-
         .col-2 img {
           width: 190%;
           margin: 0 0 0 -80%;
         }
       }
-      .row .col-3{
-        padding: 0 0 0 5px !important;
-      }
-      .row .row:last-child .col{
-        padding: 0 0 0 10px !important;
+      img{
+        margin-top: 22%;
       }
       .imgLast{
         width: 100%;
@@ -775,21 +868,21 @@ export default {
         padding-top: 0 !important;
       }
       li {
-        padding: 8px 20px 8px;
-        margin: 12px 10px 12px 30px;
-         &::before{
-           width: 30px;
-           height: 28px;
-           left: -30px;
-         }
-        &:hover:before {
+        padding: 10px 10px 12px 25px;
+        margin-left: 20px;
+        &:before {
+          top: 9px;
+          left: -20px;
           width: 36px;
         }
-        &::after {
-          border: 14px solid transparent;
-          border-left-color: #2b6584;
+        &:after {
+          border-width: 4px;
+          left: -20px;
+          width: 38px;
+          height: 38px;
         }
       }
+
     }
     #FormEntry{
       padding-bottom: 4%;
@@ -803,19 +896,22 @@ export default {
       form,p{
         width: 90%;
       }
+      img{
+        margin-top: 8%;
+      }
       .money{
         font-size: 1rem !important;
       }
     }
     #Tournaments{
       padding-bottom: 4%;
-      .col {
-        padding: 4% 1% 1%;
+      .flex-container > div img{
+        width: 65%;
       }
     }
     #Contacts,#MyFooter{
       svg{
-        margin-top: 1%;
+        margin-top: .45%;
         width: 17px;
         height: 17px;
       }
