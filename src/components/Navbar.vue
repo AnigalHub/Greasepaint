@@ -2,7 +2,7 @@
     <b-navbar id="Nav" class="navbar-expand-xl sticky-top" toggleable>
         <b-container>
             <b-navbar-brand href="#Home" @click="scrollToId">
-                <img src="../../public/1.png"  height="45px" style="float: left; margin-right: 5%; width: 45px !important;">
+                <component :is="svg"/>
                 <div class="name_company">{{name}}</div>
             </b-navbar-brand>
             <b-navbar-toggle target="navbar-toggle-collapse">
@@ -26,13 +26,16 @@
 </template>
 
 <script>
+    import logo from './svg/logo_svg';
     import information from '../../public/documents/information.json';
     import { scroll } from '@/mixins/scroll';
+
     export default {
         name: "navbar",
         mixins:[scroll],
         data(){
             return{
+                svg:logo,
                 name:information.name_company
             }
         }

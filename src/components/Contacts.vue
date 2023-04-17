@@ -25,9 +25,9 @@
 
 <script>
     import information from '../../public/documents/information.json';
-    import Telephone_svg from "./svg_contacts/telephone_svg";
-    import Email_svg from "./svg_contacts/email_svg";
-    import Instagram_svg from "./svg_contacts/instagram_svg";
+    import Telephone_svg from "./svg/svg_contacts/telephone_svg";
+    import Email_svg from "./svg/svg_contacts/email_svg";
+    import Instagram_svg from "./svg/svg_contacts/instagram_svg";
     export default {
         name: "Contacts",
         data(){
