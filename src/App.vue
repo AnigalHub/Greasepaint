@@ -271,6 +271,11 @@ export default {
     line-height: 1.8rem;
     font-weight: 500;
   }
+  .logo{
+    width: 45px;
+    height: 45px;
+    fill: #4797bc;
+  }
   img{
     display: block;
     width: 100%;
