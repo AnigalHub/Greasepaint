@@ -23,7 +23,7 @@
                             <img class="imgLast" src="../../public/componentsImg/fitnessFormula.png" alt="fitnessFormula">
                         </b-col>
                         <b-col cols="3">
-                            <img class="imgLast" src="../../public/componentsImg/jantana2.png" alt="jantana">
+                            <img class="imgLast" src="../../public/componentsImg/jantana.png" alt="jantana">
                         </b-col>
                     </b-row>
                     <p>Под яркими софитами грим выделяет мышцы и подчеркивает рельеф тела, тело смотрится более выигрышно.</p>

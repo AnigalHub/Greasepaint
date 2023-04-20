@@ -275,6 +275,8 @@ export default {
     width: 45px;
     height: 45px;
     fill: #4797bc;
+    float: left;
+    margin-right: 5%
   }
   img{
     display: block;
