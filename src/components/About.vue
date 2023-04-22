@@ -16,11 +16,8 @@
                     <p>В своей работе мы используем самые лучшие средства, подчеркивающие все достоинства тела спортсменов на соревнованиях. </p>
                     <p>Наша команда сотрудничает c известными брендами грима:</p>
                     <b-row class="products">
-                        <b-col cols="3">
-                            <img class="imgLast" src="../../public/componentsImg/fitnessFormula.png" alt="fitnessFormula">
-                        </b-col>
-                        <b-col cols="3">
-                            <img class="imgLast" src="../../public/componentsImg/jantana.png" alt="jantana">
+                        <b-col cols="3" v-for="(img,index) in Products" :key="index">
+                            <img class="imgLast" :src="img.src" :alt="img.alt">
                         </b-col>
                     </b-row>
                     <p>Под яркими софитами грим выделяет мышцы и подчеркивает рельеф тела, тело смотрится более выигрышно.</p>
@@ -43,6 +40,16 @@
                     'корректировка во время выступления;',
                     'одноразовый комплект.'
                 ],
+                Products:[
+                    {
+                        src:'./componentsImg/fitnessFormula.png',
+                        alt:'fitnessFormula'
+                    },
+                    {
+                        src:'./componentsImg/jantana.png',
+                        alt:'jantana'
+                    }
+                ]
             }
         }
     }
