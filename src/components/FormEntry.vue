@@ -17,8 +17,7 @@
                             </template>
                         </b-form-select>
                         <button>Записаться</button>
-                        <p class="aboutMoney">Предварительная стоимость:
-                            <span class="money">2500 руб.</span></p>
+                        <p class="aboutMoney">Предварительная стоимость:<span class="money">2500 руб.</span></p>
                     </form>
                     <hr/>
                     <p class="desc">Напоминаем, что на грим надо записываться уже сейчас!

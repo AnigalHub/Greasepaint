@@ -2,8 +2,7 @@
     <div id="MyFooter">
         <b-container>
             <div class="text">
-                <component :is="copyright"/>
-                2023 <span>{{name}}</span>
+                <component :is="copyright"/>2023 <span>{{name}}</span>
             </div>
             <a target="_blank" href="https://instagram.com/polyakovs_team?igshid=YmMyMTA2M2Y=">
                 <component :is="svg"/>
@@ -29,7 +28,5 @@
 </script>
 
 <style scoped lang="scss">
-    span{
-        font-family: 'Alkatra', cursive !important;
-    }
+
 </style>

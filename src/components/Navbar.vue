@@ -56,7 +56,6 @@
         background: #0f151f;
         background-size:cover;
         border-bottom: 5px #8792a5 !important;
-        //padding: 0 !important;
         box-shadow: 7px 7px 7px -7px rgb(34 60 80 / 90%);
         padding: 5px 0
     }
