@@ -407,7 +407,7 @@ export default {
       z-index: 10;
     }
     .css-typing{
-      width: 155%;
+      width: 158%;
       white-space:nowrap;
       overflow:hidden;
       animation: type 2s steps(50, end);
