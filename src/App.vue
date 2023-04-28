@@ -338,7 +338,7 @@ export default {
       font-family: 'Alkatra', cursive;
       letter-spacing: -.5px;
   }
-  #Home button, #Preparation button{
+  #Home button, #FormEntry button{
       text-align: center;
       display: block;
       сolor: $colorText !important;
@@ -383,7 +383,6 @@ export default {
       margin: 5% auto 0;
       padding: 2% 3%;
       font-size: 1.5rem !important;
-
     }
     h1{
       padding: 30% 0 0;
