@@ -65,7 +65,7 @@
         padding-right: 1rem !important;
         padding-left: 1rem !important;
         font-family: 'Charis SIL', serif;
-        font-size: 1.35rem !important;
+        font-size: 1.35rem ;
     }
     /*надпись "производственная компания" в логотипе*/
     .description_name{
@@ -78,7 +78,7 @@
     @media screen and (max-width: 768px) {
         /*все кнопки в меню*/
         .nav-link {
-            font-size: 1.15rem !important;
+            font-size: 1.15rem;
             padding: 0.35rem 1rem !important;
         }
     }

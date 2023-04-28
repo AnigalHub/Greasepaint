@@ -61,7 +61,26 @@ export default {
   $hoverBgBlock: rgba(53, 59, 62, 0.25);
   $hoverEffectBlock:scale(1.03);
 
-
+  @mixin preparationLi{
+    .preparation{
+      padding-top: 0 !important;
+    }
+    li {
+      padding: 10px 10px 12px 25px;
+      margin-left: 20px;
+      &:before {
+        top: 9px;
+        left: -20px;
+        width: 36px;
+      }
+      &:after {
+        border-width: 4px;
+        left: -20px;
+        width: 38px;
+        height: 38px;
+      }
+    }
+  }
   @mixin imgBg{
     z-index: 3;
     position: absolute;
@@ -89,12 +108,8 @@ export default {
     .imgBg{
       left: -45%;
     }
-    p{
-      font-size: 1.2rem;
-      line-height: 1.2rem;
-    }
     button{
-      margin: 2% 1.5%;
+      padding: 0 2% 1%;
     }
   }
   @mixin AboutLess768{
@@ -105,28 +120,9 @@ export default {
     .imgBg{
       width: 110%;
     }
-    .important{
-      margin: 1% 2% 2% 0;
-      .col-2{
-        padding-top: 0;
-      }
-    }
-    .about {
-      padding-top: 0 !important;
-      padding-left: 0 !important;
-      .col-2{
-        flex: 0 0 10%;
-        img {
-          position: absolute;
-        }
-      }
-    }
     .col-3{
-      flex: 0 0 23%;
+      flex: 0 0 33%;
       padding: 0 5px !important;
-    }
-    .row .row:last-child .col{
-      padding: 0 !important;
     }
     .imgLast{
       padding: 3%;
@@ -137,32 +133,7 @@ export default {
     #Preparation{
       @include Col5WithImg768;
       padding-bottom: 10px;
-      .preparation{
-        padding-top: 0 !important;
-      }
-      .row:first-child{
-        flex-direction: column;
-      }
-      li {
-        padding: 18px 3px 18px 14px;
-        margin: 8px 20px 8px 10px;
-        &::before{
-          font-size: .7rem;
-          line-height: 18px;
-          width: 20px;
-          height: 18px;
-          left: -20px;
-          top: 14px;
-        }
-        &:hover:before {
-          width: 26px;
-        }
-        &::after {
-          top: 14px;
-          border: 9px solid transparent;
-          border-left-color: #2b6584;
-        }
-      }
+      @include preparationLi;
       .imgBg {
         width: 100%;
       }
@@ -191,27 +162,40 @@ export default {
   @mixin TournamentsLess768{
     #Tournaments{
       padding-bottom: 10px;
-      .tourney{
-        flex-direction: column;
-        .col:first-child{
-          margin-bottom: 3%;
-        }
-      }
-      img{
-        filter: brightness(89%);
-        height: auto;
-        padding: 0;
-      }
-      .date{
-        padding: .5%;
-      }
-      .row{
-        margin-bottom: 2%;
-      }
       .flex-container{
         flex-direction: column;
         & > div{
-          width: 100%;
+          width: 70%;
+          margin: 1% auto 5%;
+          img{
+            width: 50%;
+            height: auto;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  @mixin Awards768{
+    #Awards{
+      .row{
+        flex-direction: column;
+      }
+      .awards{
+        margin-right: 0;
+        background: rgb(3 14 19 / 56%);
+        padding: 1.5%;
+      }
+      .col{
+        padding: 0 20px;
+      }
+      .col-2{
+        flex: 0 0 100%;
+        max-width: 100%;
+        img{
+          width: 28%;
+          margin: 0 auto;
+          position: relative;
         }
       }
     }
@@ -225,6 +209,12 @@ export default {
       }
       .row{
         flex-direction: column;
+      }
+      .flex-container {
+        & > div {
+          margin: 0 0 1% 0;
+          padding-left: 0;
+        }
       }
     }
   }
@@ -259,7 +249,7 @@ export default {
   .name_company{
     opacity: 1 !important;
     font-size: 1.5rem;
-    padding: 3% 2px 0 !important;
+    padding: 3% 2px 0;
     letter-spacing: -1px;
     color: #3798c5 !important;
     font-weight: 500;
@@ -272,10 +262,11 @@ export default {
     font-weight: 500;
   }
   .logo{
-    width: 45px;
-    height: 45px;
+    width: 38px;
+    height: 38px;
     fill: #4797bc;
     float: left;
+    margin-top: 1.5%;
     margin-right: 5%
   }
   img{
@@ -644,7 +635,8 @@ export default {
         margin-bottom: 0 !important;
       }
       p{
-        padding: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
       }
       img{
         width: 70%;
@@ -716,7 +708,7 @@ export default {
         padding: 2%;
         width: 100%;
         height: 100%;
-        margin: 0 0 4% 0 !important;
+        margin: 0 0 4% 0;
         &:hover{
           transform: $hoverEffectBlock;
         }
@@ -771,8 +763,8 @@ export default {
     p{
       margin-bottom: 2% !important;
     }
-    #Home p, p,a,button,ol, #Contacts div,.text{
-      font-size: 1.25rem;
+    #Home p, #Awards .awards,#Awards .author, p,a,button,ol, #Contacts div,.text, .nav-link{
+      font-size: 1.25rem !important;
       line-height: 1.45rem;
     }
     #About, #Preparation, #FormEntry{
@@ -818,31 +810,32 @@ export default {
     }
     .name_company{
       font-size: 1.3rem;
+      padding: 5% 2px 0;
     }
-    #Home p, #Awards .awards,#Awards .author, p,a,button,ol, #Contacts div,.text{
-      font-size: 1rem;
+    #Home p, #Awards .awards, #Awards .author, p,a,button,ol, #Contacts div,.text, .nav-link{
+      font-size: 1rem !important;
       line-height: 1.2rem;
     }
     h2{
       font-size: 1.2rem !important;
     }
     #Home{
+      padding-bottom: 15%;
       img{
         width: 108%;
         margin-left: -8%;
       }
-      padding-bottom: 15%;
       h1{
         padding: 50% 0 0;
         font-size: 2.5rem;
         line-height: 2.5rem;
       }
-      .css-typing {
-        width: 165%;
+      .allButton, p,.css-typing {
+        width: 190%;
       }
       button{
         width: 60%;
-        font-size: 1.1rem;
+        padding: 0 2% 1%;
       }
     }
     #About, #Preparation, #FormEntry{
@@ -852,13 +845,6 @@ export default {
     }
     #About{
       padding-bottom: 6%;
-      .about {
-        padding-top: 0 !important;
-        .col-2 img {
-          width: 190%;
-          margin: 0 0 0 -80%;
-        }
-      }
       img{
         margin-top: 22%;
       }
@@ -870,25 +856,7 @@ export default {
     }
     #Preparation{
       padding-bottom: 6%;
-      .preparation{
-        padding-top: 0 !important;
-      }
-      li {
-        padding: 10px 10px 12px 25px;
-        margin-left: 20px;
-        &:before {
-          top: 9px;
-          left: -20px;
-          width: 36px;
-        }
-        &:after {
-          border-width: 4px;
-          left: -20px;
-          width: 38px;
-          height: 38px;
-        }
-      }
-
+      @include preparationLi;
     }
     #FormEntry{
       padding-bottom: 4%;
@@ -925,11 +893,12 @@ export default {
   }
   @media screen and (min-width: 500px) and (max-width: 768px){
     .name_company{
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      padding: 5% 2px 0;
     }
-    p,a,button,ol, #Contacts div, .text{
+    #Home p, #Awards .awards, #Awards .author, p,a,button,ol, #Contacts div,.text, .nav-link{
       font-size: 1.2rem;
-      line-height: 1.2rem;
+      line-height: 1.25rem;
     }
     h2{
       font-size: 1.3rem !important;
@@ -940,59 +909,49 @@ export default {
       @include HomeLess768;
       img {
         width: 150%;
-        margin-top: 25%;
+        margin-top: 33%;
         margin-left: -55%;
-      }
-      p,.allButton{
-        width: 340%;
       }
       h1{
         width: 350%;
-        font-size: 1.8rem;
-        line-height: 1.6rem;
+        font-size: 2.8rem;
+        line-height: 2.6rem;
       }
-      .css-typing {
-        width: 350%;
+      p,.css-typing,.allButton {
+        width: 440%;
       }
       p{
-        margin-top: 130%;
-      }
-      button{
-        font-size: 1.2rem;
+        margin-top: 110px;
+        background: rgb(3 14 19 / 46%);
+        margin-bottom: 60px;
       }
     }
     #About{
       @include AboutLess768;
       padding-bottom: 20px;
-       .about .col-2 img {
-        width: 100%;
-        margin: -45% 0 0 -35%;
-      }
       .imgLast{
         width: 100%;
-      }
-      .important{
-        padding: 10px;
       }
     }
     @include PreparationLess768;
     #FormEntry{
       @include FormEntryLess768;
       input,select{
-        font-size: 1.2rem !important;
+        font-size: 1.15rem !important;
       }
       button{
         font-size: 1.2rem;
       }
       .money{
-        font-size: 1.2rem !important;
+        font-size: 1.3rem !important;
       }
     }
     @include TournamentsLess768;
+    @include Awards768;
     #Portfolio{
       padding-bottom: 10px;
       .flex-container > a {
-        width: 22%;
+        width: 30%;
       }
     }
     @include Contacts768;
@@ -1005,18 +964,22 @@ export default {
     }
     #MyFooter {
       padding: 3% 0 6%;
+      svg:last-child {
+        margin-top: -6%;
+      }
     }
   }
   @media screen and  (max-width: 500px){
     .name_company{
       font-size: 1.2rem;
+      padding: 6% 2px 0;
     }
-    p,a,button,ol, #Contacts div, .text{
+    #Home p, #Awards .awards, #Awards .author, p,a,button,ol, #Contacts div,.text, .nav-link{
       font-size: 1.15rem;
       line-height: 1.25rem;
     }
     h2{
-      font-size: 1.1rem !important;
+      font-size: 1.15rem !important;
       margin-bottom: 0 !important;
     }
     #Home{
@@ -1051,24 +1014,17 @@ export default {
       .col{
         max-width: 100%;
       }
-      .about .col-2 img {
-        display: none;
-      }
       .imgLast{
         width: 125%;
         margin-bottom: 20%;
       }
-      .important{
-        flex-direction: column;
-        padding: 10px;
-      }
-      .products{
-        flex-direction: column-reverse;
-        .col-3{
-          display: flex;
-          margin-left: 20%;
-        }
-      }
+      /*.products{*/
+      /*  flex-direction: column-reverse;*/
+      /*  .col-3{*/
+      /*    display: flex;*/
+      /*    margin-left: 20%;*/
+      /*  }*/
+      /*}*/
     }
     @include PreparationLess768;
     #FormEntry{
