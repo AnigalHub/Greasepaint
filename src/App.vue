@@ -113,21 +113,26 @@ export default {
     }
   }
   @mixin AboutLess768{
-    @include Col5WithImg768;
-    .row:first-child{
-      flex-direction: column-reverse;
+    #About{
+      padding-bottom: 20px;
+      @include Col5WithImg768;
+      .row:first-child{
+        flex-direction: column-reverse;
+      }
+      .imgBg{
+        width: 110%;
+      }
+      .col-3{
+        flex: 0 0 33%;
+        padding: 0 5px !important;
+      }
+      .imgLast{
+        padding: 3%;
+        width: 100%;
+        margin: 0 10px 8% 0;
+      }
     }
-    .imgBg{
-      width: 110%;
-    }
-    .col-3{
-      flex: 0 0 33%;
-      padding: 0 5px !important;
-    }
-    .imgLast{
-      padding: 3%;
-      margin: 0 10px 8% 0;
-    }
+
   }
   @mixin PreparationLess768{
     #Preparation{
@@ -146,7 +151,7 @@ export default {
       width: 100%;
     }
     form{
-      padding: 1% 4%;
+      padding: 1% 0;
     }
     .aboutMoney{
       padding: 0;
@@ -926,13 +931,7 @@ export default {
         margin-bottom: 60px;
       }
     }
-    #About{
-      @include AboutLess768;
-      padding-bottom: 20px;
-      .imgLast{
-        width: 100%;
-      }
-    }
+    @include AboutLess768;
     @include PreparationLess768;
     #FormEntry{
       @include FormEntryLess768;
@@ -979,7 +978,7 @@ export default {
       line-height: 1.25rem;
     }
     h2{
-      font-size: 1.15rem !important;
+      font-size: 1.3rem !important;
       margin-bottom: 0 !important;
     }
     #Home{
@@ -987,64 +986,44 @@ export default {
       @include HomeLess768;
       h1{
         width: 380%;
-        font-size: 1.8rem;
-        line-height: 1.6rem;
+        font-size: 2.3rem;
+        line-height: 2.3rem;
       }
       img {
         width: 150%;
         margin-top: 32%;
         margin-left: -55%;
       }
-      p,.allButton{
-        width: 340%;
-      }
-      .css-typing {
-        width: 380%;
+      p,.css-typing,.allButton{
+        width: 500%;
       }
       p{
-        margin-top: 150%;
-      }
-      button{
-        font-size: 1rem;
+        margin-top: 80px;
+        background: rgb(3 14 19 / 46%);
+        margin-bottom: 90px;
       }
     }
-    #About{
-      @include AboutLess768;
-      padding-bottom: 20px;
-      .col{
-        max-width: 100%;
-      }
-      .imgLast{
-        width: 125%;
-        margin-bottom: 20%;
-      }
-      /*.products{*/
-      /*  flex-direction: column-reverse;*/
-      /*  .col-3{*/
-      /*    display: flex;*/
-      /*    margin-left: 20%;*/
-      /*  }*/
-      /*}*/
-    }
+    @include AboutLess768;
     @include PreparationLess768;
     #FormEntry{
       @include FormEntryLess768;
       input,select{
-        font-size: 1.1rem !important;
+        font-size: 1.15rem !important;
       }
       button{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
       .money{
         display: block;
-        font-size: 1.2rem !important;
+        font-size: 1.3rem !important;
       }
     }
     @include TournamentsLess768;
+    @include Awards768;
     #Portfolio{
       padding-bottom: 10px;
       .flex-container > a {
-        width: 29.8%;
+        width: 30%;
       }
     }
     @include Contacts768;
@@ -1055,13 +1034,11 @@ export default {
         margin-top: -.5%;
       }
     }
-    #MyFooter{
-      .text, svg:last-child{
-        margin-top: -4%;
-      }
-    }
     #MyFooter {
-      padding: 7% 0 4%;
+      padding: 8% 0 4%;
+      .text,svg:last-child{
+        margin-top: -6%;
+      }
     }
   }
 </style>
