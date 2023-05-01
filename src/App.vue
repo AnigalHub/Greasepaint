@@ -628,12 +628,17 @@ export default {
       width: 50%;
       margin: .3rem auto;
     }
+    .flex-container{
+      align-items: center;
+      justify-content: center;
+    }
     .flex-container > div {
       background: $hoverBgBlock;
       border-radius: $borderRadius;
       box-shadow: 0 0.5px 3.5px 0.5px rgba(55, 152, 197, 0.52);
-      width: 29%;
       text-align: center;
+      margin: 0 1.8% 1.8%;
+      width: 29%;
       .name_tournament{
         background: rgba(24, 57, 80, 0.45);
         padding: 3% 0 !important;
@@ -655,9 +660,7 @@ export default {
         transform: $hoverEffectBlock;
       }
     }
-    .manyTournaments{
-      margin: 0 1.8%;
-    }
+
   }
   #Awards{
     padding-bottom: 20px;

@@ -3,7 +3,7 @@
         <b-container>
             <h2>Ближайшие турниры федерации NBC:</h2>
             <div class="flex-container" >
-                <div v-for="tournament in tournamentsToShow" :class="[tournamentsToShow.length > 1 ? 'manyTournaments' : '']" >
+                <div v-for="tournament in tournamentsToShow" >
                     <a :href="tournament.link">
                         <p class="name_tournament">{{tournament.name}}</p>
                         <img :src="tournament.src" :alt="tournament.name">
