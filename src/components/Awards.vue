@@ -1,7 +1,7 @@
 <template>
     <div id="Awards">
         <b-container>
-            <h2>Награды и благодарности команды:</h2>
+            <h2>Награды и благодарности команды</h2>
             <b-row>
                 <b-col cols="2">
                     <img src="../../public/awards.png" alt="Нанесение грима">

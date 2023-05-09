@@ -1,7 +1,7 @@
 <template>
     <div id="Tournaments" v-if="tournamentsToShow.length > 0">
         <b-container>
-            <h2>Ближайшие турниры федерации NBC:</h2>
+            <h2>Ближайшие турниры федерации NBC</h2>
             <div class="flex-container" >
                 <div v-for="tournament in tournamentsToShow" >
                     <a :href="tournament.link">
