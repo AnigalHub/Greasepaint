@@ -11,7 +11,7 @@
     }
   ],
   "Portfolio":[
-    {"src": "./portfolio/20.jpg", "alt": "ГРАН-ПРИ_ЛЮБЕР-2023","link": "https://nbcpro.ru/events/gran-pri-lyuber-2023"},
+    {"src": "./portfolio/20.jpg", "alt": "ГРАН-ПРИ_ЛЮБЕР-2023","link": "https://nbcpro.ru/events/gran-pri-lyuber-2023/"},
     {"src": "./portfolio/19.jpg", "alt": "CLASSIC_BATTLE","link": "https://nbcpro.ru/events/classic-battle/"},
     {"src": "./portfolio/18.jpg", "alt": "MUSCLE_BATTLE_2_КАСТИНГ","link": "https://nbcpro.ru/events/muscle-battle-2-kasting/"},
     {"src": "./portfolio/17.jpg", "alt": "ПРОКАЧ_ШОУ","link": "https://nbcpro.ru/events/prokach-shou-semki-19-marta/"},
