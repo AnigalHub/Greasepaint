@@ -58,7 +58,6 @@ export default {
   $colorText: #d7dbe5;
   $bgImg: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent );
   $borderRadius: 8px;
-  $hoverBgBlock: rgba(53, 59, 62, 0.25);
   $hoverEffectBlock:scale(1.03);
 
   @mixin preparationLi{
@@ -289,12 +288,10 @@ export default {
             inset 2px 2px 2px 0px rgba(55, 152, 197, 0.52),
             7px 7px 20px 0px rgba(0,0,0,.1),
             4px 4px 5px 0px rgba(0,0,0,.1);
-    background: $hoverBgBlock;
     border: none;
     z-index: 10;
     &:hover{
       transform: $hoverEffectBlock;
-      background:  rgba(24, 57, 80, 1);
     }
   }
   p,button,ol,input,a{
@@ -343,12 +340,12 @@ export default {
               inset 2px 2px 2px 0px rgba(55, 152, 197, 0.52),
               7px 7px 20px 0px rgba(0,0,0,.1),
               4px 4px 5px 0px rgba(0,0,0,.1);
-      background: $hoverBgBlock;
+    background:  rgba(24, 57, 80, .6);
       border: none;
       z-index: 10;
       &:hover{
         transform: $hoverEffectBlock;
-        background:  rgba(24, 57, 80, .4) !important;
+        background:  rgba(24, 57, 80, .8) !important;
       }
   }
   #Home{
@@ -633,7 +630,7 @@ export default {
       justify-content: center;
     }
     .flex-container > div {
-      background: $hoverBgBlock;
+      background: rgba(53, 59, 62, 0.25);
       border-radius: $borderRadius;
       box-shadow: 0 0.5px 3.5px 0.5px rgba(55, 152, 197, 0.52);
       text-align: center;
@@ -656,7 +653,6 @@ export default {
         filter: blur(0.5px);
       }
       &:hover{
-        background: $hoverBgBlock;
         transform: $hoverEffectBlock;
       }
     }
