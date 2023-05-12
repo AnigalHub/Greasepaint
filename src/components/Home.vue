@@ -6,9 +6,9 @@
                     <b-row>
                         <b-col>
                             <h1 class="css-typing">Мы команда <br/><span>{{name}}</span></h1>
-                            <p class="text-typing" >Профессиональные гримеры спортсменов на соревнованиях
+                            <p>Профессиональные гримеры спортсменов на соревнованиях
                                 National Bodybuilding Community по бодибилдингу и фитнесу</p>
-                            <div class="allButton text-typing">
+                            <div class="blockButton">
                                 <b-button><a @click="scrollToId" href="#FormEntry">Запись на грим</a></b-button>
                             </div>
                         </b-col>

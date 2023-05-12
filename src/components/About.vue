@@ -17,7 +17,7 @@
                     <p>Наша команда сотрудничает c известными брендами грима:</p>
                     <b-row class="products">
                         <b-col cols="3" v-for="(img,index) in Products" :key="index">
-                            <img class="imgLast" :src="img.src" :alt="img.alt">
+                            <img class="imgProducts" :src="img.src" :alt="img.alt">
                         </b-col>
                     </b-row>
                     <p>Под яркими софитами грим выделяет мышцы и подчеркивает рельеф тела, тело смотрится более выигрышно.</p>
