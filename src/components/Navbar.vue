@@ -43,6 +43,7 @@
 </script>
 
 <style scoped lang="scss">
+    /*текст при раскрытом меню в мобильном варианте*/
     .navbar-light .navbar-toggler {
         color: #3798c5;
     }
@@ -75,6 +76,7 @@
         font-weight: 600;
         text-shadow: 0.025rem 0.025rem 0.025rem #8792a5;
     }
+    /*АДАПТИВНОСТЬ*/
     @media screen and (max-width: 768px) {
         /*все кнопки в меню*/
         .nav-link {

@@ -61,6 +61,7 @@ export default {
   $hoverEffectBlock:scale(1.03);
 
   /*МИКСИНЫ*/
+  /*миксин на пункты списка*/
   @mixin preparationLi{
     /*параметры сетки бутстрап*/
     .col{
@@ -85,15 +86,18 @@ export default {
       }
     }
   }
+  /*миксин для фона основной картинки компонента*/
   @mixin imgBg{
     z-index: 3;
     position: absolute;
     background-image: $bgImg;
   }
+  /*миксин основной картинки компонента*/
   @mixin img{
     z-index: 4;
     position: absolute;
   }
+  /*миксин для параметры сетки бутстрап, от 768px ширины*/
   @mixin Col5WithImg768{
     /*параметры сетки бутстрап*/
     .col-5{
@@ -107,6 +111,7 @@ export default {
       }
     }
   }
+  /*миксин для  Компоненты - Главная, от 768px ширины*/
   @mixin HomeLess768{
     /*заголовки*/
     h1{
@@ -121,10 +126,12 @@ export default {
       padding: 0 2% 1%;
     }
   }
+  /*миксин для Компоненты - О компании, от 768px ширины*/
   @mixin AboutLess768{
     /*Компонент - О компании*/
     #About{
       padding-bottom: 20px;
+      /*миксин для параметры сетки бутстрап, от 768px ширины*/
       @include Col5WithImg768;
       /*бутстрап сетка*/
       .row:first-child{
@@ -147,11 +154,14 @@ export default {
       }
     }
   }
+  /*миксин для Компоненты - Подготовка, от 768px ширины*/
   @mixin PreparationLess768{
     /*Компонент - Подготовка*/
     #Preparation{
+      /*миксин для параметры сетки бутстрап, от 768px ширины*/
       @include Col5WithImg768;
       padding-bottom: 10px;
+      /*миксин на пункты списка*/
       @include preparationLi;
       /*фон для основной картинки компонента*/
       .imgBg {
@@ -159,7 +169,9 @@ export default {
       }
     }
   }
+  /*миксин для Компоненты - Запись на грим, от 768px ширины*/
   @mixin FormEntryLess768{
+    /*миксин для параметры сетки бутстрап, от 768px ширины*/
     @include Col5WithImg768;
     padding-bottom: 10px;
     /*форма, абзацы*/
@@ -184,6 +196,7 @@ export default {
       width: 110%;
     }
   }
+  /*миксин для Компоненты - Турниры, от 768px ширины*/
   @mixin TournamentsLess768{
     /*Компонент - Турниры*/
     #Tournaments{
@@ -205,6 +218,7 @@ export default {
       }
     }
   }
+  /*миксин для Компоненты - Награды, от 768px ширины*/
   @mixin Awards768{
     /*Компонент - Награды*/
     #Awards{
@@ -235,6 +249,7 @@ export default {
       }
     }
   }
+  /*миксин для Компоненты - Контакты, от 768px ширины*/
   @mixin Contacts768{
     /*Компонент - Контакты*/
     #Contacts{
@@ -472,6 +487,7 @@ export default {
     img{
       padding-top: 2%;
       width: 100%;
+      /*миксин основной картинки компонента*/
       @include img;
     }
   }
@@ -485,11 +501,13 @@ export default {
     }
     /*картинки*/
     img{
+      /*миксин основной картинки компонента*/
       @include img;
       width: 90%;
     }
     /*фон для основной картинки компонента*/
     .imgBg{
+      /*миксин для фона основной картинки компонента*/
       @include imgBg;
       width: 130%;
       height: 135%;
@@ -597,11 +615,13 @@ export default {
     }
     /*картинки*/
     img{
+      /*миксин основной картинки компонента*/
       @include img;
       width: 90%;
     }
     /*фон для основной картинки компонента*/
     .imgBg{
+      /*миксин для фона основной картинки компонента*/
       @include imgBg;
       z-index: 3;
       background-image: radial-gradient(ellipse 47% 48%, rgba(20, 102, 141, 0.55), transparent);
@@ -655,11 +675,13 @@ export default {
     }
     /*картинки*/
     img{
+      /*миксин основной картинки компонента*/
       @include img;
       width: 90%;
     }
     /*фон для основной картинки компонента*/
     .imgBg{
+      /*миксин для фона основной картинки компонента*/
       @include imgBg;
       width: 130%;
       height: 125%;
@@ -1017,6 +1039,7 @@ export default {
     /*Компонент - Подготовка*/
     #Preparation{
       padding-bottom: 6%;
+      /*миксин на пункты списка*/
       @include preparationLi;
     }
     /*Компонент - Запись на грим*/
@@ -1081,6 +1104,7 @@ export default {
     /*Компонент - Главная*/
     #Home{
       padding-bottom: 27%;
+      /*миксин для Компоненты - Главная, от 768px ширины*/
       @include HomeLess768;
       /*картинки*/
       img {
@@ -1105,10 +1129,13 @@ export default {
         margin-bottom: 60px;
       }
     }
+    /*миксин для Компоненты - О компании, от 768px ширины*/
     @include AboutLess768;
+    /*миксин для Компоненты - Подготовка, от 768px ширины*/
     @include PreparationLess768;
     /*Компонент - Запись на грим*/
     #FormEntry{
+      /*миксин для Компоненты - Запись на грим, от 768px ширины*/
       @include FormEntryLess768;
       /*форма ввода|выбора*/
       input,select{
@@ -1123,7 +1150,9 @@ export default {
         font-size: 1.3rem !important;
       }
     }
+    /*миксин для Компоненты - Турниры, от 768px ширины*/
     @include TournamentsLess768;
+    /*миксин для Компоненты - Награды, от 768px ширины*/
     @include Awards768;
     /*Компонент - Портфолио*/
     #Portfolio{
@@ -1133,6 +1162,7 @@ export default {
         width: 30%;
       }
     }
+    /*миксин для Компоненты - Контакты, от 768px ширины*/
     @include Contacts768;
     /*Компоненты - Контакты, Футер*/
     #Contacts, #MyFooter{
@@ -1171,6 +1201,7 @@ export default {
     /*Компонент - Главная*/
     #Home{
       padding-bottom: 22%;
+      /*миксин для Компоненты - Главная, от 768px ширины*/
       @include HomeLess768;
       /*заголовки*/
       h1{
@@ -1195,10 +1226,13 @@ export default {
         margin-bottom: 90px;
       }
     }
+    /*миксин для Компоненты - О компании, от 768px ширины*/
     @include AboutLess768;
+    /*миксин для Компоненты - Подготовка, от 768px ширины*/
     @include PreparationLess768;
     /*Компонент - Запись на грим*/
     #FormEntry{
+      /*миксин для Компоненты - Запись на грим, от 768px ширины*/
       @include FormEntryLess768;
       /*форма вводы|выбора*/
       input,select{
@@ -1214,7 +1248,9 @@ export default {
         font-size: 1.3rem !important;
       }
     }
+    /*миксин для Компоненты - Турниры, от 768px ширины*/
     @include TournamentsLess768;
+    /*миксин для Компоненты - Награды, от 768px ширины*/
     @include Awards768;
     /*Компонент - Портфолио*/
     #Portfolio{
@@ -1224,6 +1260,7 @@ export default {
         width: 30%;
       }
     }
+    /*миксин для Компоненты - Контакты, от 768px ширины*/
     @include Contacts768;
     /*Компоненты - Контакты, Футер*/
     #Contacts, #MyFooter{
