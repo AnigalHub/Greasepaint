@@ -289,7 +289,7 @@ export default {
   }
   /*фон*/
   .background{
-    background: url("../public/bg-blur-mobile.svg") no-repeat;
+    background: url("../public/bg.svg") no-repeat;
     background-size: cover;
     opacity: .8;
   }
