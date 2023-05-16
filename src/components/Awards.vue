@@ -4,7 +4,7 @@
             <h2>Награды и благодарности команды</h2>
             <b-row>
                 <b-col cols="2">
-                    <img src="../../public/awards.png" alt="Нанесение грима">
+                    <img src="../../public/awards/awards.png" alt="Нанесение грима">
                 </b-col>
                 <b-col>
                     <p class="awards text">Выражаем благодарность команде гримеров #POLYAKOVSTEAM за профессиональную работу, вклад в организацию турниров и развитие National Bodybuilding Community.</p>
