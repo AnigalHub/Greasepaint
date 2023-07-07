@@ -2,15 +2,23 @@
     <div id="Tournaments" v-if="tournamentsToShow.length > 0">
         <b-container>
             <h2>Ближайшие турниры федерации NBC</h2>
-            <div class="flex-container" >
-                <div v-for="tournament in tournamentsToShow" >
-                    <a :href="tournament.link">
-                        <p class="name_tournament">{{tournament.name}}</p>
-                        <img :src="tournament.src" :alt="tournament.name">
-                        <p class="date">{{tournament.date}}</p>
-                        <hr><p>{{tournament.city}}</p><hr>
-                        <p>{{tournament.address}}</p>
-                    </a>
+            <div class="flex-container">
+                <div v-for="tournament in tournamentsToShow" class="tournament">
+                    <p class="name_tournament">{{tournament.name}}</p>
+                    <b-row>
+                        <b-col cols="5">
+                            <img :src="tournament.src" :alt="tournament.name">
+                        </b-col>
+                        <b-col>
+                            <div>
+                                <p class="date">{{tournament.date}}</p>
+                                <hr>
+                                <p>{{tournament.city}}</p><hr>
+                                <p class="address">{{tournament.address}}</p>
+                                <b-button><a :href="tournament.link" target="_blank">Узнать подробнее</a></b-button>
+                            </div>
+                        </b-col>
+                    </b-row>
                 </div>
             </div>
         </b-container>
@@ -18,56 +26,10 @@
 </template>
 
 <script>
-    import information from '../../public/documents/information.json';
+    import { tournamentsToShow} from '@/mixins/tournamentsToShow';
     export default {
         name: "Tournaments",
-        data(){
-            return{
-                today: new Date(),
-                Tournaments:information.Tournaments,
-            }
-        },
-        computed:{
-            tournamentsToShow(){
-                let tournaments = [];
-
-                this.Tournaments.forEach((tournament) =>{
-                    let date = (tournament.date).split(" ");
-                    let day = date[0];
-                    let year = date[2];
-                    let month = this.SearchForTheNumberOfTheMonth(date[1]);
-
-                    const dateTournament = new Date(Number(year),month,Number( day));
-
-                    let dateDifference = this.today - dateTournament;
-
-                    const ONE_DAY_IN_MS = 86400000;
-                    if ( dateDifference < ONE_DAY_IN_MS ){
-                        tournaments.push(tournament)
-                    }
-                })
-                return tournaments;
-            },
-        },
-        methods:{
-            SearchForTheNumberOfTheMonth: function (monthStr) {
-                const months = {
-                    января: 0,
-                    февраля: 1,
-                    марта: 2,
-                    апреля: 3,
-                    мая: 4,
-                    июня: 5,
-                    июля: 6,
-                    августа: 7,
-                    сентября: 8,
-                    октября: 9,
-                    ноября: 10,
-                    декабря: 11
-                }
-                return months[monthStr];
-            }
-        }
+        mixins:[tournamentsToShow],
     }
 </script>
 
