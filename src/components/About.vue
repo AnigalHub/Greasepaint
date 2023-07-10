@@ -2,25 +2,28 @@
     <div id="About">
         <b-container>
             <b-row>
-                <b-col cols="5">
-                    <img src="../../public/componentsImg/about.png">
-                    <div class="imgBg"></div>
+                <b-col cols="4">
+                    <img src="../../public/componentsImg/about.png" alt="О нас">
                 </b-col>
                 <b-col>
                     <h2>О нас</h2>
-                    <p>Команда гримеров <span>#polyakovsteam</span> - официальная команда по гриму на всех соревнованиях федерации <span>NBC</span>.</p>
-                    <p>На соревнованиях по бодибилдингу и фитнесу мы организовываем нанесение грима, включающее: </p>
-                    <ul class="text">
-                        <li v-for="(greasepaint,index) in Greasepaint" :key="index">{{greasepaint}}</li>
+                    <p><span>{{name}}</span> - официальная команда гримеров на всех турнирах федерации National Bodybuilding Community<span>.</span></p>
+                    <p><span>Н</span>а соревнованиях по бодибилдингу и фитнесу мы организовываем нанесение грима<span>.</span> В услугу гримирования входит<span>:</span></p>
+                    <ul class="n1">
+                        <li>нанесение двух слоев грима<span>;</span></li>
+                        <li>нанесение масла (по желанию)<span>;</span></li>
+                        <li>корректировка во время выступления<span>;</span></li>
+                        <li>одноразовый комплект одежды для покраски<span>.</span></li>
                     </ul>
-                    <p>В своей работе мы используем самые лучшие средства, подчеркивающие все достоинства тела спортсменов на соревнованиях. </p>
-                    <p>Наша команда сотрудничает c известными брендами грима:</p>
-                    <b-row class="products">
-                        <b-col cols="3" v-for="(img,index) in Products" :key="index">
-                            <img class="imgProducts" :src="img.src" :alt="img.alt">
-                        </b-col>
+                    <p><span>Н</span>аша команда знает все об основных техниках гримирования<span>,</span> а также проводит межсезонные мероприятия для особого уровня подготовки<span>.</span></p>
+                    <p><span>В</span> своей работе мы используем самые лучшие средства известных брендов<span>:</span></p>
+                    <b-row class="flex-container">
+                        <div v-for="(img,index) in Products" :key="index">
+                            <img :src="img.src" :alt="img.alt">
+                        </div>
                     </b-row>
-                    <p>Под яркими софитами грим выделяет мышцы и подчеркивает рельеф тела, тело смотрится более выигрышно.</p>
+                    <p><span>Н</span>аш грим обладает универсальной адаптирующей системой <span>-</span> применяется для любого типа кожи<span>.</span></p>
+                    <p><span>Г</span>рим не течет<span>,</span> быстро сохнет<span>,</span> не пачкает дорогостоящие костюмы спортсменов и придает коже приятный оттенок естественного загара<span>.</span></p>
                 </b-col>
             </b-row>
         </b-container>
@@ -34,12 +37,6 @@
         data(){
             return{
                 name:information.name_company,
-                Greasepaint:[
-                    'нанесение двух слоев грима;',
-                    'масла;',
-                    'корректировка во время выступления;',
-                    'одноразовый комплект.'
-                ],
                 Products:[
                     {
                         src:'./componentsImg/fitnessFormula.png',
