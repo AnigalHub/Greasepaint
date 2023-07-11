@@ -1,27 +1,47 @@
 <template>
     <div id="MyFooter">
         <b-container>
-            <div class="text">
-                <component :is="copyright"/>2023 <span>{{name}}</span>
+            <div class="flex-container">
+                <div v-for="information in ContactsRow" :key="information.text">
+                    <a :href="information.href" :target="information.target">
+                        <component :is="information.svg"/>
+                        <p>{{information.http}}</p>
+                    </a>
+                </div>
             </div>
-            <a target="_blank" href="https://instagram.com/polyakovs_team?igshid=YmMyMTA2M2Y=">
-                <component :is="svg"/>
-            </a>
         </b-container>
     </div>
 </template>
 
 <script>
-    import Copyright_svg from "./svg/svg_contacts/copyright_svg";
     import Instagram_svg from "./svg/svg_contacts/instagram_svg";
     import information from '../../public/documents/information.json';
+    import Telephone_svg from "@/components/svg/svg_contacts/telephone_svg";
+    import Email_svg from "@/components/svg/svg_contacts/email_svg";
     export default {
         name: "MyFooter",
         data(){
             return{
-                name:information.name_company,
-                copyright:Copyright_svg,
-                svg:Instagram_svg,
+                ContactsRow:[
+                    {
+                        svg:Telephone_svg,
+                        href:'tel:' + information.phone,
+                        target:'_self',
+                        http:information.phone
+                    },
+                    {
+                        svg:Email_svg,
+                        href:'mailto:' + information.mail,
+                        target:'_self',
+                        http:information.mail
+                    },
+                    {
+                        svg:Instagram_svg,
+                        href:information.instagram_address,
+                        target:'_blank',
+                        http:information.instagram,
+                    },
+                ]
             }
         }
     }
