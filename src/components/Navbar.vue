@@ -44,6 +44,7 @@
 </script>
 
 <style scoped lang="scss">
+    /*название компании*/
     .name_company{
         font-size: 1.3rem ;
     }

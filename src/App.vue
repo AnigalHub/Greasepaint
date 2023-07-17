@@ -55,17 +55,17 @@ export default {
   /*миксин на пункты списка*/
   @mixin preparationLi{
     /*пункты списка*/
-    li {
+    li{
       padding: 10px 10px 12px 25px;
       margin-left: 20px;
       /*круг вместо точки в списке*/
-      &:before {
+      &:before{
         top: 9px;
         left: -20px;
         width: 36px;
       }
       /*круг вместо точки в списке*/
-      &:after {
+      &:after{
         border-width: 2.25px;
         left: -20px;
         width: 38px;
@@ -76,7 +76,7 @@ export default {
   /*миксин для параметры сетки бутстрап, от 768px ширины*/
   @mixin Col5WithImg768{
     /*параметры сетки бутстрап*/
-    .col-5,.col-4{
+    .col-5, .col-4{
       flex: 0 0 100%;
       max-width: 100%;
       /*картинки*/
@@ -115,20 +115,20 @@ export default {
   @mixin PreparationLess768{
     /*Компонент - Подготовка*/
     #Preparation{
+      padding-bottom: 10px;
+      /*перенос*/
       br{
         display: none;
       }
       /*миксин для параметры сетки бутстрап, от 768px ширины*/
       @include Col5WithImg768;
-      .col, .col-4:first-child {
+      /*параметры сетки бутстрап*/
+      .col, .col-4:first-child{
         padding: 0 15px !important;
       }
-      padding-bottom: 10px;
       /*миксин на пункты списка*/
       @include preparationLi;
-      .col{
-        padding: 0 15px !important;
-      }
+      /*список*/
       ol{
         margin-left: 15px;
       }
@@ -152,6 +152,7 @@ export default {
       padding: 0;
       margin: 2% 0 !important;
     }
+    /*кнопка*/
     button{
       padding: 3px 10px;
     }
@@ -168,17 +169,18 @@ export default {
       /*контейнер, который включает в себя повтор блоков*/
       .flex-container{
         flex-direction: column;
+        padding-top: 10%;
         /*блоки с турнирами*/
         & > .tournament{
           width: 87%;
-
-        }
-      }
-      .flex-container > .tournament .col div{
-        padding-top: 10%;
-        button{
-          padding: 0 10px 4px;
-          margin: -20px 0 0;
+          /*параметры сетки бутстрап*/
+          .col div{
+            /*кнопка*/
+            button{
+              padding: 0 10px 4px;
+              margin: -20px 0 0;
+            }
+          }
         }
       }
     }
@@ -231,6 +233,7 @@ export default {
     background-size: cover;
     opacity: .7;
   }
+  /*второй фон*/
   .bg{
     background-image: url("../public/bg.png");
     background-repeat: no-repeat;
@@ -272,7 +275,7 @@ export default {
     z-index: 4;
   }
   /*абзацы, кнопки, списки, формы ввода, ссылки*/
-  p,button,ol,li,input,a{
+  p, button, ol, li, input, a{
     color: $colorText;
   }
   /*ссылки*/
@@ -284,29 +287,34 @@ export default {
   p{
     margin-bottom: 1.5% !important;
   }
+  /*абзацы (голубой)*/
   #About p:first-child, #About p:nth-child(2),
-  #About p:nth-child(3),p:nth-child(5), #About li,
-  #Preparation p:nth-child(4),#Preparation p:nth-child(6),
+  #About p:nth-child(3), p:nth-child(5), #About li,
+  #Preparation p:nth-child(4), #Preparation p:nth-child(6),
   #Preparation p:nth-child(7), #FormEntry p{
     padding: 5px;
     color: rgba(209, 233, 245, 0.7);
+    /*контейнер для выделения важного*/
     span{
       color: #5eccff;
     }
   }
-  #About li {
+  /*список в компоненте "О нас"*/
+  #About li{
     padding: 0;
   }
+  /*абзацы (оранжевый)*/
   #About p:last-child, #About p:nth-child(6),
   #About p:nth-child(8), #Preparation p:first-child,
   #Preparation p:nth-child(2){
     padding: 5px;
     color: rgba(232, 217, 199, 0.75);
+    /*контейнер для выделения важного*/
     span{
       color: rgba(233, 145, 45, 0.92);
     }
   }
-  /*абзацы, кнопки, списки, формы ввода, ссылки*/
+  /*абзацы, ссылки, списки, текст о награде, текст об авторе*/
   p,a,ol,li, #Awards .awards, #Awards .author{
     font-size: 1.3rem;
     font-weight: 200;
@@ -346,7 +354,7 @@ export default {
   span{
     letter-spacing: .8px;
   }
-  /*Кнопки в компонентах - Главная, Запись на грим*/
+  /*Кнопки в компонентах - Главная, Запись на грим, Турниры*/
   #Home button, #FormEntry button, #Tournaments button{
       color: rgba(56, 152, 197, 0.92);
       background: transparent;
@@ -366,6 +374,7 @@ export default {
   }
   /*Компонент - Главная*/
   #Home{
+    /*контейнер для выделения важного*/
     p span{
       font-family: $fontFamily;
       font-style: inherit;
@@ -397,6 +406,7 @@ export default {
       margin-top: -10px;
       filter: brightness(125%);
     }
+    /*кнопки*/
     button{
       width: 220%;
       border-radius: 25px;
@@ -406,38 +416,40 @@ export default {
   }
   /*Компонент - О компании*/
   #About{
-    .flex-container img{
-      width: 100%;
-      margin-top: -7%;
-    }
     /*картинки*/
     img{
       width: 105%;
       filter: brightness(125%);
     }
-    .flex-container {
-      div {
+    /*бренды грима (картинки)*/
+    .flex-container{
+      div{
         width: 20%;
         margin: 10px 5px 0;
         padding: 5px;
-        img {
+        /*картинки (бренды грима)*/
+        img{
           width: 100%;
+          margin-top: -7%;
           filter: grayscale(20%);
         }
         /*при наведении*/
-        &:hover {
+        &:hover{
           transform: $hoverEffectBlock;
         }
       }
     }
+    /*список*/
     ul{
       list-style: none;
       margin-left: -20px;
     }
+    /*пункты списка*/
     ul > li{
       padding-left: 20px;
       position: relative;
     }
+    /*пункты списка (пункт - кружок)*/
     ul > li:before{
       content: "\2022";
       position: absolute;
@@ -453,7 +465,8 @@ export default {
       padding: 5% 0 0 0 !important;
       margin-left: -3% ;
     }
-    .col-4:first-child {
+    /*параметры сетки бутстрап*/
+    .col-4:first-child{
       padding: 6% 0 0 !important;
       margin-right: -50px ;
     }
@@ -464,13 +477,13 @@ export default {
       counter-reset: li;
     }
     /*пункты списка*/
-    li {
+    li{
       position: relative;
       padding: 17px 20px 5px 28px;
       margin-left: 40px;
       transition-duration: 0.3s;
       /*круг вместо точки в списке*/
-      &:before {
+      &:before{
         border: 6px solid transparent;
         line-height: 30px;
         position: absolute;
@@ -487,11 +500,11 @@ export default {
         box-sizing: border-box;
       }
       /*при наведении*/
-      &:hover:before {
+      &:hover:before{
         color: #337AB7;
       }
       /*круг вместо точки в списке*/
-      &:after {
+      &:after{
         position: absolute;
         top: 10px;
         left: -30px;
@@ -506,7 +519,7 @@ export default {
         box-sizing: border-box;
       }
       /*при наведении*/
-      &:hover:after {
+      &:hover:after{
         animation: 500ms ease-in-out 0s bounceIn;
         opacity: 1;
       }
@@ -587,7 +600,7 @@ export default {
       margin: 3% auto 0;
       padding: 0 5% 2%;
     }
-    /*форма ввода|выбора*/
+    /*форма ввода|выбора, описания*/
     input, select, textarea{
       width: 100%;
       background: transparent;
@@ -600,6 +613,7 @@ export default {
       margin-bottom: 4%;
       padding: 2%;
     }
+    /*форма описания*/
     textarea{
       overflow-y: hidden;
       height: 50px;
@@ -615,12 +629,12 @@ export default {
         display: none;
       }
     }
-    /*фразы в формах ввода|выбора*/
-    input::placeholder, select:optional, textarea::placeholder {
+    /*фразы в формах ввода|выбора, описания*/
+    input::placeholder, select:optional, textarea::placeholder{
       color: $colorText;
     }
-    /*фокус формы ввода|выбора*/
-    input:focus, select:focus, textarea:focus {
+    /*фокус формы ввода|выбора, описания*/
+    input:focus, select:focus, textarea:focus{
       background-color: transparent;
     }
   }
@@ -643,6 +657,7 @@ export default {
       align-items: center;
       justify-content: center;
     }
+    /*турниры*/
     .flex-container > .tournament{
       width: 46%;
       margin: 1.8%;
@@ -650,17 +665,21 @@ export default {
       background: radial-gradient(ellipse 180px 90px, transparent, rgba(14, 21, 33, 0.45));
       box-shadow: 0 0.5px 3.5px 0.5px rgba(55, 152, 197, 0.52);
       text-align: center;
+      /*параметры сетки бутстрап*/
       .col-5{
         padding: 0 !important;
       }
+      /*параметры сетки бутстрап*/
       .col{
         div{
           padding: 4%;
           margin-left: 3%;
+          /*адрес*/
           .address{
             padding: 0;
             min-height: 70px;
           }
+          /*кнопки*/
           button{
             margin: 4% 0 0;
             width: 100%;
@@ -669,12 +688,14 @@ export default {
           }
         }
       }
+      /*название турниров*/
       .name_tournament{
         color: #5eccff;
         padding: 1.5% 0;
         background: rgba(24, 57, 80, 0.45);
         margin-bottom: 0;
       }
+      /*картинки*/
       img{
         width: 100%;
         filter: blur(0.5px);
@@ -683,6 +704,7 @@ export default {
         border: 1px solid #307997;
         border-radius: $borderRadius;
       }
+      /*при наведении*/
       &:hover{
         transform: $hoverEffectBlock;
       }
@@ -708,19 +730,21 @@ export default {
   /*Компонент - Портфолио*/
   #Portfolio{
     /*блоки с картинками (ссылками)*/
-    .flex-container > a {
+    .flex-container > a{
       width: 12%;
       height: 100%;
       margin: 0 1.1% 2.4% !important;
       box-shadow: 0 0.5px 2.5px 0.5px rgba(55, 152, 197, 0.52);
       display: inline-block; /* Строчно-блочный элемент */
       overflow: hidden;
+      /*картинки*/
       img{
-        transition: .5s; /* Время эффекта */
-        display: block; /* Убираем небольшой отступ снизу */
-      }
-      img:hover {
-        transform: scale(1.2); /* Увеличиваем масштаб */
+        transition: .5s;
+        display: block;
+        /*при наведении*/
+        &:hover{
+          transform: scale(1.2);
+        }
       }
       /*при наведении*/
       &:hover{
@@ -733,11 +757,12 @@ export default {
     padding: 1.5% 0;
     background: #0000004f;
     /*блоки с пунктами информации (контакты)*/
-    .flex-container > div {
+    .flex-container > div{
       margin: 0 auto;
       padding-left: 70px;
       width: 33%;
       height: 100%;
+      /*второй блок*/
       &:nth-child(2){
         padding-left: 40px;
       }
@@ -753,7 +778,7 @@ export default {
       height: 35px;
       float: left;
       /*последний элемент*/
-      &:last-child {
+      &:last-child{
         margin-top: -2.7%;
       }
     }
@@ -761,6 +786,7 @@ export default {
 
   /*АДАПТИВНОСТЬ*/
   @media screen and (min-width: 992px) and (max-width: 1200px){
+    /*список*/
     ul{
       margin-bottom: .5rem !important;
     }
@@ -768,28 +794,23 @@ export default {
     h2{
       font-size: 1.5rem !important;
     }
-    /*текст во всех компонентах + пунктов меню*/
+    /*текст во всех компонентах*/
     p, a, ol, li, #Home p, #Awards .awards, #Awards .author,
-    #Awards .awards, #Home button, #FormEntry button,
-    button{
+    #Awards .awards, #Home button, #FormEntry button, button{
       font-size: 1.22rem;
       line-height: 1.4rem;
     }
+    /*текст в пунктах меню*/
     .nav-link{
       font-size: 1.22rem !important;
     }
-    /*Компоненты - О компании, Подготовка, Запись на грим*/
-    #Preparation, #FormEntry{
-      /*картинки*/
-      img{
+    /*Компоненты - Подготовка, Запись на грим (картинки)*/
+    #Preparation img, #FormEntry img{
         margin-top: 10%;
-      }
     }
-    #About{
-      /*картинки*/
-      img{
-        margin-top: 15%;
-      }
+    /*Компонент - О компании (картинки)*/
+    #About img{
+      margin-top: 15%;
     }
     /*Компонент - Главная*/
     #Home{
@@ -799,9 +820,11 @@ export default {
         line-height: 2.9rem;
         margin-top: 145%;
       }
-      h1,p{
+      /*заголовок, абзац*/
+      h1, p{
         width: 370%;
       }
+      /*картинки*/
       img{
         margin-left: 145px;
         width: 86%;
@@ -813,12 +836,14 @@ export default {
       .money{
         font-size: 1.5rem !important;
       }
-      /*форма ввода|выбора*/
+      /*форма ввода|выбора, описания*/
       input, select, textarea{
         font-size: 1.2rem !important;
       }
     }
+    /*Компонент - Турниры*/
     #Tournaments{
+      /*турниры (кнопки)*/
       .flex-container > .tournament .col div button{
         padding: 0 10px 4px;
       }
@@ -833,11 +858,13 @@ export default {
     }
   }
   @media screen and (max-width: 768px){
+    /*второй фон*/
     .bg{
       background-image: none;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 992px){
+    /*список*/
     ul{
       margin-bottom: .5rem !important;
     }
@@ -846,18 +873,18 @@ export default {
       font-size: 1.25rem !important;
       padding: 0;
     }
-    /*название компании  в логотипе*/
+    /*название компании в логотипе*/
     .name_company{
       font-size: 1.3rem;
       padding: 5% 2px 0;
     }
-    /*текст во всех компонентах + пунктов меню*/
+    /*текст во всех компонентах*/
     p, a, ol, li, #Home p, #Awards .awards, #Awards .author,
-    #Awards .awards, #Home button, #FormEntry button,
-    button, .nav-link{
+    #Awards .awards, #Home button, #FormEntry button, button{
       font-size: 1rem;
       line-height: 1.15rem;
     }
+    /*текст в пунктах меню*/
     .nav-link{
       font-size: 1rem !important;
       padding: 0.35rem 1rem !important;
@@ -874,6 +901,7 @@ export default {
         line-height: 2.4rem;
         margin-top: 145%;
       }
+      /*заголовки, абзац*/
       h1,p{
         width: 450%;
         margin-left: -35px;
@@ -884,26 +912,21 @@ export default {
         margin-left: 0;
       }
     }
-    /*Компоненты - О компании, Подготовка, Запись на грим*/
-    #About, #Preparation, #FormEntry{
-      /*картинки*/
-      img{
-        width: 125%;
-      }
+    /*Компоненты - О компании, Подготовка, Запись на грим (картинки)*/
+    #About img, #Preparation img, #FormEntry img{
+      width: 125%;
     }
-    /*Компонент - О компании*/
-    #About{
-      /*картинки*/
-      img{
-        margin-top: 30%;
-        margin-left: -10%;
-      }
+    /*Компонент - О компании (картинки)*/
+    #About img{
+      margin-top: 30%;
+      margin-left: -10%;
     }
     /*Компонент - Подготовка*/
     #Preparation{
       /*миксин на пункты списка*/
       @include preparationLi;
-      .col-4:first-child {
+      /*параметры сетки бутстрап*/
+      .col-4:first-child{
         padding: 3% 0 0 !important;
         margin-right: -50px;
       }
@@ -914,7 +937,7 @@ export default {
     }
     /*Компонент - Запись на грим*/
     #FormEntry{
-      /*форма ввода|выбора*/
+      /*форма ввода|выбора, описания*/
       input, select, textarea{
         font-size: 1rem !important;
         margin-bottom: 1%;
@@ -934,21 +957,24 @@ export default {
     }
     /*Компонент - Турниры*/
     #Tournaments{
+      /*параметры сетки бутстрап*/
       .col div{
         margin-top: 20px;
       }
+      /*турниры (кнопки)*/
       .flex-container > .tournament .col div button{
         margin: -5px 0 5px -150px;
         width: 200%;
         padding: 0 10px 4px;
         border-radius: 20px;
-
       }
     }
     /*Компонент - Футер*/
     #MyFooter{
-      .flex-container > div {
+      /*блоки с пунктами информации (контакты)*/
+      .flex-container > div{
         padding-left: 50px;
+        /*второй блок*/
         &:nth-child(2){
           padding-left: 30px;
         }
@@ -962,6 +988,7 @@ export default {
     }
   }
   @media screen and (min-width: 500px) and (max-width: 768px){
+    /*список*/
     ul{
       margin-bottom: .5rem !important;
     }
@@ -975,27 +1002,32 @@ export default {
       font-size: 1.3rem;
       padding: 5% 2px 0;
     }
-    /*текст во всех компонентах + пунктов меню*/
+    /*текст во всех компонентах*/
     p, a, ol, li, #Home p, #Awards .awards, #Awards .author,
-    #Awards .awards, button, .nav-link{
+    #Awards .awards, button{
       font-size: 1rem;
       line-height: 1.15rem;
     }
+    /*текст в пунктах меню*/
     .nav-link{
       font-size: 1rem !important;
       padding: 0.35rem 1rem !important;
     }
+    /*Кнопки в компонентах - Главная, Запись на грим*/
     #Home button, #FormEntry button{
       font-size: 1.2rem !important;
     }
+    /*Компонетн - О нас*/
     #About{
       padding-bottom: 0;
     }
     /*Компонент - Главная*/
     #Home{
       padding-bottom: 0;
+      /*параметры сетки бутстрап*/
       .row{
         flex-direction: column-reverse;
+        /*параметры сетки бутстрап*/
         .col-2{
           max-width: 100%;
         }
@@ -1013,7 +1045,9 @@ export default {
         margin-top: -300px;
         margin-bottom: 5px;
       }
-      h1,p{
+      /*заголовки, абзац*/
+      h1, p{
+        /*контейнер для выделения важного*/
         span{
           background: rgba(0, 0, 0, 0.45);
         }
@@ -1022,6 +1056,7 @@ export default {
         width: 100%;
         margin-left: 0;
       }
+      /*абзац*/
       p{
         padding: 3% 0;
         width: 80%;
@@ -1043,8 +1078,7 @@ export default {
     #FormEntry{
       /*миксин для Компоненты - Запись на грим, от 768px ширины*/
       @include FormEntryLess768;
-      /*форма ввода|выбора*/
-      /*форма ввода|выбора*/
+      /*форма ввода|выбора, описания*/
       input, select, textarea{
         font-size: 1rem !important;
         margin-bottom: 1%;
@@ -1065,37 +1099,38 @@ export default {
     /*Компонент - Портфолио*/
     #Portfolio{
       /*блоки с картинками (ссылками)*/
-      .flex-container > a {
+      .flex-container > a{
         width: 14%;
       }
     }
     /*Компонент - Футер*/
     #MyFooter{
       padding: 3% 0 !important;
+      /*блоки с пунктами информации (контакты)*/
       .flex-container > div{
         width: 33.3%;
         padding-left: 0;
+        /*второй блок*/
         &:nth-child(2){
           padding-left: 0;
         }
+        /*абзац*/
         p{
           text-align: center;
         }
-        svg{
-          float: none;
-          margin-left: 45%;
-        }
       }
-
       /*svg*/
       svg{
         width: 28px;
         height: 28px;
         margin-top: -.5%;
+        float: none;
+        margin-left: 45%;
       }
     }
   }
-  @media screen and  (max-width: 500px){
+  @media screen and (max-width: 500px){
+    /*список*/
     ul{
       margin-bottom: .5rem !important;
     }
@@ -1104,6 +1139,7 @@ export default {
       font-size: 1.25rem !important;
       padding: 0;
     }
+    /*логотип*/
     .logo {
       width: 32px;
       height: 32px;
@@ -1114,27 +1150,28 @@ export default {
       letter-spacing: 0 !important;
       padding: 5% 2px 0;
     }
-    /*текст во всех компонентах + пунктов меню*/
+    /*текст во всех компонентах*/
     p, a, ol, li, #Home p, #Awards .awards, #Awards .author,
-    #Awards .awards, button, .nav-link{
+    #Awards .awards, button{
       font-size: .95rem;
       line-height: 1.1rem;
     }
+    /*текст в пунктах меню*/
     .nav-link{
       font-size: .95rem !important;
       padding: 0.35rem 1rem !important;
     }
+    /*Кнопки в компонентах - Главная, Запись на грим*/
     #Home button, #FormEntry button{
       font-size: 1.2rem !important;
-    }
-    #About{
-      padding-bottom: 0;
     }
     /*Компонент - Главная*/
     #Home{
       padding-bottom: 0;
+      /*параметры сетки бутстрап*/
       .row{
         flex-direction: column-reverse;
+        /*параметры сетки бутстрап*/
         .col-2{
           max-width: 100%;
         }
@@ -1152,7 +1189,9 @@ export default {
         margin-top: -270px;
         margin-bottom: 0;
       }
-      h1,p{
+      /*заголовки, абзац*/
+      h1, p{
+        /*контейнер для выделения важного*/
         span{
           background: rgba(0, 0, 0, 0.45);
         }
@@ -1161,6 +1200,7 @@ export default {
         width: 100%;
         margin-left: 0;
       }
+      /*абзац*/
       p{
         padding: 2% 0;
         width: 100%;
@@ -1176,7 +1216,10 @@ export default {
     }
     /*миксин для Компоненты - О компании, от 768px ширины*/
     @include AboutLess768;
+    /*Компонент - О нас*/
     #About{
+      padding-bottom: 0;
+      /*блок под картинку*/
       .flex-container > div{
         padding: 0 ;
       }
@@ -1187,8 +1230,7 @@ export default {
     #FormEntry{
       /*миксин для Компоненты - Запись на грим, от 768px ширины*/
       @include FormEntryLess768;
-      /*форма ввода|выбора*/
-      /*форма ввода|выбора*/
+      /*форма ввода|выбора, описания*/
       input, select, textarea{
         font-size: 1rem !important;
         margin-bottom: 1%;
@@ -1204,19 +1246,25 @@ export default {
     }
     /*миксин для Компоненты - Турниры, от 768px ширины*/
     @include TournamentsLess768;
+    /*Компонент - Турниры*/
     #Tournaments{
+      /*турниры*/
       .tournament{
+        /*картинки*/
         img{
           margin: 5% 0 5% 70% !important;
         }
+        /*параметры сетки бутстрап*/
         .row{
           flex-direction: column;
-        }
-        .row .col div{
+          /*параметры сетки бутстрап*/
+          .col div{
             padding-top: 0 !important;
+            /*кнопки*/
             button{
               margin-top: -33px;
             }
+          }
         }
       }
     }
@@ -1225,62 +1273,58 @@ export default {
     /*Компонент - Портфолио*/
     #Portfolio{
       /*блоки с картинками (ссылками)*/
-      .flex-container > a {
+      .flex-container > a{
         width: 17%;
       }
     }
     /*Компонент - Футер*/
     #MyFooter{
       padding: 3% 0 !important;
+      /*блоки с пунктами информации (контакты)*/
       .flex-container > div{
         width: 100%;
         padding-left: 0;
         padding-bottom: 2%;
+        /*второй блок*/
         &:nth-child(2){
           padding-left: 0;
         }
+        /*абзац*/
         p{
           text-align: center;
         }
-        svg{
-          float: none;
-          margin-left: 45%;
-        }
       }
-
       /*svg*/
       svg{
+        float: none;
+        margin-left: 45%;
         width: 28px;
         height: 28px;
         margin-top: -.5%;
       }
     }
   }
-  @media screen and  (min-width: 400px) and (max-width: 450px){
-    /*Компонент - Главная*/
-    #Home{
-      /*заголовки*/
-      h1{
-        margin-top: -255px;
-      }
+  @media screen and (min-width: 400px) and (max-width: 450px){
+    /*Компонент - Главная (заголовки)*/
+    #Home h1{
+      margin-top: -255px;
     }
   }
-  @media screen and  (min-width: 350px) and (max-width: 400px){
-    /*Компонент - Главная*/
-    #Home{
-      /*заголовки*/
-      h1{
-        margin-top: -220px;
-      }
+  @media screen and (min-width: 350px) and (max-width: 400px){
+    /*Компонент - Главная (заголовки)*/
+    #Home h1{
+      margin-top: -220px;
     }
   }
-  @media screen and  (min-width: 300px) and (max-width: 350px){
+  @media screen and (min-width: 300px) and (max-width: 350px){
     /*Компонент - Главная*/
     #Home{
       padding-bottom: 20px;
-      h1,p{
+      /*заголовки, абзац*/
+      h1, p{
         width: 105%;
       }
+      /*кнопки*/
       button{
         width: 100%;
       }
@@ -1291,13 +1335,15 @@ export default {
       }
     }
   }
-  @media screen and  (min-width: 260px) and (max-width: 300px){
+  @media screen and (min-width: 260px) and (max-width: 300px){
     /*Компонент - Главная*/
     #Home{
       padding-bottom: 20px;
-      h1,p{
+      /*заголовки, абзац*/
+      h1, p{
         width: 107%;
       }
+      /*кнопки*/
       button{
         width: 100%;
       }
@@ -1312,9 +1358,11 @@ export default {
     /*Компонент - Главная*/
     #Home{
       padding-bottom: 20px;
-      h1,p{
+      /*заголовки, абзац*/
+      h1, p{
         width: 107%;
       }
+      /*кнопки*/
       button{
         width: 100%;
       }
