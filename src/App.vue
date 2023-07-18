@@ -1274,7 +1274,7 @@ export default {
     #Portfolio{
       /*блоки с картинками (ссылками)*/
       .flex-container > a{
-        width: 17%;
+        width: 17.5%;
       }
     }
     /*Компонент - Футер*/
