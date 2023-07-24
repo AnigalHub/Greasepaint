@@ -231,7 +231,7 @@ export default {
   .background{
     background: url("../public/bg.svg") no-repeat;
     background-size: cover;
-    opacity: .7;
+    opacity: .82;
   }
   /*второй фон*/
   .bg{
