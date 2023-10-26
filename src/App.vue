@@ -212,7 +212,7 @@ export default {
   }
 
   body{
-    background: rgba(10, 15, 24);
+    background: rgba(10, 15, 24) !important;
   }
   /*вся страница*/
   #app{
@@ -860,7 +860,10 @@ export default {
   @media screen and (max-width: 768px){
     /*второй фон*/
     .bg{
-      background-image: none;
+      background-repeat: repeat;
+      background-image: url("../public/bg.png");
+      background-size: 100% auto !important;
+      background-position: 0 0, center;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 992px){
