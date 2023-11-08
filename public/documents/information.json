@@ -11,14 +11,6 @@
     },
     {
       "src": "./tournaments/2.jpg",
-      "date":"29 октября 2023",
-      "name":"MUSCLE BATTLE",
-      "city": "Москва",
-      "address":"Новый Арбат, 21. ARBAT HALL",
-      "link": "https://nbcpro.ru/events/muscle-battle-29-10-2023/"
-    },
-    {
-      "src": "./tournaments/3.jpg",
       "date":"22 октября 2023",
       "name":"GRAND PRIX INFERNO",
       "city": "Москва",
@@ -27,6 +19,7 @@
     }
   ],
   "Portfolio":[
+    {"src": "./portfolio/22.jpg", "alt": "MUSCLE BATTLE","link": "https://nbcpro.ru/events/grand-prix-moscow/"},
     {"src": "./portfolio/21.jpg", "alt": "GRAND_PRIX_NBC_8","link": "https://nbcpro.ru/events/grand-prix-nbc-8/"},
     {"src": "./portfolio/20.jpg", "alt": "ГРАН-ПРИ_ЛЮБЕР-2023","link": "https://nbcpro.ru/events/gran-pri-lyuber-2023/"},
     {"src": "./portfolio/19.jpg", "alt": "CLASSIC_BATTLE","link": "https://nbcpro.ru/events/classic-battle/"},
