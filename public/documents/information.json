@@ -3,11 +3,19 @@
   "Tournaments":[
     {
       "src": "./tournaments/1.jpg",
-      "date":"5 ноября 2023",
-      "name":"GRAND PRIX NBC 9",
+      "date":"5 мая 2024",
+      "name":"ГРАН-ПРИ ЛЮБЕР-2024",
       "city": "Москва",
-      "address":"Орджоникидзе, д. 11 стр. 1. BASE",
-      "link": "https://nbcpro.ru/events/grand-prix-nbc-9/"
+      "address":"ул. Новый Арбат, 21. ARBAT HALL",
+      "link": "https://nbcpro.ru/events/gran-pri-lyuber-2024/"
+    },
+    {
+      "src": "./tournaments/2.jpg",
+      "date":"19 мая 2024",
+      "name":"GRAND PRIX NBC X. 19.05.2024",
+      "city": "Москва",
+      "address":"VK STADIUM. Ленинградский проспект 80, корп. 17",
+      "link": "https://nbcpro.ru/events/grand-prix-nbc-x-19-05-2024/"
     }
   ],
   "Portfolio":[
